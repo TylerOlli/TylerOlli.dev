@@ -18,14 +18,15 @@ export function FeatureCard({ icon: Icon, title, description, delay = 0 }: Featu
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
+      whileHover={{ y: -4 }}
     >
-      <Card className="group h-full border-2 transition-all hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5">
+      <Card className="group h-full border transition-all shadow-sm hover:shadow-md">
         <CardHeader>
-          <div className="mb-4 inline-flex rounded-lg bg-primary/10 p-3 transition-colors group-hover:bg-primary/20">
+          <div className="mb-4 inline-flex rounded-md bg-foreground/5 p-3 transition-colors group-hover:bg-foreground/10">
             <Icon className="h-6 w-6" />
           </div>
-          <CardTitle className="text-lg">{title}</CardTitle>
-          <CardDescription className="text-base leading-relaxed">{description}</CardDescription>
+          <CardTitle className="text-lg font-bold">{title}</CardTitle>
+          <CardDescription className="text-base leading-relaxed mt-2">{description}</CardDescription>
         </CardHeader>
       </Card>
     </motion.div>

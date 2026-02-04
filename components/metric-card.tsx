@@ -17,15 +17,15 @@ export function MetricCard({ value, label, delay = 0, className }: MetricCardPro
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
+      whileHover={{ y: -4 }}
       className={cn(
-        "group relative overflow-hidden rounded-xl border bg-card p-8 transition-all hover:shadow-lg hover:shadow-primary/5",
+        "group relative overflow-hidden rounded-lg border bg-card p-8 transition-all shadow-sm hover:shadow-md",
         className
       )}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
       <div className="relative">
         <div className="text-4xl font-bold tracking-tight lg:text-5xl">{value}</div>
-        <div className="mt-2 text-sm text-muted-foreground">{label}</div>
+        <div className="mt-2 text-sm font-medium text-muted-foreground uppercase tracking-wide">{label}</div>
       </div>
     </motion.div>
   )
