@@ -27,6 +27,7 @@
     --section-alt: 0 0% 96%;
     --section-dark: 0 0% 9%;
     --section-mid: 0 0% 94%;
+    --section-tech: 0 0% 92%;
   }
 
   .dark {
@@ -72,6 +73,10 @@
   
   .section-mid {
     background-color: hsl(var(--section-mid));
+  }
+  
+  .section-tech {
+    background-color: hsl(var(--section-tech));
   }
   
   .section-dark {

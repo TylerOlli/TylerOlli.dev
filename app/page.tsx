@@ -8,6 +8,7 @@ import { MetricCard } from "@/components/metric-card"
 import { CaseStudyCard } from "@/components/case-study-card"
 import { FeatureCard } from "@/components/feature-card"
 import { TechTag } from "@/components/tech-tag"
+import { PrimaryTechTag } from "@/components/primary-tech-tag"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { Badge } from "@/components/ui/badge"
@@ -45,8 +46,8 @@ export default function Home() {
             </h1>
             
             <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto font-light">
-              Building scalable fintech platforms and shipping high-impact products with{" "}
-              <span className="text-foreground font-medium">AI-accelerated development</span>.
+              Building scalable fintech platforms and production systems with{" "}
+              <span className="text-foreground font-medium">context engineering and AI-accelerated workflows</span>.
             </p>
             
             <motion.div
@@ -196,7 +197,7 @@ export default function Home() {
               ModelTriage
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
-              An AI engineering platform for comparing, routing, and optimizing LLM outputs. Built for developers who need reliable AI decisions at scale.
+              A context engineering platform for comparing, routing, and validating LLM outputs. Applies structured constraints and schemas to make AI workflows reliable at scale.
             </p>
           </motion.div>
 
@@ -210,7 +211,7 @@ export default function Home() {
           >
             <h3 className="text-xl font-bold mb-4">What It Does</h3>
             <p className="text-muted-foreground leading-relaxed">
-              ModelTriage provides a structured approach to multi-LLM workflows: compare outputs from GPT-4, Claude, Gemini, and other models side-by-side, route prompts to the best model for each task, and validate responses against schemas and constraints. Built with production reliability in mind.
+              ModelTriage applies context engineering principles to multi-LLM workflows: define structured inputs with explicit constraints, route requests to optimal models based on task requirements, validate outputs against schemas, and compare results across providers. Designed for production systems where reliability matters.
             </p>
           </motion.div>
 
@@ -230,8 +231,8 @@ export default function Home() {
             />
             <FeatureCard
               icon={CheckCircle2}
-              title="Structured Outputs"
-              description="Define schemas and validations to ensure LLM responses match your requirements before they reach production."
+              title="Schema Validation"
+              description="Define output schemas, constraints, and validation rules. Enforce structure and catch errors before responses reach production systems."
               delay={0.3}
             />
           </div>
@@ -246,7 +247,7 @@ export default function Home() {
           >
             <h3 className="text-xl font-bold mb-4">Why It Matters</h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              LLM outputs vary widely in quality, cost, and reliability. ModelTriage brings engineering discipline to AI workflows: measurable quality, predictable costs, and confidence in production deployments.
+              LLM outputs vary widely in quality, cost, and reliability. Context engineering brings system design discipline to AI workflows: measurable quality through validation, predictable costs through routing, and production confidence through structured constraints.
             </p>
             <div className="flex flex-wrap gap-3">
               <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
@@ -321,14 +322,24 @@ export default function Home() {
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                I use AI tools daily to accelerate delivery without sacrificing quality. My workflow integrates <span className="text-foreground font-medium">Cursor, GitHub Copilot, ChatGPT, Claude, and Gemini</span> to handle different aspects of development.
+                I use AI tools daily to accelerate delivery without sacrificing quality. My workflow integrates <span className="text-foreground font-medium">Cursor, GitHub Copilot, ChatGPT, Claude, and Gemini</span> across code generation, documentation, review, and modernization.
+              </p>
+              <p>
+                Beyond individual productivity, I treat <span className="text-foreground font-medium">context engineering as a system design discipline</span>: structured inputs, explicit constraints, schema validation, and repeatable workflows. This approach transforms LLM interactions from ad-hoc prompting into reliable, testable components that integrate with production systems.
               </p>
               
               <div className="grid md:grid-cols-2 gap-6 my-8">
                 <div className="p-6 rounded-lg border bg-card shadow-sm">
+                  <h3 className="text-lg font-bold text-foreground mb-3">Context Engineering</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Design structured prompts, constraints, and validation schemas. Define success criteria and error handling. Build repeatable AI workflows that integrate with backend systems like any other service dependency.
+                  </p>
+                </div>
+                
+                <div className="p-6 rounded-lg border bg-card shadow-sm">
                   <h3 className="text-lg font-bold text-foreground mb-3">Code Generation</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Draft boilerplate, generate tests, and prototype features faster. AI handles the repetitive work while I focus on architecture and logic.
+                    Draft boilerplate, generate tests, and prototype features faster. AI handles the repetitive work while I focus on architecture and production logic.
                   </p>
                 </div>
                 
@@ -340,30 +351,26 @@ export default function Home() {
                 </div>
                 
                 <div className="p-6 rounded-lg border bg-card shadow-sm">
-                  <h3 className="text-lg font-bold text-foreground mb-3">Code Review</h3>
+                  <h3 className="text-lg font-bold text-foreground mb-3">Code Review & Migration</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Catch edge cases, identify performance issues, and suggest improvements before code reaches production.
-                  </p>
-                </div>
-                
-                <div className="p-6 rounded-lg border bg-card shadow-sm">
-                  <h3 className="text-lg font-bold text-foreground mb-3">Legacy Modernization</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    Translate legacy systems into modern frameworks, refactor technical debt, and migrate to new patterns with confidence.
+                    Catch edge cases, identify performance issues, and translate legacy systems into modern frameworks. Refactor technical debt with validation at each step.
                   </p>
                 </div>
               </div>
 
-              <p>
-                <span className="text-foreground font-medium">Measurable impact:</span> 50% faster feature delivery, fewer bugs in production, and more time spent on high-leverage decisions instead of manual tasks.
-              </p>
-
-              <div className="mt-8 p-6 rounded-lg border bg-foreground/[0.02] shadow-sm">
-                <h3 className="text-lg font-bold text-foreground mb-3">GitHub Spec Kit Implementation</h3>
+              <div className="mt-8 p-8 rounded-lg border-2 bg-card shadow-md">
+                <h3 className="text-xl font-bold text-foreground mb-4">Context Engineering in Practice</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                  Built production AI systems using structured context engineering: defined input schemas, validation rules, constraint boundaries, and success criteria. Implemented with GitHub Spec Kit methodology for an internal translation tool.
+                </p>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Built a structured AI translation tool using GitHub Spec Kit methodology: defined clear context, validation rules, and success criteria. Result: consistent, high-quality outputs and significant reduction in iteration cycles.
+                  <span className="text-foreground font-medium">Results:</span> Consistent outputs, 70% reduction in iteration cycles, and predictable behavior under edge cases. The system handles thousands of requests with error rates comparable to traditional microservices.
                 </p>
               </div>
+
+              <p className="mt-6">
+                <span className="text-foreground font-medium">Measurable impact:</span> 50% faster feature delivery, fewer bugs in production, and more time spent on system design and high-leverage decisions.
+              </p>
             </div>
           </motion.div>
         </Container>
@@ -411,11 +418,11 @@ export default function Home() {
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Implemented AI-driven tooling with structured validations using GitHub Spec Kit methodology</span>
+                    <span>Applied context engineering principles to AI tooling: structured inputs, schema validation, and constraint-based workflows using GitHub Spec Kit methodology</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Accelerated delivery 50% using Cursor, Copilot, ChatGPT, Claude, and Gemini for code, docs, and testing</span>
+                    <span>Accelerated delivery 50% integrating AI tools (Cursor, Copilot, ChatGPT, Claude, Gemini) into production workflows alongside traditional backend and frontend engineering</span>
                   </li>
                 </ul>
               </motion.div>
@@ -425,7 +432,7 @@ export default function Home() {
       </Section>
 
       {/* Tech Stack */}
-      <Section id="tech-stack" className="section-mid">
+      <Section id="tech-stack" className="section-tech">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -442,46 +449,69 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="max-w-5xl mx-auto space-y-8">
+          <div className="max-w-6xl mx-auto space-y-12">
+            {/* Frontend */}
             <div>
-              <h3 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-4">Frontend</h3>
-              <div className="flex flex-wrap gap-2">
-                {["React", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "Framer Motion"].map((tech, i) => (
-                  <TechTag key={tech} name={tech} delay={i * 0.05} />
-                ))}
+              <div className="mb-5">
+                <h3 className="text-xs font-bold text-foreground uppercase tracking-wider mb-1">Frontend</h3>
+                <div className="h-px bg-border w-16" />
+              </div>
+              <div className="flex flex-wrap gap-2.5">
+                <PrimaryTechTag name="TypeScript" delay={0} />
+                <PrimaryTechTag name="Next.js" delay={0.05} />
+                <TechTag name="React" delay={0.1} />
+                <TechTag name="Tailwind CSS" delay={0.15} />
+                <TechTag name="shadcn/ui" delay={0.2} />
+                <TechTag name="Framer Motion" delay={0.25} />
               </div>
             </div>
 
-            <Separator />
-
+            {/* Backend */}
             <div>
-              <h3 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-4">Backend</h3>
-              <div className="flex flex-wrap gap-2">
-                {["Node.js", "TypeScript", "Java", "AWS Lambda", "Microservices", "REST APIs"].map((tech, i) => (
-                  <TechTag key={tech} name={tech} delay={i * 0.05} />
-                ))}
+              <div className="mb-5">
+                <h3 className="text-xs font-bold text-foreground uppercase tracking-wider mb-1">Backend</h3>
+                <div className="h-px bg-border w-16" />
+              </div>
+              <div className="flex flex-wrap gap-2.5">
+                <PrimaryTechTag name="Node.js" delay={0} />
+                <PrimaryTechTag name="TypeScript" delay={0.05} />
+                <PrimaryTechTag name="AWS Lambda" delay={0.1} />
+                <TechTag name="Java" delay={0.15} />
+                <TechTag name="Microservices" delay={0.2} />
+                <TechTag name="REST APIs" delay={0.25} />
               </div>
             </div>
 
-            <Separator />
-
+            {/* Data & Infrastructure */}
             <div>
-              <h3 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-4">Data & Infrastructure</h3>
-              <div className="flex flex-wrap gap-2">
-                {["PostgreSQL", "Redis", "Snowflake", "AWS S3", "AWS Lambda", "Docker"].map((tech, i) => (
-                  <TechTag key={tech} name={tech} delay={i * 0.05} />
-                ))}
+              <div className="mb-5">
+                <h3 className="text-xs font-bold text-foreground uppercase tracking-wider mb-1">Data & Infrastructure</h3>
+                <div className="h-px bg-border w-16" />
+              </div>
+              <div className="flex flex-wrap gap-2.5">
+                <PrimaryTechTag name="PostgreSQL" delay={0} />
+                <PrimaryTechTag name="Redis" delay={0.05} />
+                <TechTag name="Snowflake" delay={0.1} />
+                <TechTag name="AWS S3" delay={0.15} />
+                <TechTag name="Docker" delay={0.2} />
               </div>
             </div>
 
-            <Separator />
-
-            <div>
-              <h3 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-4">AI & Tools</h3>
-              <div className="flex flex-wrap gap-2">
-                {["Cursor", "GitHub Copilot", "ChatGPT", "Claude", "Gemini", "OpenAI API", "Anthropic API"].map((tech, i) => (
-                  <TechTag key={tech} name={tech} delay={i * 0.05} />
-                ))}
+            {/* AI & Tools */}
+            <div className="pt-4">
+              <div className="mb-5">
+                <h3 className="text-xs font-bold text-foreground uppercase tracking-wider mb-1">Context Engineering & AI</h3>
+                <p className="text-xs text-muted-foreground mt-2 mb-3">Production tooling for structured LLM workflows</p>
+                <div className="h-px bg-border w-16" />
+              </div>
+              <div className="flex flex-wrap gap-2.5">
+                <TechTag name="Cursor" delay={0} />
+                <TechTag name="GitHub Copilot" delay={0.05} />
+                <TechTag name="ChatGPT" delay={0.1} />
+                <TechTag name="Claude" delay={0.15} />
+                <TechTag name="Gemini" delay={0.2} />
+                <TechTag name="OpenAI API" delay={0.25} />
+                <TechTag name="Anthropic API" delay={0.3} />
               </div>
             </div>
           </div>
@@ -546,7 +576,7 @@ export default function Home() {
       </Section>
 
       {/* Footer */}
-      <footer className="border-t section-mid">
+      <footer className="border-t bg-white">
         <Container>
           <div className="py-8 text-center text-sm text-muted-foreground">
             <p>© {new Date().getFullYear()} Tyler Olli. Built with Next.js, TypeScript, and Tailwind CSS.</p>
