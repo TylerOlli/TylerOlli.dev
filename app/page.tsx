@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 import { ArrowRight, ArrowDown, Github, Linkedin, Mail, Zap, GitCompare, Network, Code2, Sparkles, CheckCircle2 } from "lucide-react"
 import { Section } from "@/components/section"
 import { Container } from "@/components/container"
@@ -260,12 +261,16 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="max-w-4xl mx-auto mb-12"
           >
-            <img
-              src="/modeltriage-screenshot.png"
-              alt="ModelTriage interface showing LLM comparison and routing"
-              className="w-full rounded-lg border border-white/10"
-              style={{ filter: 'brightness(0.94)' }}
-            />
+            <div className="relative w-full rounded-lg border border-white/10 overflow-hidden" style={{ filter: 'brightness(0.94)' }}>
+              <Image
+                src="/modeltriage-screenshot.png"
+                alt="ModelTriage interface showing LLM comparison and routing"
+                width={1920}
+                height={1080}
+                className="w-full h-auto"
+                priority
+              />
+            </div>
           </motion.div>
 
           {/* What it does */}

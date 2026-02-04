@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation'
 
-export default function ResumePage() {
+export default async function ResumePage() {
   redirect('/Tyler-Olli-Resume.pdf')
 }

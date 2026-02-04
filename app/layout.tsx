@@ -16,6 +16,7 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://tylerolli.dev'),
   title: "Tyler Olli | Lead Software Engineer",
   description: "Lead Software Engineer focused on scalable fintech platforms and AI-accelerated development. Building high-impact systems with modern web technologies.",
   keywords: ["software engineer", "fintech", "full-stack", "TypeScript", "React", "Next.js", "AI engineering", "AWS", "lead engineer"],
