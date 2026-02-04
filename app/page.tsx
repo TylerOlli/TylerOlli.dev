@@ -629,7 +629,7 @@ export default function Home() {
               Let's Build Something
             </h2>
             <p className="text-lg text-muted-foreground mb-12 leading-relaxed font-light">
-              Open to interesting problems in fintech, AI tooling, and high-scale platforms. Let's talk.
+              Interested in complex engineering problems where scale, architecture, and engineering judgment matter. If you're building something meaningful, let's talk.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
