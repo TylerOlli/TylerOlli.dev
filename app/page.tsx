@@ -236,7 +236,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
+            className="text-center mb-8"
           >
             <Badge variant="outline" className="mb-4 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider border-white/20 text-white/90">
               Product Spotlight
@@ -247,6 +247,21 @@ export default function Home() {
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
               A context engineering platform for comparing, routing, and validating LLM outputs. Applies structured constraints and schemas to make AI workflows reliable at scale.
             </p>
+          </motion.div>
+
+          {/* Screenshot */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="max-w-4xl mx-auto mb-12"
+          >
+            <img
+              src="/modeltriage-screenshot.png"
+              alt="ModelTriage interface showing LLM comparison and routing"
+              className="w-full rounded-lg border border-white/10"
+            />
           </motion.div>
 
           {/* What it does */}
