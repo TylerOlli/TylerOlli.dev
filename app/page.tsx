@@ -261,6 +261,7 @@ export default function Home() {
               src="/modeltriage-screenshot.png"
               alt="ModelTriage interface showing LLM comparison and routing"
               className="w-full rounded-lg border border-white/10"
+              style={{ filter: 'brightness(0.94)' }}
             />
           </motion.div>
 
