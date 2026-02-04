@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { Badge } from "@/components/ui/badge"
 
 interface TechTagProps {
@@ -8,20 +7,13 @@ interface TechTagProps {
   delay?: number
 }
 
-export function TechTag({ name, delay = 0 }: TechTagProps) {
+export function TechTag({ name }: TechTagProps) {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.9 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.3, delay }}
+    <Badge 
+      variant="outline" 
+      className="px-3 py-1.5 text-sm font-medium bg-white border-gray-300 text-gray-800"
     >
-      <Badge 
-        variant="outline" 
-        className="px-4 py-2 text-sm font-medium transition-all hover:bg-foreground/5"
-      >
-        {name}
-      </Badge>
-    </motion.div>
+      {name}
+    </Badge>
   )
 }

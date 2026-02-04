@@ -7,7 +7,6 @@ import { Container } from "@/components/container"
 import { CaseStudyCard } from "@/components/case-study-card"
 import { FeatureCard } from "@/components/feature-card"
 import { TechTag } from "@/components/tech-tag"
-import { PrimaryTechTag } from "@/components/primary-tech-tag"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { Badge } from "@/components/ui/badge"
@@ -422,7 +421,7 @@ export default function Home() {
               </div>
 
               <p className="mt-6">
-                <span className="text-foreground font-medium">Measurable impact:</span> 50% faster feature delivery, fewer bugs in production, and more time spent on system design and high-leverage decisions.
+                <span className="text-foreground font-medium">Measurable impact:</span> Reduced feature iteration cycles from days to hours for well-scoped work, enabling 3–5× faster delivery on AI-assisted features and significantly more time spent on system design and high-leverage decisions.
               </p>
             </div>
           </motion.div>
@@ -565,7 +564,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-12"
           >
             <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
               Tech Stack
@@ -575,71 +574,23 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="max-w-6xl mx-auto space-y-12">
-            {/* Frontend */}
-            <div>
-              <div className="mb-5">
-                <h3 className="text-xs font-bold text-foreground uppercase tracking-wider mb-1">Frontend</h3>
-                <div className="h-px bg-border w-16" />
+          <div className="max-w-4xl mx-auto space-y-8">
+            {[
+              { title: "Languages", items: ["JavaScript", "TypeScript", "Java", "PHP", "SQL"] },
+              { title: "Frameworks", items: ["React", "Next.js", "Node.js", "Redux", "Angular", "Vue.js", "Express"] },
+              { title: "Platforms", items: ["Adobe Experience Manager (AEM)", "AWS Lambda", "Shopify", "WordPress"] },
+              { title: "Data Systems", items: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Snowflake", "Amazon S3"] },
+              { title: "AI Tools", items: ["GitHub Copilot", "GitHub Spec Kit", "Cursor", "ChatGPT", "Claude", "Gemini"] },
+            ].map((group) => (
+              <div key={group.title}>
+                <h3 className="text-xs font-bold text-foreground uppercase tracking-wider mb-4">{group.title}</h3>
+                <div className="flex flex-wrap gap-x-1.5 gap-y-2">
+                  {group.items.map((item) => (
+                    <TechTag key={item} name={item} />
+                  ))}
+                </div>
               </div>
-              <div className="flex flex-wrap gap-2.5">
-                <PrimaryTechTag name="TypeScript" delay={0} />
-                <PrimaryTechTag name="Next.js" delay={0.05} />
-                <TechTag name="React" delay={0.1} />
-                <TechTag name="Tailwind CSS" delay={0.15} />
-                <TechTag name="shadcn/ui" delay={0.2} />
-                <TechTag name="Framer Motion" delay={0.25} />
-              </div>
-            </div>
-
-            {/* Backend */}
-            <div>
-              <div className="mb-5">
-                <h3 className="text-xs font-bold text-foreground uppercase tracking-wider mb-1">Backend</h3>
-                <div className="h-px bg-border w-16" />
-              </div>
-              <div className="flex flex-wrap gap-2.5">
-                <PrimaryTechTag name="Node.js" delay={0} />
-                <PrimaryTechTag name="TypeScript" delay={0.05} />
-                <PrimaryTechTag name="AWS Lambda" delay={0.1} />
-                <TechTag name="Java" delay={0.15} />
-                <TechTag name="Microservices" delay={0.2} />
-                <TechTag name="REST APIs" delay={0.25} />
-              </div>
-            </div>
-
-            {/* Data & Infrastructure */}
-            <div>
-              <div className="mb-5">
-                <h3 className="text-xs font-bold text-foreground uppercase tracking-wider mb-1">Data & Infrastructure</h3>
-                <div className="h-px bg-border w-16" />
-              </div>
-              <div className="flex flex-wrap gap-2.5">
-                <PrimaryTechTag name="PostgreSQL" delay={0} />
-                <PrimaryTechTag name="Redis" delay={0.05} />
-                <TechTag name="Snowflake" delay={0.1} />
-                <TechTag name="AWS S3" delay={0.15} />
-                <TechTag name="Docker" delay={0.2} />
-              </div>
-            </div>
-
-            {/* AI & Tools */}
-            <div className="pt-4">
-              <div className="mb-5">
-                <h3 className="text-xs font-bold text-foreground uppercase tracking-wider mb-1">Context Engineering & AI</h3>
-                <p className="text-xs text-muted-foreground mt-2 mb-3">Production tooling for structured LLM workflows</p>
-                <div className="h-px bg-border w-16" />
-              </div>
-              <div className="flex flex-wrap gap-2.5">
-                <TechTag name="Cursor" delay={0} />
-                <TechTag name="GitHub Copilot" delay={0.05} />
-                <TechTag name="ChatGPT" delay={0.1} />
-                <TechTag name="Claude" delay={0.15} />
-                <TechTag name="Gemini" delay={0.2} />
-                <TechTag name="OpenAI API" delay={0.25} />
-                <TechTag name="Anthropic API" delay={0.3} />
-              </div>
-            </div>
+            ))}
           </div>
         </Container>
       </Section>
