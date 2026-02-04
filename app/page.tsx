@@ -574,7 +574,7 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="max-w-4xl mx-auto space-y-8">
+          <div className="max-w-[60rem] mx-auto space-y-6 px-8">
             {[
               { title: "Languages", items: ["JavaScript", "TypeScript", "Java", "PHP", "SQL"] },
               { title: "Frameworks", items: ["React", "Next.js", "Node.js", "Redux", "Angular", "Vue.js", "Express"] },
@@ -583,7 +583,7 @@ export default function Home() {
               { title: "AI Tools", items: ["GitHub Copilot", "GitHub Spec Kit", "Cursor", "ChatGPT", "Claude", "Gemini"] },
             ].map((group) => (
               <div key={group.title}>
-                <h3 className="text-xs font-bold text-foreground uppercase tracking-wider mb-4">{group.title}</h3>
+                <h3 className="text-xs font-bold text-gray-900 uppercase tracking-wider mb-3">{group.title}</h3>
                 <div className="flex flex-wrap gap-x-1.5 gap-y-2">
                   {group.items.map((item) => (
                     <TechTag key={item} name={item} />
