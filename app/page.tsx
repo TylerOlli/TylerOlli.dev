@@ -7,6 +7,7 @@ import { Container } from "@/components/container"
 import { CaseStudyCard } from "@/components/case-study-card"
 import { FeatureCard } from "@/components/feature-card"
 import { TechTag } from "@/components/tech-tag"
+import { TypingText } from "@/components/typing-text"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { Badge } from "@/components/ui/badge"
@@ -34,7 +35,7 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <Badge variant="secondary" className="mb-6 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider">
+              <Badge variant="secondary" className="mb-6 px-5 py-2 text-sm font-semibold uppercase tracking-wider bg-gray-100 border border-gray-300 text-gray-800">
                 Lead Software Engineer
               </Badge>
             </motion.div>
@@ -44,8 +45,10 @@ export default function Home() {
             </h1>
             
             <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto font-light">
-              Building scalable fintech platforms and production systems with{" "}
-              <span className="text-foreground font-medium">context engineering and AI-accelerated workflows</span>.
+              <TypingText 
+                text="Building scalable fintech platforms and production systems with context engineering and AI-assisted development."
+                duration={3500}
+              />
             </p>
             
             <motion.div

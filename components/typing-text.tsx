@@ -1,0 +1,61 @@
+"use client"
+
+import { useEffect, useState } from "react"
+
+interface TypingTextProps {
+  text: string
+  className?: string
+  duration?: number
+}
+
+export function TypingText({ text, className = "", duration = 1500 }: TypingTextProps) {
+  const [displayedText, setDisplayedText] = useState("")
+  const [isComplete, setIsComplete] = useState(false)
+
+  useEffect(() => {
+    // Check for reduced motion preference
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    
+    if (prefersReducedMotion) {
+      // If reduced motion is preferred, show full text immediately
+      setDisplayedText(text)
+      setIsComplete(true)
+      return
+    }
+
+    // Calculate delay per character for smooth typing
+    const chars = text.length
+    const delayPerChar = duration / chars
+    
+    let currentIndex = 0
+    let animationFrameId: number
+    let lastTime = performance.now()
+
+    const animate = (currentTime: number) => {
+      const elapsed = currentTime - lastTime
+
+      if (elapsed >= delayPerChar) {
+        currentIndex++
+        setDisplayedText(text.slice(0, currentIndex))
+        lastTime = currentTime
+
+        if (currentIndex >= chars) {
+          setIsComplete(true)
+          return
+        }
+      }
+
+      animationFrameId = requestAnimationFrame(animate)
+    }
+
+    animationFrameId = requestAnimationFrame(animate)
+
+    return () => {
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId)
+      }
+    }
+  }, [text, duration])
+
+  return <span className={className}>{displayedText}</span>
+}
