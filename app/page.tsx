@@ -129,7 +129,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="rounded-lg border border-gray-300 bg-card p-6"
+                className="rounded-lg border border-gray-300 bg-card p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 ease-out motion-reduce:hover:translate-y-0"
               >
                 <h3 className="text-xl font-bold mb-3">Team Leadership</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
@@ -143,7 +143,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="rounded-lg border border-gray-300 bg-card p-6"
+                className="rounded-lg border border-gray-300 bg-card p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 ease-out motion-reduce:hover:translate-y-0"
               >
                 <h3 className="text-xl font-bold mb-3">End-to-End Ownership</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
@@ -157,7 +157,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="rounded-lg border border-gray-300 bg-card p-6"
+                className="rounded-lg border border-gray-300 bg-card p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 ease-out motion-reduce:hover:translate-y-0"
               >
                 <h3 className="text-xl font-bold mb-3">Engineering Judgment</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
@@ -171,7 +171,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="rounded-lg border border-gray-300 bg-card p-6"
+                className="rounded-lg border border-gray-300 bg-card p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 ease-out motion-reduce:hover:translate-y-0"
               >
                 <h3 className="text-xl font-bold mb-3">Technical Architecture</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
