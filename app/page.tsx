@@ -148,7 +148,7 @@ export default function Home() {
                 </p>
               </motion.div>
 
-              {/* Production Scale */}
+              {/* Engineering Judgment */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -156,9 +156,9 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="rounded-lg border bg-card p-6 shadow-sm hover:shadow-md transition-shadow"
               >
-                <h3 className="text-xl font-bold mb-3">Production Scale</h3>
+                <h3 className="text-xl font-bold mb-3">Engineering Judgment</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Built high-traffic fintech platforms serving enterprise users at scale. Ensured reliability, security, and performance under real-world production load.
+                  Made pragmatic tradeoffs balancing delivery speed, system complexity, and long-term maintainability. Scoped MVPs under real constraints, evaluated build vs buy decisions, and evolved architecture as product needs changed.
                 </p>
               </motion.div>
 
