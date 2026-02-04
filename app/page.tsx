@@ -18,10 +18,10 @@ export default function Home() {
       {/* Hero Section */}
       <Section 
         id="hero" 
-        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 bg-white"
       >
         {/* Subtle Background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-muted/30 via-background to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-white" />
         
         <Container className="relative z-10">
           <motion.div
@@ -105,7 +105,7 @@ export default function Home() {
       </Section>
 
       {/* Proof Highlights */}
-      <Section id="proof" className="section-alt">
+      <Section id="proof" className="section-mid">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -178,7 +178,7 @@ export default function Home() {
       </Section>
 
       {/* ModelTriage Product Spotlight */}
-      <Section id="modeltriage" className="relative overflow-hidden section-alt">
+      <Section id="modeltriage" className="relative overflow-hidden section-dark">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
         
         <Container className="relative z-10">
@@ -189,7 +189,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <Badge variant="secondary" className="mb-4 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider">
+            <Badge variant="outline" className="mb-4 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider border-white/20 text-white/90">
               Product Spotlight
             </Badge>
             <h2 className="font-[family-name:var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
@@ -249,15 +249,15 @@ export default function Home() {
               LLM outputs vary widely in quality, cost, and reliability. ModelTriage brings engineering discipline to AI workflows: measurable quality, predictable costs, and confidence in production deployments.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium">
+              <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
                 <Sparkles className="w-4 h-4 mr-2" />
                 Faster Iteration
               </Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium">
+              <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
                 <CheckCircle2 className="w-4 h-4 mr-2" />
                 Higher Quality
               </Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium">
+              <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
                 <Zap className="w-4 h-4 mr-2" />
                 Lower Costs
               </Badge>
@@ -307,7 +307,7 @@ export default function Home() {
       </Section>
 
       {/* AI in Engineering */}
-      <Section id="ai-engineering">
+      <Section id="ai-engineering" className="section-alt">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -425,7 +425,7 @@ export default function Home() {
       </Section>
 
       {/* Tech Stack */}
-      <Section id="tech-stack" className="section-alt">
+      <Section id="tech-stack" className="section-mid">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -546,7 +546,7 @@ export default function Home() {
       </Section>
 
       {/* Footer */}
-      <footer className="border-t section-alt">
+      <footer className="border-t section-mid">
         <Container>
           <div className="py-8 text-center text-sm text-muted-foreground">
             <p>© {new Date().getFullYear()} Tyler Olli. Built with Next.js, TypeScript, and Tailwind CSS.</p>
