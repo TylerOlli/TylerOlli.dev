@@ -4,7 +4,6 @@ import { motion } from "framer-motion"
 import { ArrowRight, ArrowDown, Github, Linkedin, Mail, Zap, GitCompare, Network, Code2, Sparkles, CheckCircle2 } from "lucide-react"
 import { Section } from "@/components/section"
 import { Container } from "@/components/container"
-import { MetricCard } from "@/components/metric-card"
 import { CaseStudyCard } from "@/components/case-study-card"
 import { FeatureCard } from "@/components/feature-card"
 import { TechTag } from "@/components/tech-tag"
@@ -107,35 +106,83 @@ export default function Home() {
         </Container>
       </Section>
 
-      {/* Proof Highlights */}
-      <Section id="proof" className="section-mid">
+      {/* Scope & Ownership */}
+      <Section id="scope" className="section-tech">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="max-w-5xl mx-auto"
           >
-            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-              Impact by the Numbers
+            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-12 text-center">
+              Scope & Ownership
             </h2>
-            <p className="text-base text-muted-foreground max-w-2xl mx-auto font-light">
-              Delivering measurable results across teams, users, and systems.
-            </p>
-          </motion.div>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Team Leadership */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="rounded-lg border bg-card p-6 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <h3 className="text-xl font-bold mb-3">Team Leadership</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Led cross-functional engineering teams through complex platform launches. Coordinated frontend, backend, and infrastructure delivery to ship production systems on schedule.
+                </p>
+              </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <MetricCard value="100k+" label="Users Served" delay={0.1} />
-            <MetricCard value="5" label="Engineers Led" delay={0.2} />
-            <MetricCard value="3" label="Platform Launches" delay={0.3} />
-            <MetricCard value="50%" label="Delivery Speed Gain" delay={0.4} />
-          </div>
+              {/* End-to-End Ownership */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="rounded-lg border bg-card p-6 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <h3 className="text-xl font-bold mb-3">End-to-End Ownership</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Owned full-stack architecture for mission-critical systems. API design, database schema, frontend implementation, and deployment pipelines under single ownership.
+                </p>
+              </motion.div>
+
+              {/* Production Scale */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="rounded-lg border bg-card p-6 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <h3 className="text-xl font-bold mb-3">Production Scale</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Built high-traffic fintech platforms serving enterprise users at scale. Ensured reliability, security, and performance under real-world production load.
+                </p>
+              </motion.div>
+
+              {/* Technical Architecture */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                className="rounded-lg border bg-card p-6 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <h3 className="text-xl font-bold mb-3">Technical Architecture</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Designed distributed systems with serverless functions, microservices, and data workflows. Balanced scalability, maintainability, and delivery speed in system decisions.
+                </p>
+              </motion.div>
+            </div>
+          </motion.div>
         </Container>
       </Section>
 
       {/* Case Studies */}
-      <Section id="case-studies">
+      <Section id="case-studies" className="bg-white">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -157,7 +204,7 @@ export default function Home() {
               title="Account Registration Portal"
               description="Led team of 5 engineers to ship a production account registration system serving 100,000+ users, integrating React front-end with AEM and Java microservices."
               impact="Launched on schedule, enabled digital account creation at scale, improved conversion rates and user onboarding experience."
-              tags={["React", "AEM", "Java", "Team Leadership", "Microservices"]}
+              tags={["React", "AEM", "Java", "Distributed Systems"]}
               delay={0.1}
             />
             
@@ -165,7 +212,7 @@ export default function Home() {
               title="Rules-Driven Eligibility System"
               description="Architected and built a flexible eligibility and dynamic content platform using Next.js, Node.js, Redis, and Postgres to support complex business rules."
               impact="Reduced manual configuration effort by 70%, enabled rapid rule changes without deployments, improved accuracy of content targeting."
-              tags={["Next.js", "Node.js", "Redis", "PostgreSQL", "System Design"]}
+              tags={["Next.js", "Node.js", "Redis", "PostgreSQL", "Backend Architecture"]}
               delay={0.2}
             />
             
@@ -396,18 +443,20 @@ export default function Home() {
               Experience
             </h2>
 
-            <div className="space-y-12">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="relative pl-8 border-l-2 border-border"
-              >
-                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-foreground border-2 border-background" />
+            <div className="relative border-l-2 border-border pl-8">
+              <div className="space-y-12">
+                {/* Blankfactor */}
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                  className="relative"
+                >
+                  <div className="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-foreground border-2 border-background" />
                 <div className="mb-4">
                   <h3 className="text-xl font-bold mb-1">Lead Software Engineer</h3>
-                  <p className="text-sm text-muted-foreground font-medium">Fintech Platform Company</p>
+                  <p className="text-sm text-muted-foreground font-medium">Blankfactor • 2023–2025</p>
                 </div>
                 <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                   <li className="flex gap-3">
@@ -431,7 +480,78 @@ export default function Home() {
                     <span>Accelerated delivery 50% integrating AI tools (Cursor, Copilot, ChatGPT, Claude, Gemini) into production workflows alongside traditional backend and frontend engineering</span>
                   </li>
                 </ul>
-              </motion.div>
+                </motion.div>
+
+                {/* Citrix - Senior Software Engineer */}
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  className="relative"
+                >
+                  <div className="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-foreground border-2 border-background" />
+                <div className="mb-4">
+                  <h3 className="text-xl font-bold mb-1">Senior Software Engineer</h3>
+                  <p className="text-sm text-muted-foreground font-medium">Citrix • 2022–2023</p>
+                </div>
+                <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
+                  <li className="flex gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
+                    <span>Served as technical lead for enterprise web platforms (NetScaler, XenServer), owning end-to-end delivery and coordinating across cross-functional teams</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
+                    <span>Led modernization of legacy AEM platforms, rebuilding Java services and React components to simplify architecture and improve performance and UX consistency</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
+                    <span>Built embeddable applications and reusable product widgets using React, Node.js, and AWS serverless infrastructure</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
+                    <span>Consolidated fragmented React and AEM components into shared libraries, increasing reuse and consistency across high-traffic sites</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
+                    <span>Introduced automated testing and accessibility workflows (Jest, Axe), improving WCAG compliance and release confidence</span>
+                  </li>
+                </ul>
+                </motion.div>
+
+                {/* Citrix - Software Engineer */}
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  className="relative"
+                >
+                  <div className="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-foreground border-2 border-background" />
+                <div className="mb-4">
+                  <h3 className="text-xl font-bold mb-1">Software Engineer</h3>
+                  <p className="text-sm text-muted-foreground font-medium">Citrix • 2020–2022</p>
+                </div>
+                <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
+                  <li className="flex gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
+                    <span>Delivered large-scale web applications supporting multi-site, international deployments</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
+                    <span>Led global rebranding and product renaming initiatives across 10+ applications and 27 international sites</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
+                    <span>Built interactive purchasing workflows and reusable UI components using React, AEM, and REST APIs</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
+                    <span>Promoted to Senior Software Engineer based on technical ownership, delivery consistency, and cross-stack impact</span>
+                  </li>
+                </ul>
+                </motion.div>
+              </div>
             </div>
           </motion.div>
         </Container>
