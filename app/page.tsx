@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Github, Linkedin, Mail, Zap, GitCompare, Network, Code2, Sparkles, CheckCircle2 } from "lucide-react"
+import { ArrowRight, ArrowDown, Github, Linkedin, Mail, Zap, GitCompare, Network, Code2, Sparkles, CheckCircle2 } from "lucide-react"
 import { Section } from "@/components/section"
 import { Container } from "@/components/container"
 import { MetricCard } from "@/components/metric-card"
@@ -54,18 +54,20 @@ export default function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="flex flex-wrap items-center justify-center gap-4"
+              className="flex flex-col items-center justify-center gap-4"
             >
               <a href="#case-studies">
-                <Button size="lg" className="group">
+                <Button size="lg" className="group px-8 h-12 text-base">
                   View My Work
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  <ArrowDown className="ml-2 h-5 w-5 transition-transform group-hover:translate-y-1" />
                 </Button>
               </a>
-              <a href="#contact">
-                <Button size="lg" variant="outline">
-                  Get In Touch
-                </Button>
+              <a 
+                href="#contact"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors relative group"
+              >
+                or get in touch
+                <span className="absolute bottom-0 left-0 w-0 h-px bg-foreground transition-all group-hover:w-full" />
               </a>
             </motion.div>
 
@@ -76,7 +78,7 @@ export default function Home() {
               className="mt-12 flex items-center justify-center gap-6"
             >
               <a
-                href="https://github.com/tylerolli"
+                href="https://github.com/TylerOlli"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -85,7 +87,7 @@ export default function Home() {
                 <Github className="h-6 w-6" />
               </a>
               <a
-                href="https://linkedin.com/in/tylerolli"
+                href="https://www.linkedin.com/in/tylerolli/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -94,7 +96,7 @@ export default function Home() {
                 <Linkedin className="h-6 w-6" />
               </a>
               <a
-                href="mailto:tyler@tylerolli.dev"
+                href="mailto:ollityler@gmail.com"
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="Email"
               >
@@ -289,19 +291,23 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="flex flex-wrap items-center justify-center gap-4"
+            className="flex flex-col items-center justify-center gap-4"
           >
-            <a href="https://github.com/tylerolli/modeltriage" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="group">
-                <Github className="mr-2 h-5 w-5" />
-                View on GitHub
+            <a href="https://modeltriage.com" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="group px-8">
+                Visit ModelTriage
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
             </a>
-            <a href="mailto:tyler@tylerolli.dev?subject=ModelTriage Demo Request">
-              <Button size="lg" variant="outline">
-                Request Demo
-              </Button>
+            <a 
+              href="https://github.com/TylerOlli/ModelTriage" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2 group"
+            >
+              <Github className="h-4 w-4" />
+              <span>View on GitHub</span>
+              <span className="opacity-0 group-hover:opacity-100 transition-opacity">→</span>
             </a>
           </motion.div>
         </Container>
@@ -537,13 +543,13 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
-              <a href="mailto:tyler@tylerolli.dev" className="w-full sm:w-auto">
+              <a href="mailto:ollityler@gmail.com" className="w-full sm:w-auto">
                 <Button size="lg" className="w-full sm:w-auto group">
                   <Mail className="mr-2 h-5 w-5" />
-                  tyler@tylerolli.dev
+                  ollityler@gmail.com
                 </Button>
               </a>
-              <a href="https://linkedin.com/in/tylerolli" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <a href="https://www.linkedin.com/in/tylerolli/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button size="lg" variant="outline" className="w-full sm:w-auto">
                   <Linkedin className="mr-2 h-5 w-5" />
                   Connect on LinkedIn
@@ -553,7 +559,7 @@ export default function Home() {
 
             <div className="flex items-center justify-center gap-8 text-sm text-muted-foreground">
               <a
-                href="https://github.com/tylerolli"
+                href="https://github.com/TylerOlli"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-foreground transition-colors flex items-center gap-2"

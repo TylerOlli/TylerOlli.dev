@@ -38,11 +38,11 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 
 1. **Resume PDF**: Replace `/public/Tyler-Olli-Resume.pdf` with your actual resume
 2. **OG Image**: Replace `/public/og-image.png` with a 1200x630 social share image
-3. **Contact Links**: Update placeholder URLs in `app/page.tsx`:
-   - GitHub: `https://github.com/tylerolli`
-   - LinkedIn: `https://linkedin.com/in/tylerolli`
-   - Email: `tyler@tylerolli.dev`
-   - ModelTriage repo: Update URL in ModelTriage section
+3. **Contact Links**: All links have been updated in `app/page.tsx`:
+   - GitHub: `https://github.com/TylerOlli`
+   - LinkedIn: `https://www.linkedin.com/in/tylerolli/`
+   - Email: `ollityler@gmail.com`
+   - ModelTriage: `https://modeltriage.com`
 
 ### Customize Content
 
