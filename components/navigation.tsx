@@ -5,7 +5,7 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 
 const navItems = [
-  { label: "Home", href: "#hero" },
+  { label: "Overview", href: "#hero" },
   { label: "Work", href: "#case-studies" },
   { label: "ModelTriage", href: "#modeltriage" },
   { label: "Experience", href: "#experience" },
@@ -49,37 +49,40 @@ export function Navigation() {
           : "bg-transparent"
       )}
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <Link 
-            href="#hero" 
-            className="text-xl font-bold tracking-tight hover:opacity-80 transition-opacity"
-          >
-            Tyler Olli
-          </Link>
-          
-          <div className="hidden md:flex items-center gap-1">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-14 items-center justify-between gap-4 sm:gap-8">
+          {/* Left-aligned navigation */}
+          <div className="flex items-center gap-0.5 sm:gap-1 overflow-x-auto no-scrollbar">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "px-4 py-2 rounded-md text-sm font-medium transition-all",
+                  "px-2 sm:px-3 py-1.5 text-[11px] sm:text-[13px] font-normal transition-all relative group whitespace-nowrap flex-shrink-0",
                   activeSection === item.href.slice(1)
-                    ? "bg-primary/10 text-primary"
-                    : "text-muted-foreground hover:text-foreground hover:bg-accent"
+                    ? "text-foreground"
+                    : "text-muted-foreground/80 hover:text-foreground"
                 )}
               >
                 {item.label}
+                <span 
+                  className={cn(
+                    "absolute bottom-0 left-2 sm:left-3 right-2 sm:right-3 h-[1px] bg-foreground transition-opacity",
+                    activeSection === item.href.slice(1)
+                      ? "opacity-100"
+                      : "opacity-0 group-hover:opacity-40"
+                  )}
+                />
               </Link>
             ))}
           </div>
 
+          {/* Right-aligned Resume button */}
           <Link
             href="/resume"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium px-4 py-2 rounded-md border border-primary/20 hover:bg-primary/10 transition-all"
+            className="text-[11px] sm:text-[13px] font-medium px-3 sm:px-4 py-1.5 rounded-md border border-border hover:bg-accent hover:border-primary/30 transition-all whitespace-nowrap flex-shrink-0"
           >
             Resume
           </Link>
