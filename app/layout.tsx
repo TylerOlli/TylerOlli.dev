@@ -17,31 +17,31 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://tylerolli.dev'),
-  title: "Tyler Olli | Lead Software Engineer",
-  description: "Lead Software Engineer focused on scalable fintech platforms and AI-accelerated development. Building high-impact systems with modern web technologies.",
-  keywords: ["software engineer", "fintech", "full-stack", "TypeScript", "React", "Next.js", "AI engineering", "AWS", "lead engineer"],
+  title: "Tyler Olli",
+  description: "Senior Software Engineer. Building scalable platforms and production systems with context engineering and AI-enabled systems.",
+  keywords: ["software engineer", "senior engineer", "full-stack", "TypeScript", "React", "Next.js", "AI engineering", "AWS", "context engineering"],
   authors: [{ name: "Tyler Olli" }],
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://tylerolli.dev",
     siteName: "Tyler Olli",
-    title: "Tyler Olli | Lead Software Engineer",
-    description: "Lead Software Engineer focused on scalable fintech platforms and AI-accelerated development.",
+    title: "Tyler Olli",
+    description: "Senior Software Engineer. Building scalable platforms and production systems with context engineering and AI-enabled systems.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og/tyler-olli-og.png",
         width: 1200,
         height: 630,
-        alt: "Tyler Olli - Lead Software Engineer",
+        alt: "Tyler Olli - Senior Software Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tyler Olli | Lead Software Engineer",
-    description: "Lead Software Engineer focused on scalable fintech platforms and AI-accelerated development.",
-    images: ["/og-image.png"],
+    title: "Tyler Olli",
+    description: "Senior Software Engineer. Building scalable platforms and production systems with context engineering and AI-enabled systems.",
+    images: ["/og/tyler-olli-og.png"],
   },
   robots: {
     index: true,
