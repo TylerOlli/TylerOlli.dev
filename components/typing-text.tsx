@@ -57,5 +57,15 @@ export function TypingText({ text, className = "", duration = 1500 }: TypingText
     }
   }, [text, duration])
 
-  return <span className={className}>{displayedText}</span>
+  return (
+    <span className={className}>
+      {displayedText}
+      <span 
+        className={`inline-block w-[2px] h-[1.1em] bg-current align-text-bottom ml-[1px] ${
+          isComplete ? 'opacity-0' : 'animate-cursor-blink'
+        } transition-opacity duration-200`}
+        aria-hidden="true"
+      />
+    </span>
+  )
 }
