@@ -37,7 +37,7 @@ export default function Home() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <Badge variant="secondary" className="mb-6 px-5 py-2 text-sm font-semibold uppercase tracking-wider bg-gray-100 border border-gray-300 text-gray-800">
-                Lead Software Engineer
+                Senior Software Engineer
               </Badge>
             </motion.div>
             
@@ -47,7 +47,7 @@ export default function Home() {
             
             <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto font-light">
               <TypingText 
-                text="Building scalable fintech platforms and production systems with context engineering and AI-assisted development."
+                text="Building scalable platforms and production systems with context engineering and AI-enabled systems."
                 duration={3500}
               />
             </p>
@@ -537,7 +537,7 @@ export default function Home() {
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Introduced automated testing and accessibility workflows (Jest, Axe), improving WCAG compliance and release confidence</span>
+                    <span>Built a company-wide unsubscribe service backed by MongoDB, centralizing email preference management across multiple applications with differing data formats</span>
                   </li>
                 </ul>
                 </motion.div>
@@ -570,6 +570,10 @@ export default function Home() {
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
+                    <span>Improved platform reliability by streamlining reCAPTCHA validation and SendGrid email delivery across multiple applications</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
                     <span>Promoted to Senior Software Engineer based on technical ownership, delivery consistency, and cross-stack impact</span>
                   </li>
                 </ul>
@@ -593,17 +597,17 @@ export default function Home() {
             <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
               Tech Stack
             </h2>
-            <p className="text-base text-muted-foreground max-w-2xl mx-auto font-light">
-              Modern tools for building scalable, maintainable systems.
+            <p className="text-base text-gray-600 max-w-2xl mx-auto font-normal">
+              Technologies I use to build and ship production systems.
             </p>
           </motion.div>
 
           <div className="max-w-[60rem] mx-auto space-y-6 px-8">
             {[
-              { title: "Languages", items: ["JavaScript", "TypeScript", "Java", "PHP", "SQL"] },
-              { title: "Frameworks", items: ["React", "Next.js", "Node.js", "Redux", "Angular", "Vue.js", "Express"] },
-              { title: "Platforms", items: ["Adobe Experience Manager (AEM)", "AWS Lambda", "Shopify", "WordPress"] },
-              { title: "Data Systems", items: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Snowflake", "Amazon S3"] },
+              { title: "Languages", items: ["JavaScript", "TypeScript", "Java", "SQL"] },
+              { title: "Frameworks", items: ["React", "Next.js", "Node.js", "Angular", "Vue.js"] },
+              { title: "Platforms", items: ["Adobe Experience Manager (AEM)", "AWS Lambda"] },
+              { title: "Data Systems", items: ["PostgreSQL", "MongoDB", "Redis", "Snowflake", "Amazon S3"] },
               { title: "AI Tools", items: ["GitHub Copilot", "GitHub Spec Kit", "Cursor", "ChatGPT", "Claude", "Gemini"] },
             ].map((group) => (
               <div key={group.title}>
