@@ -27,7 +27,7 @@ export function CaseStudyCard({
       transition={{ duration: 0.5, delay }}
       whileHover={{ y: -2 }}
     >
-      <Card className="group h-full transition-shadow duration-200 ease-out border border-gray-200 bg-gray-50 shadow-sm hover:shadow-md hover:border-gray-300">
+      <Card className="group h-full transition-shadow duration-200 ease-out border border-ui-border-subtle bg-ui-bg-surface-subtle shadow-sm hover:shadow-md hover:border-ui-border-default">
         <CardHeader>
           <CardTitle className="text-xl font-bold text-foreground">{title}</CardTitle>
           <CardDescription className="text-base leading-relaxed mt-3">{description}</CardDescription>
@@ -41,7 +41,7 @@ export function CaseStudyCard({
           </div>
           <div className="flex flex-wrap gap-1.5">
             {tags.map((tag) => (
-              <Badge key={tag} variant="outline" className="bg-white border-gray-200 text-gray-800 text-[13px] font-medium px-2.5 py-1 hover:bg-gray-50/50 hover:border-gray-300 transition-colors duration-150 ease-out">
+              <Badge key={tag} variant="outline" className="bg-ui-bg-surface border-ui-border-subtle text-ui-text-secondary text-[13px] font-medium px-2.5 py-1 hover:bg-ui-hover-subtle hover:border-ui-border-default transition-colors duration-150 ease-out">
                 {tag}
               </Badge>
             ))}

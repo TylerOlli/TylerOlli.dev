@@ -26,10 +26,10 @@ export default function Home() {
       {/* Hero Section */}
       <Section 
         id="hero" 
-        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 bg-white"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 bg-ui-bg-surface"
       >
         {/* Subtle Background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-white" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ui-bg-surface-subtle via-ui-bg-surface to-ui-bg-surface" />
         
         <Container className="relative z-10">
           <motion.div
@@ -43,7 +43,7 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <Badge variant="secondary" className="mb-6 px-5 py-2 text-sm font-semibold uppercase tracking-wider bg-gray-100 border border-gray-300 text-gray-800">
+              <Badge variant="secondary" className="mb-6 px-5 py-2 text-sm font-semibold uppercase tracking-wider bg-ui-bg-surface-muted border border-ui-border-default text-ui-text-secondary">
                 Senior Software Engineer
               </Badge>
             </motion.div>
@@ -126,7 +126,7 @@ export default function Home() {
       </Section>
 
       {/* What I Help Teams Do */}
-      <Section id="scope" className="bg-gray-50">
+      <Section id="scope" className="bg-ui-bg-surface-subtle">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -152,10 +152,10 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md hover:border-gray-300 transition-shadow duration-200 ease-out"
+                className="rounded-lg border border-ui-border-subtle bg-ui-bg-surface p-6 shadow-sm hover:shadow-md hover:border-ui-border-default transition-shadow duration-200 ease-out"
               >
                 <div className="flex items-start gap-3">
-                  <Shield className="h-5 w-5 text-gray-500 mt-1 flex-shrink-0" />
+                  <Shield className="h-5 w-5 text-ui-text-tertiary mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-bold mb-3">Ship Reliably</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
@@ -172,10 +172,10 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md hover:border-gray-300 transition-shadow duration-200 ease-out"
+                className="rounded-lg border border-ui-border-subtle bg-ui-bg-surface p-6 shadow-sm hover:shadow-md hover:border-ui-border-default transition-shadow duration-200 ease-out"
               >
                 <div className="flex items-start gap-3">
-                  <TrendingUp className="h-5 w-5 text-gray-500 mt-1 flex-shrink-0" />
+                  <TrendingUp className="h-5 w-5 text-ui-text-tertiary mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-bold mb-3">Scale Without Pain</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
@@ -192,10 +192,10 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md hover:border-gray-300 transition-shadow duration-200 ease-out"
+                className="rounded-lg border border-ui-border-subtle bg-ui-bg-surface p-6 shadow-sm hover:shadow-md hover:border-ui-border-default transition-shadow duration-200 ease-out"
               >
                 <div className="flex items-start gap-3">
-                  <Sliders className="h-5 w-5 text-gray-500 mt-1 flex-shrink-0" />
+                  <Sliders className="h-5 w-5 text-ui-text-tertiary mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-bold mb-3">Make Smart Technical Decisions</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
@@ -212,10 +212,10 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md hover:border-gray-300 transition-shadow duration-200 ease-out"
+                className="rounded-lg border border-ui-border-subtle bg-ui-bg-surface p-6 shadow-sm hover:shadow-md hover:border-ui-border-default transition-shadow duration-200 ease-out"
               >
                 <div className="flex items-start gap-3">
-                  <Cpu className="h-5 w-5 text-gray-500 mt-1 flex-shrink-0" />
+                  <Cpu className="h-5 w-5 text-ui-text-tertiary mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="text-xl font-bold mb-3">Bring AI Into Real Systems</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
@@ -230,7 +230,7 @@ export default function Home() {
       </Section>
 
       {/* Case Studies */}
-      <Section id="case-studies" className="bg-white">
+      <Section id="case-studies" className="bg-ui-bg-surface">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -481,7 +481,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.05 }}
                 >
-                  <div className="p-6 rounded-lg border bg-card shadow-sm hover:shadow-md hover:border-gray-300 transition-shadow duration-200 ease-out h-full">
+                  <div className="p-6 rounded-lg border bg-card shadow-sm hover:shadow-md hover:border-ui-border-default transition-shadow duration-200 ease-out h-full">
                     <div className="flex items-center gap-2 mb-3">
                       <Sliders className="w-5 h-5 text-foreground" />
                       <h3 className="text-lg font-bold text-foreground">Context Engineering</h3>
@@ -499,7 +499,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                  <div className="p-6 rounded-lg border bg-card shadow-sm hover:shadow-md hover:border-gray-300 transition-shadow duration-200 ease-out h-full">
+                  <div className="p-6 rounded-lg border bg-card shadow-sm hover:shadow-md hover:border-ui-border-default transition-shadow duration-200 ease-out h-full">
                     <div className="flex items-center gap-2 mb-3">
                       <Code2 className="w-5 h-5 text-foreground" />
                       <h3 className="text-lg font-bold text-foreground">Code Generation</h3>
@@ -517,7 +517,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.15 }}
                 >
-                  <div className="p-6 rounded-lg border bg-card shadow-sm hover:shadow-md hover:border-gray-300 transition-shadow duration-200 ease-out h-full">
+                  <div className="p-6 rounded-lg border bg-card shadow-sm hover:shadow-md hover:border-ui-border-default transition-shadow duration-200 ease-out h-full">
                     <div className="flex items-center gap-2 mb-3">
                       <FileText className="w-5 h-5 text-foreground" />
                       <h3 className="text-lg font-bold text-foreground">Documentation</h3>
@@ -535,7 +535,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                  <div className="p-6 rounded-lg border bg-card shadow-sm hover:shadow-md hover:border-gray-300 transition-shadow duration-200 ease-out h-full">
+                  <div className="p-6 rounded-lg border bg-card shadow-sm hover:shadow-md hover:border-ui-border-default transition-shadow duration-200 ease-out h-full">
                     <div className="flex items-center gap-2 mb-3">
                       <RefreshCw className="w-5 h-5 text-foreground" />
                       <h3 className="text-lg font-bold text-foreground">Code Review</h3>
@@ -556,7 +556,7 @@ export default function Home() {
             className="max-w-7xl mx-auto"
           >
               {/* Agent-Oriented Engineering Systems - Focal Point */}
-              <div className="max-w-4xl mx-auto mt-14 bg-white border-2 border-gray-300 rounded-lg py-10 px-6 md:py-12 md:px-10 mb-14">
+              <div className="max-w-4xl mx-auto mt-14 bg-ui-bg-surface border-2 border-ui-border-default rounded-lg py-10 px-6 md:py-12 md:px-10 mb-14">
                 <h3 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
                   Agent-Oriented Engineering Systems
                 </h3>
@@ -573,7 +573,7 @@ export default function Home() {
               </div>
 
               {/* Measurable Impact - Punchline */}
-              <div className="max-w-3xl mx-auto pt-8 border-t border-gray-300">
+              <div className="max-w-3xl mx-auto pt-8 border-t border-ui-border-default">
                 <p className="text-lg leading-relaxed text-foreground/90">
                   <span className="font-extrabold text-foreground">Measurable impact:</span> Reduced feature iteration cycles from days to hours for well-scoped work, enabling 3–5× faster delivery on AI-assisted features and significantly more time spent on system design and high-leverage decisions.
                 </p>
@@ -608,7 +608,7 @@ export default function Home() {
                   className="relative"
                 >
                   <div className="absolute -left-[42px] top-0 w-5 h-5 rounded-full bg-foreground border-[3px] border-background" />
-                  <div className="bg-neutral-50 border border-neutral-300 rounded px-6 py-5 shadow-sm hover:shadow-md hover:border-gray-400 transition-shadow duration-200 ease-out">
+                  <div className="bg-neutral-50 border border-neutral-300 rounded px-6 py-5 shadow-sm hover:shadow-md hover:border-ui-border-strong transition-shadow duration-200 ease-out">
                     <div className="mb-4">
                       <h3 className="text-xl font-bold mb-1">Lead Software Engineer</h3>
                       <p className="text-sm text-muted-foreground font-medium">Blankfactor • 2023–2025</p>
@@ -648,7 +648,7 @@ export default function Home() {
                   className="relative"
                 >
                   <div className="absolute -left-[40px] top-0 w-3.5 h-3.5 rounded-full bg-foreground border-[1.5px] border-background" />
-                  <div className="border border-neutral-200 rounded px-6 py-4 shadow-sm hover:shadow-md hover:border-gray-300 transition-shadow duration-200 ease-out">
+                  <div className="border border-neutral-200 rounded px-6 py-4 shadow-sm hover:shadow-md hover:border-ui-border-default transition-shadow duration-200 ease-out">
                     <div className="mb-4">
                       <h3 className="text-xl font-bold mb-1">Senior Software Engineer</h3>
                       <p className="text-sm text-muted-foreground font-medium">Citrix • 2020–2023</p>
@@ -700,15 +700,15 @@ export default function Home() {
             <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
               Tech Stack
             </h2>
-            <p className="text-base text-gray-700 max-w-xl mx-auto leading-relaxed mb-5">
+            <p className="text-base text-ui-text-secondary max-w-xl mx-auto leading-relaxed mb-5">
               Technologies I use to build and ship production systems.
             </p>
             {/* Capability Strip */}
-            <div className="flex flex-wrap items-center justify-center gap-x-3 text-base font-medium text-gray-700">
+            <div className="flex flex-wrap items-center justify-center gap-x-3 text-base font-medium text-ui-text-secondary">
               <span>Frontend & Backend</span>
-              <span className="text-gray-400">|</span>
+              <span className="text-ui-text-muted">|</span>
               <span>Serverless Systems</span>
-              <span className="text-gray-400">|</span>
+              <span className="text-ui-text-muted">|</span>
               <span>Data Storage</span>
             </div>
           </motion.div>
@@ -720,41 +720,41 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="relative bg-gradient-to-br from-gray-100 via-gray-50 to-white border-2 border-gray-300 rounded-xl px-6 pt-3 pb-4 shadow-sm hover:shadow-md hover:border-gray-400 transition-all duration-200 ease-out"
+              className="relative bg-gradient-to-br from-ui-bg-surface-muted via-ui-bg-surface-subtle to-ui-bg-surface border-2 border-ui-border-default rounded-xl px-6 pt-3 pb-4 shadow-sm hover:shadow-md hover:border-ui-border-strong transition-all duration-200 ease-out"
               style={{
                 background: 'radial-gradient(circle at top left, rgb(249, 250, 251) 0%, rgb(255, 255, 255) 50%, rgb(249, 250, 251) 100%)'
               }}
             >
               {/* Primary Badge */}
               <div className="absolute top-3 right-4">
-                <span className="inline-block px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider bg-gray-900 text-white rounded">
+                <span className="inline-block px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider bg-ui-bg-inverse text-ui-text-inverse rounded">
                   Primary
                 </span>
               </div>
               
               {/* Shape Badge */}
               <div className="flex items-center gap-2.5 mb-3">
-                <div className="flex items-center justify-center w-6 h-6 bg-gray-900/5 rounded">
-                  <div className="w-2 h-2 rotate-45 bg-gray-900"></div>
+                <div className="flex items-center justify-center w-6 h-6 bg-ui-bg-inverse/5 rounded">
+                  <div className="w-2 h-2 rotate-45 bg-ui-bg-inverse"></div>
                 </div>
-                <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">Core Stack</h3>
+                <h3 className="text-[11px] font-bold text-ui-text-primary uppercase tracking-[0.1em]">Core Stack</h3>
               </div>              
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="flex flex-col items-start justify-center lg:pr-6 lg:border-r lg:border-gray-300/25">
-                  <span className="text-[9px] text-gray-500 uppercase tracking-wider font-medium mb-1.5">LANG</span>
-                  <span className="text-base font-bold text-gray-900">TypeScript</span>
+                <div className="flex flex-col items-start justify-center lg:pr-6 lg:border-r lg:border-ui-border-subtle">
+                  <span className="text-[9px] text-ui-text-tertiary uppercase tracking-wider font-medium mb-1.5">LANG</span>
+                  <span className="text-base font-bold text-ui-text-primary">TypeScript</span>
                 </div>
-                <div className="flex flex-col items-start justify-center lg:pr-6 lg:border-r lg:border-gray-300/25">
-                  <span className="text-[9px] text-gray-500 uppercase tracking-wider font-medium mb-1.5">RUNTIME</span>
-                  <span className="text-base font-bold text-gray-900">Node.js</span>
+                <div className="flex flex-col items-start justify-center lg:pr-6 lg:border-r lg:border-ui-border-subtle">
+                  <span className="text-[9px] text-ui-text-tertiary uppercase tracking-wider font-medium mb-1.5">RUNTIME</span>
+                  <span className="text-base font-bold text-ui-text-primary">Node.js</span>
                 </div>
-                <div className="flex flex-col items-start justify-center lg:pr-6 lg:border-r lg:border-gray-300/25">
-                  <span className="text-[9px] text-gray-500 uppercase tracking-wider font-medium mb-1.5">DB</span>
-                  <span className="text-base font-bold text-gray-900">PostgreSQL</span>
+                <div className="flex flex-col items-start justify-center lg:pr-6 lg:border-r lg:border-ui-border-subtle">
+                  <span className="text-[9px] text-ui-text-tertiary uppercase tracking-wider font-medium mb-1.5">DB</span>
+                  <span className="text-base font-bold text-ui-text-primary">PostgreSQL</span>
                 </div>
                 <div className="flex flex-col items-start justify-center">
-                  <span className="text-[9px] text-gray-500 uppercase tracking-wider font-medium mb-1.5">COMPUTE</span>
-                  <span className="text-base font-bold text-gray-900">AWS Lambda</span>
+                  <span className="text-[9px] text-ui-text-tertiary uppercase tracking-wider font-medium mb-1.5">COMPUTE</span>
+                  <span className="text-base font-bold text-ui-text-primary">AWS Lambda</span>
                 </div>
               </div>
             </motion.div>
@@ -768,7 +768,7 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="group relative bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md hover:border-accent-ui-light transition-all duration-200 ease-out overflow-hidden"
+                className="group relative bg-ui-bg-surface border border-ui-border-subtle rounded-lg p-4 shadow-sm hover:shadow-md hover:border-accent-ui-light transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ui to-accent-ui-mid group-hover:from-accent-ui-dark group-hover:to-accent-ui transition-colors duration-200"></div>
@@ -777,20 +777,20 @@ export default function Home() {
                   <div className="flex items-center justify-center w-6 h-6 bg-accent-ui/5 group-hover:bg-accent-ui/10 rounded transition-colors duration-200">
                     <div className="w-2 h-2 rounded-full bg-accent-ui"></div>
                   </div>
-                  <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">UI Frameworks</h3>
+                  <h3 className="text-[11px] font-bold text-ui-text-primary uppercase tracking-[0.1em]">UI Frameworks</h3>
                 </div>
-                <div className="divide-y divide-gray-100">
+                <div className="divide-y divide-ui-border-subtle">
                   <div className="flex items-center gap-2 py-1.5">
-                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">React</span>
+                    <span className="w-1 h-1 rounded-full bg-ui-border-default flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-ui-text-primary leading-snug">React</span>
                   </div>
                   <div className="flex items-center gap-2 py-1.5">
-                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Next.js</span>
+                    <span className="w-1 h-1 rounded-full bg-ui-border-default flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-ui-text-primary leading-snug">Next.js</span>
                   </div>
                 </div>
-                <div className="mt-3 pt-2 border-t border-gray-100">
-                  <p className="text-sm text-gray-500">Also: Angular, Vue</p>
+                <div className="mt-3 pt-2 border-t border-ui-border-subtle">
+                  <p className="text-sm text-ui-text-tertiary">Also: Angular, Vue</p>
                 </div>
               </motion.div>
 
@@ -801,7 +801,7 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.15 }}
-                className="group relative bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md hover:border-accent-data-light transition-all duration-200 ease-out overflow-hidden"
+                className="group relative bg-ui-bg-surface border border-ui-border-subtle rounded-lg p-4 shadow-sm hover:shadow-md hover:border-accent-data-light transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-data to-accent-data-mid group-hover:from-accent-data-dark group-hover:to-accent-data transition-colors duration-200"></div>
@@ -810,24 +810,24 @@ export default function Home() {
                   <div className="flex items-center justify-center w-6 h-6 bg-accent-data/5 group-hover:bg-accent-data/10 rounded transition-colors duration-200">
                     <div className="w-2 h-2 bg-accent-data" style={{ clipPath: 'polygon(50% 0%, 100% 100%, 0% 100%)' }}></div>
                   </div>
-                  <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">Data Systems</h3>
+                  <h3 className="text-[11px] font-bold text-ui-text-primary uppercase tracking-[0.1em]">Data Systems</h3>
                 </div>
-                <div className="divide-y divide-gray-100">
+                <div className="divide-y divide-ui-border-subtle">
                   <div className="flex items-center gap-2 py-1.5">
-                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">MongoDB</span>
+                    <span className="w-1 h-1 rounded-full bg-ui-border-default flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-ui-text-primary leading-snug">MongoDB</span>
                   </div>
                   <div className="flex items-center gap-2 py-1.5">
-                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Redis</span>
+                    <span className="w-1 h-1 rounded-full bg-ui-border-default flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-ui-text-primary leading-snug">Redis</span>
                   </div>
                   <div className="flex items-center gap-2 py-1.5">
-                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Snowflake</span>
+                    <span className="w-1 h-1 rounded-full bg-ui-border-default flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-ui-text-primary leading-snug">Snowflake</span>
                   </div>
                   <div className="flex items-center gap-2 py-1.5">
-                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Amazon S3</span>
+                    <span className="w-1 h-1 rounded-full bg-ui-border-default flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-ui-text-primary leading-snug">Amazon S3</span>
                   </div>
                 </div>
               </motion.div>
@@ -839,7 +839,7 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="group relative bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md hover:border-accent-ai-light transition-all duration-200 ease-out overflow-hidden"
+                className="group relative bg-ui-bg-surface border border-ui-border-subtle rounded-lg p-4 shadow-sm hover:shadow-md hover:border-accent-ai-light transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ai to-accent-ai-mid group-hover:from-accent-ai-dark group-hover:to-accent-ai transition-colors duration-200"></div>
@@ -848,28 +848,28 @@ export default function Home() {
                   <div className="flex items-center justify-center w-6 h-6 bg-accent-ai/5 group-hover:bg-accent-ai/10 rounded transition-colors duration-200">
                     <div className="w-2 h-2 bg-accent-ai"></div>
                   </div>
-                  <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">AI Tools</h3>
+                  <h3 className="text-[11px] font-bold text-ui-text-primary uppercase tracking-[0.1em]">AI Tools</h3>
                 </div>
-                <div className="divide-y divide-gray-100">
+                <div className="divide-y divide-ui-border-subtle">
                   <div className="flex items-center gap-2 py-1.5">
-                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Cursor</span>
+                    <span className="w-1 h-1 rounded-full bg-ui-border-default flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-ui-text-primary leading-snug">Cursor</span>
                   </div>
                   <div className="flex items-center gap-2 py-1.5">
-                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">GitHub Copilot</span>
+                    <span className="w-1 h-1 rounded-full bg-ui-border-default flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-ui-text-primary leading-snug">GitHub Copilot</span>
                   </div>
                   <div className="flex items-center gap-2 py-1.5">
-                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">ChatGPT</span>
+                    <span className="w-1 h-1 rounded-full bg-ui-border-default flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-ui-text-primary leading-snug">ChatGPT</span>
                   </div>
                   <div className="flex items-center gap-2 py-1.5">
-                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Claude</span>
+                    <span className="w-1 h-1 rounded-full bg-ui-border-default flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-ui-text-primary leading-snug">Claude</span>
                   </div>
                   <div className="flex items-center gap-2 py-1.5">
-                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Gemini</span>
+                    <span className="w-1 h-1 rounded-full bg-ui-border-default flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-ui-text-primary leading-snug">Gemini</span>
                   </div>
                 </div>
               </motion.div>
@@ -936,7 +936,7 @@ export default function Home() {
       </Section>
 
       {/* Footer */}
-      <footer className="border-t bg-white">
+      <footer className="border-t bg-ui-bg-surface">
         <Container>
           <div className="py-8 text-center text-sm text-muted-foreground">
             <p>© {new Date().getFullYear()} Tyler Olli. Built with Next.js, TypeScript, and Tailwind CSS.</p>
