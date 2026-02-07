@@ -28,6 +28,56 @@
     --section-dark: 0 0% 9%;
     --section-mid: 0 0% 94%;
     --section-tech: 0 0% 92%;
+    
+    /* ============================================
+       Tech Stack Accent Colors (RGB format)
+       ============================================ */
+    --accent-core: 156 163 175;          /* gray-400 - neutral foundation */
+    --accent-ui: 96 165 250;             /* blue-400 - UI frameworks */
+    --accent-data: 74 222 128;           /* green-400 - data systems */
+    --accent-ai: 192 132 252;            /* purple-400 - AI tools */
+    
+    /* Lighter variants for hover states */
+    --accent-ui-light: 191 219 254;      /* blue-200 */
+    --accent-data-light: 187 247 208;    /* green-200 */
+    --accent-ai-light: 233 213 255;      /* purple-200 */
+    
+    /* Darker variants for hover accents */
+    --accent-ui-dark: 59 130 246;        /* blue-500 */
+    --accent-data-dark: 34 197 94;       /* green-500 */
+    --accent-ai-dark: 168 85 247;        /* purple-500 */
+    
+    /* Mid-tone variants for gradients */
+    --accent-ui-mid: 147 197 253;        /* blue-300 */
+    --accent-data-mid: 134 239 172;      /* green-300 */
+    --accent-ai-mid: 216 180 254;        /* purple-300 */
+    
+    /* ============================================
+       Semantic Neutral System (RGB format)
+       ============================================ */
+    
+    /* Surfaces - background layers */
+    --ui-bg-page: 255 255 255;           /* Main page background (white) */
+    --ui-bg-surface: 255 255 255;        /* Primary card/section surface (white) */
+    --ui-bg-surface-subtle: 249 250 251; /* Subtle elevated surface (gray-50) */
+    --ui-bg-surface-muted: 243 244 246;  /* Muted background (gray-100) */
+    --ui-bg-inverse: 17 24 39;           /* Dark surface for contrast (gray-900) */
+    
+    /* Text hierarchy */
+    --ui-text-primary: 17 24 39;         /* Primary text (gray-900) */
+    --ui-text-secondary: 55 65 81;       /* Secondary text (gray-700) */
+    --ui-text-tertiary: 107 114 128;     /* Tertiary text (gray-500) */
+    --ui-text-muted: 156 163 175;        /* Muted text (gray-400) */
+    --ui-text-inverse: 255 255 255;      /* Text on dark backgrounds */
+    
+    /* Borders & dividers */
+    --ui-border-subtle: 229 231 235;     /* Subtle borders (gray-200) */
+    --ui-border-default: 209 213 219;    /* Default borders (gray-300) */
+    --ui-border-strong: 156 163 175;     /* Strong borders (gray-400) */
+    
+    /* Interactive states */
+    --ui-hover-subtle: 249 250 251;      /* Subtle hover background (gray-50) */
+    --ui-hover-default: 243 244 246;     /* Default hover background (gray-100) */
   }
 
   .dark {
@@ -50,6 +100,26 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+    
+    /* Dark Mode Neutral Overrides */
+    --ui-bg-page: 17 24 39;              /* gray-900 */
+    --ui-bg-surface: 31 41 55;           /* gray-800 */
+    --ui-bg-surface-subtle: 55 65 81;    /* gray-700 */
+    --ui-bg-surface-muted: 75 85 99;     /* gray-600 */
+    --ui-bg-inverse: 255 255 255;        /* white */
+    
+    --ui-text-primary: 243 244 246;      /* gray-100 */
+    --ui-text-secondary: 209 213 219;    /* gray-300 */
+    --ui-text-tertiary: 156 163 175;     /* gray-400 */
+    --ui-text-muted: 107 114 128;        /* gray-500 */
+    --ui-text-inverse: 17 24 39;         /* gray-900 */
+    
+    --ui-border-subtle: 55 65 81;        /* gray-700 */
+    --ui-border-default: 75 85 99;       /* gray-600 */
+    --ui-border-strong: 107 114 128;     /* gray-500 */
+    
+    --ui-hover-subtle: 55 65 81;         /* gray-700 */
+    --ui-hover-default: 75 85 99;        /* gray-600 */
   }
 }
 
