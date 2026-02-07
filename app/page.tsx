@@ -592,7 +592,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-12">
+            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-12 text-center">
               Experience
             </h2>
 
@@ -615,23 +615,23 @@ export default function Home() {
                     <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                       <li className="flex gap-3">
                         <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                        <span className="leading-relaxed">Delivered an account registration system with integrated authentication, unifying onboarding workflows across applications</span>
+                        <span className="leading-relaxed">Delivered an <strong>account registration platform</strong> with integrated authentication, unifying onboarding workflows across applications</span>
                       </li>
                       <li className="flex gap-3">
                         <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                        <span className="leading-relaxed">Built a centralized eligibility system governing feature access and workflows with support for dynamic rule updates</span>
+                        <span className="leading-relaxed">Built a <strong>centralized eligibility system</strong> governing feature access and workflows with support for dynamic rule updates</span>
                       </li>
                       <li className="flex gap-3">
                         <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                        <span className="leading-relaxed">Architected systems coordinating services and data pipelines to support personalized experiences across financial products</span>
+                        <span className="leading-relaxed">Architected systems coordinating <strong>services and data pipelines</strong> to support personalized experiences across financial products</span>
                       </li>
                       <li className="flex gap-3">
                         <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                        <span className="leading-relaxed">Shipped an AI-based localization system that automated multilingual content generation across web platforms</span>
+                        <span className="leading-relaxed">Shipped an <strong>AI-based localization system</strong> that automated multilingual content generation across web platforms</span>
                       </li>
                       <li className="flex gap-3">
                         <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                        <span className="leading-relaxed">Pioneered adoption of AI development tools and drove usage across engineering teams by integrating them into production workflows</span>
+                        <span className="leading-relaxed">Pioneered adoption of <strong>AI development tools</strong> and drove usage across engineering teams by integrating them into production workflows</span>
                       </li>
                     </ul>
                   </div>
