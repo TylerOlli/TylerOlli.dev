@@ -720,7 +720,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="relative bg-gradient-to-br from-gray-100 via-gray-50 to-white border-2 border-gray-300 rounded-xl px-6 pt-3 pb-4 shadow-sm"
+              className="relative bg-gradient-to-br from-gray-100 via-gray-50 to-white border-2 border-gray-300 rounded-xl px-6 pt-3 pb-4 shadow-sm hover:shadow-md hover:border-gray-400 transition-all duration-200 ease-out"
               style={{
                 background: 'radial-gradient(circle at top left, rgb(249, 250, 251) 0%, rgb(255, 255, 255) 50%, rgb(249, 250, 251) 100%)'
               }}
