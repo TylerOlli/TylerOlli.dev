@@ -259,7 +259,7 @@ export default function Home() {
             <CaseStudyCard
               title="Rules-Driven Eligibility System"
               description="Designed a flexible eligibility and decision system that governed access to product features, offers, and workflows, allowing teams to update rules without engineering involvement or service downtime."
-              impact="Lowered the risk, effort, and operational cost of frequent product and policy updates."
+              impact="Lowered the risk, effort, and operational cost of frequent product and policy updates made by content authors."
               tags={["Next.js", "Node.js", "Redis", "PostgreSQL"]}
               delay={0.2}
             />

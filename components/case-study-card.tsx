@@ -39,9 +39,9 @@ export function CaseStudyCard({
             </div>
             <p className="text-sm leading-relaxed text-foreground/90">{impact}</p>
           </div>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-1.5">
             {tags.map((tag) => (
-              <Badge key={tag} variant="outline" className="bg-white border-gray-200 text-gray-800 text-sm font-medium px-3 py-1.5 hover:bg-gray-50/50 hover:border-gray-300 transition-colors duration-150 ease-out">
+              <Badge key={tag} variant="outline" className="bg-white border-gray-200 text-gray-800 text-[13px] font-medium px-2.5 py-1 hover:bg-gray-50/50 hover:border-gray-300 transition-colors duration-150 ease-out">
                 {tag}
               </Badge>
             ))}
