@@ -614,23 +614,23 @@ export default function Home() {
                 <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Delivered an account registration system with integrated authentication, unifying onboarding workflows across applications</span>
+                    <span className="leading-relaxed">Delivered an account registration system with integrated authentication, unifying onboarding workflows across applications</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Built a centralized eligibility system governing feature access and workflows with support for dynamic rule updates</span>
+                    <span className="leading-relaxed">Built a centralized eligibility system governing feature access and workflows with support for dynamic rule updates</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Architected systems coordinating services and data pipelines to support personalized experiences across financial products</span>
+                    <span className="leading-relaxed">Architected systems coordinating services and data pipelines to support personalized experiences across financial products</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Shipped an AI-based localization system that automated multilingual content generation across web platforms</span>
+                    <span className="leading-relaxed">Shipped an AI-based localization system that automated multilingual content generation across web platforms</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Pioneered adoption of AI development tools and drove usage across engineering teams by integrating them into production workflows</span>
+                    <span className="leading-relaxed">Pioneered adoption of AI development tools and drove usage across engineering teams by integrating them into production workflows</span>
                   </li>
                 </ul>
                 </motion.div>
@@ -651,27 +651,27 @@ export default function Home() {
                 <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Led end-to-end architecture and delivery for enterprise web platforms supporting NetScaler and XenServer</span>
+                    <span className="leading-relaxed">Led end-to-end architecture and delivery for enterprise web platforms supporting NetScaler and XenServer</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Built purchasing systems with reusable workflows, secure SKU lookup, interactive forms, and pricing calculators</span>
+                    <span className="leading-relaxed">Built purchasing systems with reusable workflows, secure SKU lookup, interactive forms, and pricing calculators</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Delivered lightweight, embeddable demo applications used on marketing pages to showcase real usage</span>
+                    <span className="leading-relaxed">Delivered lightweight, embeddable demo applications used on marketing pages to showcase real usage</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Implimented a company-wide unsubscribe and email preference service backed by MongoDB with centralized opt-out logic</span>
+                    <span className="leading-relaxed">Implimented a company-wide unsubscribe and email preference service backed by MongoDB with centralized opt-out logic</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Built and maintained a centralized component library for React and AEM used across multiple enterprise sites</span>
+                    <span className="leading-relaxed">Built and maintained a centralized component library for React and AEM used across multiple enterprise sites</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Introduced automated testing and accessibility workflows to improve reliability, compliance, and release confidence</span>
+                    <span className="leading-relaxed">Introduced automated testing and accessibility workflows to improve reliability, compliance, and release confidence</span>
                   </li>
                 </ul>
                 </motion.div>
