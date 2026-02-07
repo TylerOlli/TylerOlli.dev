@@ -727,45 +727,41 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="relative bg-gradient-to-br from-gray-100 via-gray-50 to-white border-2 border-gray-300 rounded-xl p-5 shadow-sm"
+              className="relative bg-gradient-to-br from-gray-100 via-gray-50 to-white border-2 border-gray-300 rounded-xl px-6 py-4 shadow-sm"
               style={{
                 background: 'radial-gradient(circle at top left, rgb(249, 250, 251) 0%, rgb(255, 255, 255) 50%, rgb(249, 250, 251) 100%)'
               }}
             >
               {/* Primary Badge */}
-              <div className="absolute top-4 right-4">
+              <div className="absolute top-3 right-4">
                 <span className="inline-block px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider bg-gray-900 text-white rounded">
                   Primary
                 </span>
               </div>
               
               {/* Shape Badge */}
-              <div className="flex items-center gap-2.5 mb-3">
+              <div className="flex items-center gap-2.5 mb-4">
                 <div className="flex items-center justify-center w-6 h-6 bg-gray-900/5 rounded">
                   <div className="w-2 h-2 rotate-45 bg-gray-900"></div>
                 </div>
                 <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">Core Stack</h3>
               </div>              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                <div className="flex items-baseline gap-2">
-                  <span className="w-20 sm:w-24 md:w-28 text-[10px] text-gray-500 uppercase tracking-wide font-medium text-right shrink-0">LANG</span>
-                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0 mt-1.5"></span>
-                  <span className="text-sm font-semibold text-gray-900">TypeScript</span>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="flex flex-col items-start justify-center lg:pr-6 lg:border-r lg:border-gray-300/40">
+                  <span className="text-[9px] text-gray-500 uppercase tracking-wider font-medium mb-1.5">LANG</span>
+                  <span className="text-base font-bold text-gray-900">TypeScript</span>
                 </div>
-                <div className="flex items-baseline gap-2">
-                  <span className="w-20 sm:w-24 md:w-28 text-[10px] text-gray-500 uppercase tracking-wide font-medium text-right shrink-0">RUNTIME</span>
-                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0 mt-1.5"></span>
-                  <span className="text-sm font-semibold text-gray-900">Node.js</span>
+                <div className="flex flex-col items-start justify-center lg:pr-6 lg:border-r lg:border-gray-300/40">
+                  <span className="text-[9px] text-gray-500 uppercase tracking-wider font-medium mb-1.5">RUNTIME</span>
+                  <span className="text-base font-bold text-gray-900">Node.js</span>
                 </div>
-                <div className="flex items-baseline gap-2">
-                  <span className="w-20 sm:w-24 md:w-28 text-[10px] text-gray-500 uppercase tracking-wide font-medium text-right shrink-0">DB</span>
-                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0 mt-1.5"></span>
-                  <span className="text-sm font-semibold text-gray-900">PostgreSQL</span>
+                <div className="flex flex-col items-start justify-center lg:pr-6 lg:border-r lg:border-gray-300/40">
+                  <span className="text-[9px] text-gray-500 uppercase tracking-wider font-medium mb-1.5">DB</span>
+                  <span className="text-base font-bold text-gray-900">PostgreSQL</span>
                 </div>
-                <div className="flex items-baseline gap-2">
-                  <span className="w-20 sm:w-24 md:w-28 text-[10px] text-gray-500 uppercase tracking-wide font-medium text-right shrink-0">COMPUTE</span>
-                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0 mt-1.5"></span>
-                  <span className="text-sm font-semibold text-gray-900">AWS Lambda</span>
+                <div className="flex flex-col items-start justify-center">
+                  <span className="text-[9px] text-gray-500 uppercase tracking-wider font-medium mb-1.5">COMPUTE</span>
+                  <span className="text-base font-bold text-gray-900">AWS Lambda</span>
                 </div>
               </div>
             </motion.div>
@@ -877,7 +873,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-2 py-1.5">
                     <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">OpenAI</span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">ChatGPT</span>
                   </div>
                   <div className="flex items-center gap-2 py-1.5">
                     <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
