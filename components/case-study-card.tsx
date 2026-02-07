@@ -25,9 +25,9 @@ export function CaseStudyCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
-      whileHover={{ y: -4 }}
+      whileHover={{ y: -2 }}
     >
-      <Card className="group h-full transition-all border border-gray-200 bg-gray-50 shadow-sm">
+      <Card className="group h-full transition-shadow duration-200 ease-out border border-gray-200 bg-gray-50 shadow-sm hover:shadow-md hover:border-gray-300">
         <CardHeader>
           <CardTitle className="text-xl font-bold text-foreground">{title}</CardTitle>
           <CardDescription className="text-base leading-relaxed mt-3">{description}</CardDescription>
