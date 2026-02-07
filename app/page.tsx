@@ -695,33 +695,147 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-12"
+            className="text-center mb-8"
           >
-            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-3">
               Tech Stack
             </h2>
-            <p className="text-base text-gray-600 max-w-2xl mx-auto font-normal">
+            <p className="text-sm text-gray-600 max-w-2xl mx-auto leading-tight mb-4">
               Technologies I use to build and ship production systems.
             </p>
+            {/* Credibility Strip */}
+            <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-gray-500">
+              <span className="flex items-center gap-1.5">
+                <span className="w-1 h-1 rounded-full bg-gray-400"></span>
+                Frontend + full stack
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="w-1 h-1 rounded-full bg-gray-400"></span>
+                Serverless + APIs
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="w-1 h-1 rounded-full bg-gray-400"></span>
+                Data + pipelines
+              </span>
+            </div>
           </motion.div>
 
-          <div className="max-w-[60rem] mx-auto space-y-6 px-8">
-            {[
-              { title: "Languages", items: ["JavaScript", "TypeScript", "Java", "SQL"] },
-              { title: "Frameworks", items: ["React", "Next.js", "Angular", "Node.js"] },
-              { title: "Platforms", items: ["Adobe Experience Manager (AEM)", "AWS Lambda"] },
-              { title: "Data Systems", items: ["PostgreSQL", "MongoDB", "Redis", "Snowflake", "Amazon S3"] },
-              { title: "AI Tools", items: ["GitHub Copilot", "Cursor", "ChatGPT", "Claude", "Gemini"] },
-            ].map((group) => (
-              <div key={group.title}>
-                <h3 className="text-xs font-bold text-gray-900 uppercase tracking-wider mb-3">{group.title}</h3>
-                <div className="flex flex-wrap gap-x-1.5 gap-y-2">
-                  {group.items.map((item) => (
-                    <TechTag key={item} name={item} />
-                  ))}
+          <div className="max-w-4xl mx-auto space-y-5">
+            {/* Core Stack - Hero Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50 border-2 border-gray-300 rounded-xl p-7 shadow-sm"
+            >
+              {/* Primary Badge */}
+              <div className="absolute top-4 right-4">
+                <span className="inline-block px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider bg-gray-900 text-white rounded">
+                  Primary
+                </span>
+              </div>
+              
+              <h3 className="text-xs font-bold text-gray-900 uppercase tracking-widest mb-5">Core Stack</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-gray-900 flex-shrink-0"></span>
+                  <span className="text-sm font-medium text-gray-900">TypeScript</span>
+                  <span className="text-xs text-gray-500 ml-auto">Lang</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-gray-900 flex-shrink-0"></span>
+                  <span className="text-sm font-medium text-gray-900">React</span>
+                  <span className="text-xs text-gray-500 ml-auto">UI</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-gray-900 flex-shrink-0"></span>
+                  <span className="text-sm font-medium text-gray-900">Next.js</span>
+                  <span className="text-xs text-gray-500 ml-auto">Framework</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-gray-900 flex-shrink-0"></span>
+                  <span className="text-sm font-medium text-gray-900">Node.js</span>
+                  <span className="text-xs text-gray-500 ml-auto">Runtime</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-gray-900 flex-shrink-0"></span>
+                  <span className="text-sm font-medium text-gray-900">PostgreSQL</span>
+                  <span className="text-xs text-gray-500 ml-auto">DB</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-gray-900 flex-shrink-0"></span>
+                  <span className="text-sm font-medium text-gray-900">AWS Lambda</span>
+                  <span className="text-xs text-gray-500 ml-auto">Compute</span>
                 </div>
               </div>
-            ))}
+            </motion.div>
+
+            {/* Secondary Cards Grid */}
+            <div className="grid md:grid-cols-3 gap-4">
+              {/* Platforms */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -2 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-gray-300 transition-all duration-200 ease-out h-full"
+              >
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+                  <h3 className="text-xs font-bold text-gray-900 uppercase tracking-widest">Platforms</h3>
+                </div>
+                <div className="space-y-2 text-sm font-medium text-gray-800">
+                  <div>AEM</div>
+                  <div>AWS Lambda</div>
+                  <div>Amazon S3</div>
+                </div>
+              </motion.div>
+
+              {/* Data Systems */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -2 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.15 }}
+                className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-gray-300 transition-all duration-200 ease-out h-full"
+              >
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-2 h-2 bg-green-500" style={{ clipPath: 'polygon(50% 0%, 100% 100%, 0% 100%)' }}></div>
+                  <h3 className="text-xs font-bold text-gray-900 uppercase tracking-widest">Data Systems</h3>
+                </div>
+                <div className="space-y-2 text-sm font-medium text-gray-800">
+                  <div>MongoDB</div>
+                  <div>Redis</div>
+                  <div>Snowflake</div>
+                  <div>SQL</div>
+                </div>
+              </motion.div>
+
+              {/* AI Tools */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -2 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-gray-300 transition-all duration-200 ease-out h-full"
+              >
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="w-2 h-2 bg-purple-500"></div>
+                  <h3 className="text-xs font-bold text-gray-900 uppercase tracking-widest">AI Tools</h3>
+                </div>
+                <div className="space-y-2 text-sm font-medium text-gray-800">
+                  <div>Cursor</div>
+                  <div>GitHub Copilot</div>
+                  <div>ChatGPT</div>
+                  <div>Claude</div>
+                  <div>Gemini</div>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </Container>
       </Section>
