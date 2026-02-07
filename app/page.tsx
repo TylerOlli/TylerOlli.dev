@@ -481,9 +481,9 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.05 }}
                 >
-                  <div className="group p-6 rounded-lg border border-ui-border-subtle bg-card shadow-sm hover:shadow-md hover:border-accent-ai-light transition-all duration-200 ease-out h-full">
+                  <div className="group p-6 rounded-lg border border-ui-border-subtle bg-card shadow-sm hover:shadow-md hover:border-accent-ai transition-all duration-200 ease-out h-full">
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="flex items-center justify-center w-8 h-8 bg-accent-ai/5 group-hover:bg-accent-ai/10 rounded transition-colors duration-200">
+                      <div className="flex items-center justify-center w-8 h-8 bg-accent-ai/5 group-hover:bg-accent-ai/15 rounded transition-colors duration-200">
                         <Sliders className="w-5 h-5 text-accent-ai" />
                       </div>
                       <h3 className="text-lg font-bold text-foreground">Context Engineering</h3>
@@ -501,9 +501,9 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                  <div className="group p-6 rounded-lg border border-ui-border-subtle bg-card shadow-sm hover:shadow-md hover:border-accent-ai-light transition-all duration-200 ease-out h-full">
+                  <div className="group p-6 rounded-lg border border-ui-border-subtle bg-card shadow-sm hover:shadow-md hover:border-accent-ai transition-all duration-200 ease-out h-full">
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="flex items-center justify-center w-8 h-8 bg-accent-ai/5 group-hover:bg-accent-ai/10 rounded transition-colors duration-200">
+                      <div className="flex items-center justify-center w-8 h-8 bg-accent-ai/5 group-hover:bg-accent-ai/15 rounded transition-colors duration-200">
                         <Code2 className="w-5 h-5 text-accent-ai" />
                       </div>
                       <h3 className="text-lg font-bold text-foreground">Code Generation</h3>
@@ -521,9 +521,9 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.15 }}
                 >
-                  <div className="group p-6 rounded-lg border border-ui-border-subtle bg-card shadow-sm hover:shadow-md hover:border-accent-ai-light transition-all duration-200 ease-out h-full">
+                  <div className="group p-6 rounded-lg border border-ui-border-subtle bg-card shadow-sm hover:shadow-md hover:border-accent-ai transition-all duration-200 ease-out h-full">
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="flex items-center justify-center w-8 h-8 bg-accent-ai/5 group-hover:bg-accent-ai/10 rounded transition-colors duration-200">
+                      <div className="flex items-center justify-center w-8 h-8 bg-accent-ai/5 group-hover:bg-accent-ai/15 rounded transition-colors duration-200">
                         <FileText className="w-5 h-5 text-accent-ai" />
                       </div>
                       <h3 className="text-lg font-bold text-foreground">Documentation</h3>
@@ -541,9 +541,9 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                  <div className="group p-6 rounded-lg border border-ui-border-subtle bg-card shadow-sm hover:shadow-md hover:border-accent-ai-light transition-all duration-200 ease-out h-full">
+                  <div className="group p-6 rounded-lg border border-ui-border-subtle bg-card shadow-sm hover:shadow-md hover:border-accent-ai transition-all duration-200 ease-out h-full">
                     <div className="flex items-center gap-2 mb-3">
-                      <div className="flex items-center justify-center w-8 h-8 bg-accent-ai/5 group-hover:bg-accent-ai/10 rounded transition-colors duration-200">
+                      <div className="flex items-center justify-center w-8 h-8 bg-accent-ai/5 group-hover:bg-accent-ai/15 rounded transition-colors duration-200">
                         <RefreshCw className="w-5 h-5 text-accent-ai" />
                       </div>
                       <h3 className="text-lg font-bold text-foreground">Code Review</h3>
@@ -564,9 +564,9 @@ export default function Home() {
             className="max-w-7xl mx-auto"
           >
               {/* Agent-Oriented Engineering Systems - Focal Point */}
-              <div className="group max-w-4xl mx-auto mt-14 bg-ui-bg-surface border-2 border-ui-border-subtle rounded-lg py-10 px-6 md:py-12 md:px-10 mb-14 hover:border-accent-ai-light transition-all duration-200 ease-out overflow-hidden relative">
+              <div className="group max-w-4xl mx-auto mt-14 bg-ui-bg-surface border border-ui-border-subtle rounded-lg py-10 px-6 md:py-12 md:px-10 mb-14 shadow-sm hover:shadow-md transition-all duration-200 ease-out overflow-hidden relative">
                 {/* Left accent bar */}
-                <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-gradient-to-b from-accent-ai to-accent-ai-mid group-hover:from-accent-ai-dark group-hover:to-accent-ai transition-colors duration-200"></div>
+                <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-accent-ai/30 group-hover:bg-accent-ai-dark transition-colors duration-200"></div>
                 <h3 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
                   Agent-Oriented Engineering Systems
                 </h3>
