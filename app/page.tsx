@@ -614,23 +614,23 @@ export default function Home() {
                 <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Led team of 5 engineers to deliver account registration portal serving 100,000+ users</span>
+                    <span>Delivered an account registration system with integrated authentication, unifying onboarding workflows across applications</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Architected rules-driven eligibility platform with Next.js, Node, Redis, and Postgres</span>
+                    <span>Built a centralized eligibility system governing feature access and workflows with support for dynamic rule updates</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Built AWS Lambda TypeScript workflows orchestrating Java services and Snowflake pipelines</span>
+                    <span>Architected systems coordinating services and data pipelines to support personalized experiences across financial products</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Applied context engineering principles to AI tooling: structured inputs, schema validation, and constraint-based workflows using GitHub Spec Kit methodology</span>
+                    <span>Shipped an AI-based localization system that automated multilingual content generation across web platforms</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Accelerated delivery 50% integrating AI tools (Cursor, Copilot, ChatGPT, Claude, Gemini) into production workflows alongside traditional backend and frontend engineering</span>
+                    <span>Pioneered adoption of AI development tools and drove usage across engineering teams by integrating them into production workflows</span>
                   </li>
                 </ul>
                 </motion.div>
@@ -646,65 +646,32 @@ export default function Home() {
                   <div className="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-foreground border-2 border-background" />
                 <div className="mb-4">
                   <h3 className="text-xl font-bold mb-1">Senior Software Engineer</h3>
-                  <p className="text-sm text-muted-foreground font-medium">Citrix • 2022–2023</p>
+                  <p className="text-sm text-muted-foreground font-medium">Citrix • 2020–2023</p>
                 </div>
                 <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Served as technical lead for enterprise web platforms (NetScaler, XenServer), owning end-to-end delivery and coordinating across cross-functional teams</span>
+                    <span>Led end-to-end architecture and delivery for enterprise web platforms supporting NetScaler and XenServer</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Led modernization of legacy AEM platforms, rebuilding Java services and React components to simplify architecture and improve performance and UX consistency</span>
+                    <span>Built purchasing systems with reusable workflows, secure SKU lookup, interactive forms, and pricing calculators</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Built embeddable applications and reusable product widgets using React, Node.js, and AWS serverless infrastructure</span>
+                    <span>Delivered lightweight, embeddable demo applications used on marketing pages to showcase real usage</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Consolidated fragmented React and AEM components into shared libraries, increasing reuse and consistency across high-traffic sites</span>
+                    <span>Implimented a company-wide unsubscribe and email preference service backed by MongoDB with centralized opt-out logic</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Built a company-wide unsubscribe service backed by MongoDB, centralizing email preference management across multiple applications with differing data formats</span>
-                  </li>
-                </ul>
-                </motion.div>
-
-                {/* Citrix - Software Engineer */}
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  className="relative"
-                >
-                  <div className="absolute -left-[41px] top-0 w-4 h-4 rounded-full bg-foreground border-2 border-background" />
-                <div className="mb-4">
-                  <h3 className="text-xl font-bold mb-1">Software Engineer</h3>
-                  <p className="text-sm text-muted-foreground font-medium">Citrix • 2020–2022</p>
-                </div>
-                <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Delivered large-scale web applications supporting multi-site, international deployments</span>
+                    <span>Built and maintained a centralized component library for React and AEM used across multiple enterprise sites</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Led global rebranding and product renaming initiatives across 10+ applications and 27 international sites</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Built interactive purchasing workflows and reusable UI components using React, AEM, and REST APIs</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Improved platform reliability by streamlining reCAPTCHA validation and SendGrid email delivery across multiple applications</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
-                    <span>Promoted to Senior Software Engineer based on technical ownership, delivery consistency, and cross-stack impact</span>
+                    <span>Introduced automated testing and accessibility workflows to improve reliability, compliance, and release confidence</span>
                   </li>
                 </ul>
                 </motion.div>
