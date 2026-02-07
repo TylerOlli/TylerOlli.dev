@@ -330,51 +330,69 @@ export default function Home() {
               {/* How It Works */}
               <div className="p-8 rounded-lg border bg-card shadow-sm">
                 <h3 className="text-xl font-bold mb-4">How It Works</h3>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                ModelTriage analyzes each request by reading the prompt and scanning any uploaded files to establish context.
-It classifies the task and routes the request to the LLM best suited for that type of work.
-When multiple models are queried, ModelTriage analyzes their responses to identify agreement, disagreement, and unique perspectives.
-                </p>
-
-                <div className="flex flex-wrap gap-3">
-                  <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
-                    <Network className="w-4 h-4 mr-2" />
-                    Intelligent Routing
-                  </Badge>
-                  <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
-                    <GitCompare className="w-4 h-4 mr-2" />
-                    Multi-Model Comparison
-                  </Badge>
-                  <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
-                    <Code2 className="w-4 h-4 mr-2" />
-                    Context Analysis
-                  </Badge>
+                <div className="space-y-4 mb-6">
+                  <div>
+                    <div className="flex items-baseline gap-2 mb-1">
+                      <span className="text-foreground font-semibold">1. Analyze context</span>
+                    </div>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      ModelTriage reads the prompt and any uploaded files to understand the task.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="flex items-baseline gap-2 mb-1">
+                      <span className="text-foreground font-semibold">2. Route intelligently</span>
+                    </div>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      The request is classified and routed to the LLM best suited for that type of work.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="flex items-baseline gap-2 mb-1">
+                      <span className="text-foreground font-semibold">3. Compare behavior</span>
+                    </div>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      When multiple models are queried, responses are analyzed to identify agreement, disagreement, and unique perspectives.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="flex items-baseline gap-2 mb-1">
+                      <span className="text-foreground font-semibold">The result</span>
+                    </div>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Engineers can review how different models behave on the same task and make an informed decision before production.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               {/* Why It Matters */}
               <div className="p-8 rounded-lg bg-foreground/[0.02] border">
                 <h3 className="text-xl font-bold mb-4">Why It Matters</h3>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  LLM outputs vary widely in quality, cost, and reliability. ModelTriage brings structure to AI decision-making by applying task-aware routing and parallel comparison, giving teams predictable costs, measurable quality, and confidence in model behavior.
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                LLM outputs vary widely in quality, cost, and reliability, making model choice a recurring engineering decision rather than a one-time setup. ModelTriage brings structure to that process through task-aware routing and parallel comparison, giving teams predictable costs, measurable quality, and confidence in model behavior.
                 </p>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  Engineering teams use ModelTriage to evaluate model tradeoffs, validate prompts before production, debug inconsistent behavior across providers, and make model choices based on evidence instead of guesswork.
+                <p className="text-foreground font-semibold mb-3">
+                  Engineering teams use ModelTriage to:
                 </p>
-                <div className="flex flex-wrap gap-3">
-                  <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
-                    <Sparkles className="w-4 h-4 mr-2" />
-                    Faster Iteration
-                  </Badge>
-                  <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
-                    <CheckCircle2 className="w-4 h-4 mr-2" />
-                    Higher Quality
-                  </Badge>
-                  <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
-                    <Zap className="w-4 h-4 mr-2" />
-                    Lower Costs
-                  </Badge>
-                </div>
+                <ul className="text-muted-foreground text-sm leading-relaxed mb-6 space-y-2">
+                  <li className="flex gap-2">
+                    <span className="text-muted-foreground flex-shrink-0">•</span>
+                    <span>Evaluate tradeoffs between models before committing to one</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-muted-foreground flex-shrink-0">•</span>
+                    <span>Validate prompt behavior across providers, not just a single model</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-muted-foreground flex-shrink-0">•</span>
+                    <span>Debug inconsistent responses and edge cases early</span>
+                  </li>
+                  <li className="flex gap-2">
+                    <span className="text-muted-foreground flex-shrink-0">•</span>
+                    <span>Justify model choices with evidence instead of intuition</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </motion.div>
