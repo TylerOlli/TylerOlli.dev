@@ -525,21 +525,32 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-7xl mx-auto"
           >
-              <div className="py-8 px-8 md:py-10 md:px-12 rounded-lg border bg-gray-50 shadow-sm">
-                <div className="max-w-5xl">
-                  <h3 className="text-xl font-bold text-foreground mb-4">Agent-Oriented Engineering Systems</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+              {/* Section break */}
+              <div className="mt-12 mb-10">
+                <hr className="border-t-2 border-gray-300" />
+              </div>
+
+              {/* Agent-Oriented Engineering Systems section */}
+              <div className="max-w-3xl mx-auto bg-gray-50 py-10 px-8 rounded-lg">
+                <h3 className="font-[family-name:var(--font-outfit)] text-2xl md:text-3xl font-extrabold text-foreground text-center mb-10">
+                  Agent-Oriented Engineering Systems
+                </h3>
+                
+                <div className="space-y-6">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
                   I design and operate AI-driven engineering systems where multiple specialized agents execute work in parallel. Agents handle code generation, validation, review, documentation, and migration, while I retain architectural ownership and final decision authority.
                   </p>
+                  
                   <p className="text-sm text-muted-foreground leading-relaxed">
                   I treat context engineering as an agent system design discipline. Agents are designed with explicit inputs, constraints, schemas, and success criteria to improve predictable, repeatable behavior. This turns LLM interactions from ad-hoc prompts into reliable, testable components that integrate cleanly with production systems.
                   </p>
                 </div>
               </div>
 
-              <div className="max-w-5xl">
-                <p className="mt-8">
-                  <span className="text-foreground font-medium">Measurable impact:</span> Reduced feature iteration cycles from days to hours for well-scoped work, enabling 3–5× faster delivery on AI-assisted features and significantly more time spent on system design and high-leverage decisions.
+              {/* Measurable impact - overall section conclusion */}
+              <div className="max-w-3xl mx-auto mt-12">
+                <p className="text-base leading-relaxed">
+                  <span className="text-foreground font-bold">Measurable impact:</span> Reduced feature iteration cycles from days to hours for well-scoped work, enabling 3–5× faster delivery on AI-assisted features and significantly more time spent on system design and high-leverage decisions.
                 </p>
               </div>
           </motion.div>
