@@ -125,7 +125,7 @@ export default function Home() {
         </Container>
       </Section>
 
-      {/* Scope & Ownership */}
+      {/* What I Help Teams Do */}
       <Section id="scope" className="section-tech">
         <Container>
           <motion.div
@@ -136,11 +136,11 @@ export default function Home() {
             className="max-w-5xl mx-auto"
           >
             <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-12 text-center">
-              Scope & Ownership
+              What I Help Teams Do
             </h2>
             
             <div className="grid md:grid-cols-2 gap-6">
-              {/* Team Leadership */}
+              {/* Ship Reliably */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -148,13 +148,13 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="rounded-lg border border-gray-300 bg-card p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 ease-out motion-reduce:hover:translate-y-0"
               >
-                <h3 className="text-xl font-bold mb-3">Team Leadership</h3>
+                <h3 className="text-xl font-bold mb-3">Ship Reliably</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Led cross-functional engineering teams through complex platform launches. Coordinated frontend, backend, and infrastructure delivery to ship production systems on schedule.
+                  Turn ideas into production software with clear ownership, fewer handoffs, and systems teams can depend on from day one.
                 </p>
               </motion.div>
 
-              {/* End-to-End Ownership */}
+              {/* Scale Without Pain */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -162,13 +162,13 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="rounded-lg border border-gray-300 bg-card p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 ease-out motion-reduce:hover:translate-y-0"
               >
-                <h3 className="text-xl font-bold mb-3">End-to-End Ownership</h3>
+                <h3 className="text-xl font-bold mb-3">Scale Without Pain</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Owned full-stack architecture for mission-critical systems. API design, database schema, frontend implementation, and deployment pipelines under single ownership.
+                  Design software that can grow with usage and requirements without constant re-architecture or rewrites.
                 </p>
               </motion.div>
 
-              {/* Engineering Judgment */}
+              {/* Make Smart Technical Decisions */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -176,13 +176,13 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="rounded-lg border border-gray-300 bg-card p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 ease-out motion-reduce:hover:translate-y-0"
               >
-                <h3 className="text-xl font-bold mb-3">Engineering Judgment</h3>
+                <h3 className="text-xl font-bold mb-3">Make Smart Technical Decisions</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Made pragmatic tradeoffs balancing delivery speed, system complexity, and long-term maintainability. Scoped MVPs under real constraints, evaluated build vs buy decisions, and evolved architecture as product needs changed.
+                  Balance speed, complexity, and long-term maintainability under real product and operational constraints.
                 </p>
               </motion.div>
 
-              {/* Technical Architecture */}
+              {/* Bring AI Into Real Systems */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -190,9 +190,9 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className="rounded-lg border border-gray-300 bg-card p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 ease-out motion-reduce:hover:translate-y-0"
               >
-                <h3 className="text-xl font-bold mb-3">Technical Architecture</h3>
+                <h3 className="text-xl font-bold mb-3">Bring AI Into Real Systems</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Designed distributed systems with serverless functions, microservices, and data workflows. Balanced scalability, maintainability, and delivery speed in system decisions.
+                  Integrate AI thoughtfully, with structure, validation, and production constraints that hold up in real systems.
                 </p>
               </motion.div>
             </div>
