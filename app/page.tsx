@@ -746,21 +746,11 @@ export default function Home() {
                 </div>
                 <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">Core Stack</h3>
               </div>              
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                 <div className="flex items-baseline gap-2">
                   <span className="w-20 sm:w-24 md:w-28 text-[10px] text-gray-500 uppercase tracking-wide font-medium text-right shrink-0">LANG</span>
                   <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0 mt-1.5"></span>
                   <span className="text-sm font-semibold text-gray-900">TypeScript</span>
-                </div>
-                <div className="flex items-baseline gap-2">
-                  <span className="w-20 sm:w-24 md:w-28 text-[10px] text-gray-500 uppercase tracking-wide font-medium text-right shrink-0">UI</span>
-                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0 mt-1.5"></span>
-                  <span className="text-sm font-semibold text-gray-900">React</span>
-                </div>
-                <div className="flex items-baseline gap-2">
-                  <span className="w-20 sm:w-24 md:w-28 text-[10px] text-gray-500 uppercase tracking-wide font-medium text-right shrink-0">FRAMEWORK</span>
-                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0 mt-1.5"></span>
-                  <span className="text-sm font-semibold text-gray-900">Next.js</span>
                 </div>
                 <div className="flex items-baseline gap-2">
                   <span className="w-20 sm:w-24 md:w-28 text-[10px] text-gray-500 uppercase tracking-wide font-medium text-right shrink-0">RUNTIME</span>
@@ -782,7 +772,7 @@ export default function Home() {
 
             {/* Secondary Cards Grid */}
             <div className="grid md:grid-cols-3 gap-4">
-              {/* Platforms */}
+              {/* UI Frameworks */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -798,20 +788,24 @@ export default function Home() {
                   <div className="flex items-center justify-center w-6 h-6 bg-blue-400/5 group-hover:bg-blue-400/10 rounded transition-colors duration-200">
                     <div className="w-2 h-2 rounded-full bg-blue-400"></div>
                   </div>
-                  <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">Platforms</h3>
+                  <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">UI Frameworks</h3>
                 </div>
                 <div className="divide-y divide-gray-100">
                   <div className="flex items-center gap-2 py-1.5">
                     <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Adobe Experience Manager</span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">React</span>
                   </div>
                   <div className="flex items-center gap-2 py-1.5">
                     <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">AWS Lambda</span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Next.js</span>
                   </div>
                   <div className="flex items-center gap-2 py-1.5">
                     <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Amazon S3</span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Angular</span>
+                  </div>
+                  <div className="flex items-center gap-2 py-1.5">
+                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Vue.js</span>
                   </div>
                 </div>
               </motion.div>
@@ -849,7 +843,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-2 py-1.5">
                     <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">SQL</span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Amazon S3</span>
                   </div>
                 </div>
               </motion.div>
@@ -883,7 +877,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-2 py-1.5">
                     <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">ChatGPT</span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">OpenAI</span>
                   </div>
                   <div className="flex items-center gap-2 py-1.5">
                     <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
