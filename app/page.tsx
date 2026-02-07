@@ -3,7 +3,7 @@
 import { useState, useCallback } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { ArrowRight, ArrowDown, Github, Linkedin, Mail, Zap, GitCompare, Network, Code2, Sparkles, CheckCircle2, Shield, TrendingUp, Sliders, Cpu } from "lucide-react"
+import { ArrowRight, ArrowDown, Github, Linkedin, Mail, Zap, GitCompare, Network, Code2, Sparkles, CheckCircle2, Shield, TrendingUp, Sliders, Cpu, FileText, RefreshCw } from "lucide-react"
 import { Section } from "@/components/section"
 import { Container } from "@/components/container"
 import { CaseStudyCard } from "@/components/case-study-card"
@@ -454,63 +454,94 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="max-w-4xl mx-auto"
+            className="max-w-4xl mx-auto mb-12"
           >
-            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-8 text-center">
               AI in My Engineering Workflow
             </h2>
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               <p>
-                I use AI tools daily to accelerate delivery without sacrificing quality. My workflow integrates <span className="text-foreground font-medium">Cursor, GitHub Copilot, ChatGPT, Claude, and Gemini</span> across code generation, documentation, review, and modernization.
-              </p>
-              <p>
-                Beyond individual productivity, I treat <span className="text-foreground font-medium">context engineering as a system design discipline</span>: structured inputs, explicit constraints, schema validation, and repeatable workflows. This approach transforms LLM interactions from ad-hoc prompting into reliable, testable components that integrate with production systems.
+              I use AI-assisted development tools such as <strong>Cursor</strong>, <strong>GitHub Copilot</strong>, and <strong>Codex</strong> to explore ideas and execute faster, while making the final calls on architecture, technical tradeoffs, and what ships to production. This approach shapes how I use AI across my engineering workflow:
               </p>
               
-              <div className="grid md:grid-cols-2 gap-6 my-8">
+             
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="max-w-7xl mx-auto mb-16"
+          >
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="p-6 rounded-lg border bg-card shadow-sm">
-                  <h3 className="text-lg font-bold text-foreground mb-3">Context Engineering</h3>
+                  <div className="flex items-center gap-2 mb-3">
+                    <Sliders className="w-5 h-5 text-foreground" />
+                    <h3 className="text-lg font-bold text-foreground">Context Engineering</h3>
+                  </div>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Design structured prompts, constraints, and validation schemas. Define success criteria and error handling. Build repeatable AI workflows that integrate with backend systems like any other service dependency.
                   </p>
                 </div>
                 
                 <div className="p-6 rounded-lg border bg-card shadow-sm">
-                  <h3 className="text-lg font-bold text-foreground mb-3">Code Generation</h3>
+                  <div className="flex items-center gap-2 mb-3">
+                    <Code2 className="w-5 h-5 text-foreground" />
+                    <h3 className="text-lg font-bold text-foreground">Code Generation</h3>
+                  </div>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Draft boilerplate, generate tests, and prototype features faster. AI handles the repetitive work while I focus on architecture and production logic.
                   </p>
                 </div>
                 
                 <div className="p-6 rounded-lg border bg-card shadow-sm">
-                  <h3 className="text-lg font-bold text-foreground mb-3">Documentation</h3>
+                  <div className="flex items-center gap-2 mb-3">
+                    <FileText className="w-5 h-5 text-foreground" />
+                    <h3 className="text-lg font-bold text-foreground">Documentation</h3>
+                  </div>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Generate API docs, write clear comments, and create onboarding guides. Keeps teams aligned and reduces knowledge silos.
                   </p>
                 </div>
                 
                 <div className="p-6 rounded-lg border bg-card shadow-sm">
-                  <h3 className="text-lg font-bold text-foreground mb-3">Code Review & Migration</h3>
+                  <div className="flex items-center gap-2 mb-3">
+                    <RefreshCw className="w-5 h-5 text-foreground" />
+                    <h3 className="text-lg font-bold text-foreground">Code Review</h3>
+                  </div>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Catch edge cases, identify performance issues, and translate legacy systems into modern frameworks. Refactor technical debt with validation at each step.
                   </p>
                 </div>
               </div>
+          </motion.div>
 
-              <div className="mt-8 p-8 rounded-lg border-2 bg-card shadow-md">
-                <h3 className="text-xl font-bold text-foreground mb-4">Context Engineering in Practice</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                  Built production AI systems using structured context engineering: defined input schemas, validation rules, constraint boundaries, and success criteria. Implemented with GitHub Spec Kit methodology for an internal translation tool.
-                </p>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  <span className="text-foreground font-medium">Results:</span> Consistent outputs, 70% reduction in iteration cycles, and predictable behavior under edge cases. The system handles thousands of requests with error rates comparable to traditional microservices.
-                </p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="max-w-7xl mx-auto"
+          >
+              <div className="py-8 px-8 md:py-10 md:px-12 rounded-lg border bg-gray-50 shadow-sm">
+                <div className="max-w-5xl">
+                  <h3 className="text-xl font-bold text-foreground mb-4">Agent-Oriented Engineering Systems</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                  I design and operate AI-driven engineering systems where multiple specialized agents execute work in parallel. Agents handle code generation, validation, review, documentation, and migration, while I retain architectural ownership and final decision authority.
+                  </p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  I treat context engineering as an agent system design discipline. Agents are designed with explicit inputs, constraints, schemas, and success criteria to improve predictable, repeatable behavior. This turns LLM interactions from ad-hoc prompts into reliable, testable components that integrate cleanly with production systems.
+                  </p>
+                </div>
               </div>
 
-              <p className="mt-6">
-                <span className="text-foreground font-medium">Measurable impact:</span> Reduced feature iteration cycles from days to hours for well-scoped work, enabling 3–5× faster delivery on AI-assisted features and significantly more time spent on system design and high-leverage decisions.
-              </p>
-            </div>
+              <div className="max-w-5xl">
+                <p className="mt-8">
+                  <span className="text-foreground font-medium">Measurable impact:</span> Reduced feature iteration cycles from days to hours for well-scoped work, enabling 3–5× faster delivery on AI-assisted features and significantly more time spent on system design and high-leverage decisions.
+                </p>
+              </div>
           </motion.div>
         </Container>
       </Section>
