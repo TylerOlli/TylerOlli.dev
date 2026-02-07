@@ -727,7 +727,10 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50 border-2 border-gray-300 rounded-xl p-7 shadow-sm"
+              className="relative bg-gradient-to-br from-gray-100 via-gray-50 to-white border-2 border-gray-300 rounded-xl p-6 shadow-sm"
+              style={{
+                background: 'radial-gradient(circle at top left, rgb(249, 250, 251) 0%, rgb(255, 255, 255) 50%, rgb(249, 250, 251) 100%)'
+              }}
             >
               {/* Primary Badge */}
               <div className="absolute top-4 right-4">
@@ -736,37 +739,43 @@ export default function Home() {
                 </span>
               </div>
               
-              <h3 className="text-xs font-bold text-gray-900 uppercase tracking-widest mb-5">Core Stack</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+              {/* Shape Badge */}
+              <div className="flex items-center gap-2.5 mb-4">
+                <div className="flex items-center justify-center w-6 h-6 bg-gray-900/5 rounded">
+                  <div className="w-2 h-2 rotate-45 bg-gray-900"></div>
+                </div>
+                <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">Core Stack</h3>
+              </div>              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-gray-900 flex-shrink-0"></span>
-                  <span className="text-sm font-medium text-gray-900">TypeScript</span>
-                  <span className="text-xs text-gray-500 ml-auto">Lang</span>
+                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0"></span>
+                  <span className="text-sm font-semibold text-gray-900">TypeScript</span>
+                  <span className="text-[10px] text-gray-400 ml-auto uppercase tracking-wide">Lang</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-gray-900 flex-shrink-0"></span>
-                  <span className="text-sm font-medium text-gray-900">React</span>
-                  <span className="text-xs text-gray-500 ml-auto">UI</span>
+                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0"></span>
+                  <span className="text-sm font-semibold text-gray-900">React</span>
+                  <span className="text-[10px] text-gray-400 ml-auto uppercase tracking-wide">UI</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-gray-900 flex-shrink-0"></span>
-                  <span className="text-sm font-medium text-gray-900">Next.js</span>
-                  <span className="text-xs text-gray-500 ml-auto">Framework</span>
+                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0"></span>
+                  <span className="text-sm font-semibold text-gray-900">Next.js</span>
+                  <span className="text-[10px] text-gray-400 ml-auto uppercase tracking-wide">Framework</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-gray-900 flex-shrink-0"></span>
-                  <span className="text-sm font-medium text-gray-900">Node.js</span>
-                  <span className="text-xs text-gray-500 ml-auto">Runtime</span>
+                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0"></span>
+                  <span className="text-sm font-semibold text-gray-900">Node.js</span>
+                  <span className="text-[10px] text-gray-400 ml-auto uppercase tracking-wide">Runtime</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-gray-900 flex-shrink-0"></span>
-                  <span className="text-sm font-medium text-gray-900">PostgreSQL</span>
-                  <span className="text-xs text-gray-500 ml-auto">DB</span>
+                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0"></span>
+                  <span className="text-sm font-semibold text-gray-900">PostgreSQL</span>
+                  <span className="text-[10px] text-gray-400 ml-auto uppercase tracking-wide">DB</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-gray-900 flex-shrink-0"></span>
-                  <span className="text-sm font-medium text-gray-900">AWS Lambda</span>
-                  <span className="text-xs text-gray-500 ml-auto">Compute</span>
+                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0"></span>
+                  <span className="text-sm font-semibold text-gray-900">AWS Lambda</span>
+                  <span className="text-[10px] text-gray-400 ml-auto uppercase tracking-wide">Compute</span>
                 </div>
               </div>
             </motion.div>
@@ -780,13 +789,18 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-gray-300 transition-all duration-200 ease-out h-full"
+                className="relative bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-blue-200 transition-all duration-200 ease-out h-full overflow-hidden"
               >
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                  <h3 className="text-xs font-bold text-gray-900 uppercase tracking-widest">Platforms</h3>
+                {/* Left accent bar */}
+                <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-blue-500 to-blue-400"></div>
+                
+                <div className="flex items-center gap-2.5 mb-4">
+                  <div className="flex items-center justify-center w-6 h-6 bg-blue-500/10 rounded">
+                    <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+                  </div>
+                  <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">Platforms</h3>
                 </div>
-                <div className="space-y-2 text-sm font-medium text-gray-800">
+                <div className="space-y-2 text-sm font-semibold text-gray-800 leading-tight">
                   <div>AEM</div>
                   <div>AWS Lambda</div>
                   <div>Amazon S3</div>
@@ -800,13 +814,18 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.15 }}
-                className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-gray-300 transition-all duration-200 ease-out h-full"
+                className="relative bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-green-200 transition-all duration-200 ease-out h-full overflow-hidden"
               >
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-2 h-2 bg-green-500" style={{ clipPath: 'polygon(50% 0%, 100% 100%, 0% 100%)' }}></div>
-                  <h3 className="text-xs font-bold text-gray-900 uppercase tracking-widest">Data Systems</h3>
+                {/* Left accent bar */}
+                <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-green-500 to-green-400"></div>
+                
+                <div className="flex items-center gap-2.5 mb-4">
+                  <div className="flex items-center justify-center w-6 h-6 bg-green-500/10 rounded">
+                    <div className="w-2 h-2 bg-green-500" style={{ clipPath: 'polygon(50% 0%, 100% 100%, 0% 100%)' }}></div>
+                  </div>
+                  <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">Data Systems</h3>
                 </div>
-                <div className="space-y-2 text-sm font-medium text-gray-800">
+                <div className="space-y-2 text-sm font-semibold text-gray-800 leading-tight">
                   <div>MongoDB</div>
                   <div>Redis</div>
                   <div>Snowflake</div>
@@ -821,13 +840,18 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-gray-300 transition-all duration-200 ease-out h-full"
+                className="relative bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-200 ease-out h-full overflow-hidden"
               >
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-2 h-2 bg-purple-500"></div>
-                  <h3 className="text-xs font-bold text-gray-900 uppercase tracking-widest">AI Tools</h3>
+                {/* Left accent bar */}
+                <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-purple-500 to-purple-400"></div>
+                
+                <div className="flex items-center gap-2.5 mb-4">
+                  <div className="flex items-center justify-center w-6 h-6 bg-purple-500/10 rounded">
+                    <div className="w-2 h-2 bg-purple-500"></div>
+                  </div>
+                  <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">AI Tools</h3>
                 </div>
-                <div className="space-y-2 text-sm font-medium text-gray-800">
+                <div className="space-y-2 text-sm font-semibold text-gray-800 leading-tight">
                   <div>Cursor</div>
                   <div>GitHub Copilot</div>
                   <div>ChatGPT</div>
