@@ -18,7 +18,7 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL('https://tylerolli.dev'),
   title: "Tyler Olli",
-  description: "Senior Software Engineer. Building scalable platforms and production systems with context engineering and AI-enabled systems.",
+  description: "Senior Software Engineer. Building scalable software and AI platforms.",
   keywords: ["software engineer", "senior engineer", "full-stack", "TypeScript", "React", "Next.js", "AI engineering", "AWS", "context engineering"],
   authors: [{ name: "Tyler Olli" }],
   openGraph: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     url: "https://tylerolli.dev",
     siteName: "Tyler Olli",
     title: "Tyler Olli",
-    description: "Senior Software Engineer. Building scalable platforms and production systems with context engineering and AI-enabled systems.",
+    description: "Senior Software Engineer. Building scalable software and AI platforms.",
     images: [
       {
         url: "/og/tyler-olli-og.png",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Tyler Olli",
-    description: "Senior Software Engineer. Building scalable platforms and production systems with context engineering and AI-enabled systems.",
+    description: "Senior Software Engineer. Building scalable software and AI platforms.",
     images: ["/og/tyler-olli-og.png"],
   },
   robots: {

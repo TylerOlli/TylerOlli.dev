@@ -6,9 +6,10 @@ interface TypingTextProps {
   text: string
   className?: string
   duration?: number
+  onComplete?: () => void
 }
 
-export function TypingText({ text, className = "", duration = 1500 }: TypingTextProps) {
+export function TypingText({ text, className = "", duration = 1500, onComplete }: TypingTextProps) {
   const [displayedText, setDisplayedText] = useState("")
   const [isComplete, setIsComplete] = useState(false)
 
@@ -20,6 +21,7 @@ export function TypingText({ text, className = "", duration = 1500 }: TypingText
       // If reduced motion is preferred, show full text immediately
       setDisplayedText(text)
       setIsComplete(true)
+      onComplete?.()
       return
     }
 
@@ -41,6 +43,7 @@ export function TypingText({ text, className = "", duration = 1500 }: TypingText
 
         if (currentIndex >= chars) {
           setIsComplete(true)
+          onComplete?.()
           return
         }
       }
@@ -55,7 +58,7 @@ export function TypingText({ text, className = "", duration = 1500 }: TypingText
         cancelAnimationFrame(animationFrameId)
       }
     }
-  }, [text, duration])
+  }, [text, duration, onComplete])
 
   return (
     <span className={className}>

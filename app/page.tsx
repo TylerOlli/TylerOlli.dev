@@ -1,5 +1,6 @@
 "use client"
 
+import { useState, useCallback } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { ArrowRight, ArrowDown, Github, Linkedin, Mail, Zap, GitCompare, Network, Code2, Sparkles, CheckCircle2 } from "lucide-react"
@@ -14,6 +15,12 @@ import { Separator } from "@/components/ui/separator"
 import { Badge } from "@/components/ui/badge"
 
 export default function Home() {
+  const [isTypingComplete, setIsTypingComplete] = useState(false)
+
+  const handleTypingComplete = useCallback(() => {
+    setIsTypingComplete(true)
+  }, [])
+
   return (
     <main className="relative">
       {/* Hero Section */}
@@ -45,11 +52,20 @@ export default function Home() {
               Tyler Olli
             </h1>
             
-            <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto font-light">
+            <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-3 leading-relaxed max-w-3xl mx-auto font-light">
               <TypingText 
-                text="Building scalable platforms and production systems with context engineering and AI-enabled systems."
-                duration={3500}
+                text="Building scalable software and AI platforms."
+                duration={2000}
+                onComplete={handleTypingComplete}
               />
+            </p>
+
+            <p 
+              className={`text-base md:text-lg text-muted-foreground/80 mb-8 leading-relaxed max-w-3xl mx-auto font-light transition-opacity duration-200 ${
+                isTypingComplete ? 'opacity-100' : 'opacity-0'
+              }`}
+            >
+              I take ideas from architecture to production, creating products that teams can rely on.
             </p>
             
             <motion.div
@@ -605,10 +621,10 @@ export default function Home() {
           <div className="max-w-[60rem] mx-auto space-y-6 px-8">
             {[
               { title: "Languages", items: ["JavaScript", "TypeScript", "Java", "SQL"] },
-              { title: "Frameworks", items: ["React", "Next.js", "Node.js", "Angular", "Vue.js"] },
+              { title: "Frameworks", items: ["React", "Next.js", "Angular", "Node.js"] },
               { title: "Platforms", items: ["Adobe Experience Manager (AEM)", "AWS Lambda"] },
               { title: "Data Systems", items: ["PostgreSQL", "MongoDB", "Redis", "Snowflake", "Amazon S3"] },
-              { title: "AI Tools", items: ["GitHub Copilot", "GitHub Spec Kit", "Cursor", "ChatGPT", "Claude", "Gemini"] },
+              { title: "AI Tools", items: ["GitHub Copilot", "Cursor", "ChatGPT", "Claude", "Gemini"] },
             ].map((group) => (
               <div key={group.title}>
                 <h3 className="text-xs font-bold text-gray-900 uppercase tracking-wider mb-3">{group.title}</h3>
