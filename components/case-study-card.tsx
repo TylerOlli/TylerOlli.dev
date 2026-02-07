@@ -25,7 +25,6 @@ export function CaseStudyCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
-      whileHover={{ y: -2 }}
     >
       <Card className="group h-full transition-all duration-200 ease-out border border-ui-border-subtle bg-ui-bg-surface-subtle shadow-sm hover:shadow-md hover:border-accent-ui-light overflow-hidden relative">
         {/* Top accent bar - appears on hover */}
