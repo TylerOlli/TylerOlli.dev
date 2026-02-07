@@ -596,9 +596,10 @@ export default function Home() {
               Experience
             </h2>
 
-            <div className="relative border-l-2 border-border pl-8">
+            <div className="relative border-l-2 border-ui-border-subtle pl-8">
               <div className="space-y-12">
-                {/* Blankfactor */}
+                {/* Blankfactor - Current Role (UI-focused) */}
+                {/* Citrix uses accent-data (green) for data-focused work (MongoDB, libraries, etc.) */}
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -607,38 +608,50 @@ export default function Home() {
                   transition={{ duration: 0.5 }}
                   className="relative"
                 >
-                  <div className="absolute -left-[42px] top-0 w-5 h-5 rounded-full bg-foreground border-[3px] border-background" />
-                  <div className="bg-neutral-50 border border-neutral-300 rounded px-6 py-5 shadow-sm hover:shadow-md hover:border-ui-border-strong transition-shadow duration-200 ease-out">
+                  <div className="absolute -left-[42px] top-0 w-5 h-5 rounded-full bg-accent-ui border-[3px] border-background ring-2 ring-accent-ui/20" />
+                  <div className="group relative bg-ui-bg-surface border border-ui-border-subtle rounded px-6 py-5 shadow-sm hover:shadow-md hover:border-accent-ui-light transition-all duration-200 ease-out overflow-hidden">
+                    {/* Left accent bar */}
+                    <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ui to-accent-ui-mid group-hover:from-accent-ui-dark group-hover:to-accent-ui transition-colors duration-200"></div>
                     <div className="mb-4">
                       <h3 className="text-xl font-bold mb-1">Lead Software Engineer</h3>
                       <p className="text-sm text-muted-foreground font-medium">Blankfactor • 2023–2025</p>
                     </div>
                     <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                       <li className="flex gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
+                        <div className="flex items-center justify-center w-5 h-5 bg-accent-ui/5 group-hover:bg-accent-ui/10 rounded transition-colors duration-200 mt-0.5 flex-shrink-0">
+                          <CheckCircle2 className="h-4 w-4 text-accent-ui" />
+                        </div>
                         <span className="leading-relaxed">Delivered an <strong>account registration platform</strong> with integrated authentication, unifying onboarding workflows across applications</span>
                       </li>
                       <li className="flex gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
+                        <div className="flex items-center justify-center w-5 h-5 bg-accent-ui/5 group-hover:bg-accent-ui/10 rounded transition-colors duration-200 mt-0.5 flex-shrink-0">
+                          <CheckCircle2 className="h-4 w-4 text-accent-ui" />
+                        </div>
                         <span className="leading-relaxed">Built a <strong>centralized eligibility system</strong> governing feature access and workflows with support for dynamic rule updates</span>
                       </li>
                       <li className="flex gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
+                        <div className="flex items-center justify-center w-5 h-5 bg-accent-ui/5 group-hover:bg-accent-ui/10 rounded transition-colors duration-200 mt-0.5 flex-shrink-0">
+                          <CheckCircle2 className="h-4 w-4 text-accent-ui" />
+                        </div>
                         <span className="leading-relaxed">Architected systems coordinating <strong>services and data pipelines</strong> to support personalized experiences across financial products</span>
                       </li>
                       <li className="flex gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
+                        <div className="flex items-center justify-center w-5 h-5 bg-accent-ui/5 group-hover:bg-accent-ui/10 rounded transition-colors duration-200 mt-0.5 flex-shrink-0">
+                          <CheckCircle2 className="h-4 w-4 text-accent-ui" />
+                        </div>
                         <span className="leading-relaxed">Shipped an <strong>AI-based localization system</strong> that automated multilingual content generation across web platforms</span>
                       </li>
                       <li className="flex gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-foreground/60 mt-0.5 flex-shrink-0" />
+                        <div className="flex items-center justify-center w-5 h-5 bg-accent-ui/5 group-hover:bg-accent-ui/10 rounded transition-colors duration-200 mt-0.5 flex-shrink-0">
+                          <CheckCircle2 className="h-4 w-4 text-accent-ui" />
+                        </div>
                         <span className="leading-relaxed">Pioneered adoption of <strong>AI development tools</strong> and drove usage across engineering teams by integrating them into production workflows</span>
                       </li>
                     </ul>
                   </div>
                 </motion.div>
 
-                {/* Citrix - Senior Software Engineer */}
+                {/* Citrix - Senior Software Engineer - Past Role */}
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -647,8 +660,8 @@ export default function Home() {
                   transition={{ duration: 0.5, delay: 0.1 }}
                   className="relative"
                 >
-                  <div className="absolute -left-[40px] top-0 w-3.5 h-3.5 rounded-full bg-foreground border-[1.5px] border-background" />
-                  <div className="border border-neutral-200 rounded px-6 py-4 shadow-sm hover:shadow-md hover:border-ui-border-default transition-shadow duration-200 ease-out">
+                  <div className="absolute -left-[40px] top-0 w-3.5 h-3.5 rounded-full bg-ui-border-strong border-[1.5px] border-background" />
+                  <div className="group relative bg-ui-bg-surface border border-ui-border-subtle rounded px-6 py-4 shadow-sm hover:shadow-md hover:border-ui-border-default transition-all duration-200 ease-out">
                     <div className="mb-4">
                       <h3 className="text-xl font-bold mb-1">Senior Software Engineer</h3>
                       <p className="text-sm text-muted-foreground font-medium">Citrix • 2020–2023</p>
