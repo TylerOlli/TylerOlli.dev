@@ -602,12 +602,13 @@ export default function Home() {
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
+                  whileHover={{ y: -2 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5 }}
                   className="relative"
                 >
                   <div className="absolute -left-[42px] top-0 w-5 h-5 rounded-full bg-foreground border-[3px] border-background" />
-                  <div className="bg-neutral-50 border border-neutral-300 rounded px-6 py-5">
+                  <div className="bg-neutral-50 border border-neutral-300 rounded px-6 py-5 shadow-sm hover:shadow-md hover:border-gray-400 transition-shadow duration-200 ease-out">
                     <div className="mb-4">
                       <h3 className="text-xl font-bold mb-1">Lead Software Engineer</h3>
                       <p className="text-sm text-muted-foreground font-medium">Blankfactor • 2023–2025</p>
@@ -641,12 +642,13 @@ export default function Home() {
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
+                  whileHover={{ y: -2 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.1 }}
                   className="relative"
                 >
                   <div className="absolute -left-[40px] top-0 w-3.5 h-3.5 rounded-full bg-foreground border-[1.5px] border-background" />
-                  <div className="border border-neutral-200 rounded px-6 py-4">
+                  <div className="border border-neutral-200 rounded px-6 py-4 shadow-sm hover:shadow-md hover:border-gray-300 transition-shadow duration-200 ease-out">
                     <div className="mb-4">
                       <h3 className="text-xl font-bold mb-1">Senior Software Engineer</h3>
                       <p className="text-sm text-muted-foreground font-medium">Citrix • 2020–2023</p>
