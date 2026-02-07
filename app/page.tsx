@@ -293,7 +293,7 @@ export default function Home() {
             <h2 className="font-[family-name:var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
               ModelTriage
             </h2>
-            <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed font-light">
+            <p className="text-lg text-white max-w-4xl mx-auto leading-relaxed font-light">
             A decision and verification layer that routes prompts to the right LLM and explains model behavior.
             </p>
           </motion.div>
@@ -369,8 +369,11 @@ export default function Home() {
               {/* Why It Matters */}
               <div className="p-8 rounded-lg bg-foreground/[0.02] border">
                 <h3 className="text-xl font-bold mb-4">Why It Matters</h3>
-                <p className="text-muted-foreground leading-relaxed mb-4">
-                LLM outputs vary widely in quality, cost, and reliability, making model choice a recurring engineering decision rather than a one-time setup. ModelTriage brings structure to that process through task-aware routing and parallel comparison, giving teams predictable costs, measurable quality, and confidence in model behavior.
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                LLM outputs vary widely in quality, cost, and reliability, making model choice a recurring engineering decision rather than a one-time setup.
+                </p>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                ModelTriage brings structure to that process through task-aware routing and parallel comparison, giving teams predictable costs, measurable quality, and confidence in model behavior.
                 </p>
                 <p className="text-foreground font-semibold mb-3">
                   Engineering teams use ModelTriage to:
@@ -410,7 +413,7 @@ export default function Home() {
             </div>
             <div className="flex flex-wrap justify-center gap-2">
               {["Next.js", "TypeScript", "OpenAI", "Anthropic", "Google AI", "Vercel", "Postgres", "Tailwind"].map((tech, i) => (
-                <TechTag key={tech} name={tech} delay={i * 0.05} />
+                <TechTag key={tech} name={tech} delay={i * 0.05} variant="dark" />
               ))}
             </div>
           </motion.div>
