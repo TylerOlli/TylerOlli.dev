@@ -1,8 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Pill } from "@/components/ui/pill"
 
 interface CaseStudyCardProps {
   title: string
@@ -43,9 +43,7 @@ export function CaseStudyCard({
           </div>
           <div className="flex flex-wrap gap-1.5">
             {tags.map((tag) => (
-              <Badge key={tag} variant="outline" className="bg-ui-bg-surface border-ui-border-subtle text-ui-text-secondary text-[13px] font-medium px-2.5 py-1 hover:bg-ui-hover-subtle hover:border-ui-border-default transition-colors duration-150 ease-out">
-                {tag}
-              </Badge>
+              <Pill key={tag}>{tag}</Pill>
             ))}
           </div>
         </CardContent>

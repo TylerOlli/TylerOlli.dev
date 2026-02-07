@@ -8,7 +8,7 @@ import { Section } from "@/components/section"
 import { Container } from "@/components/container"
 import { CaseStudyCard } from "@/components/case-study-card"
 import { FeatureCard } from "@/components/feature-card"
-import { TechTag } from "@/components/tech-tag"
+import { Pill } from "@/components/ui/pill"
 import { TypingText } from "@/components/typing-text"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
@@ -412,8 +412,8 @@ export default function Home() {
               <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Tech Stack</h4>
             </div>
             <div className="flex flex-wrap justify-center gap-2">
-              {["Next.js", "TypeScript", "OpenAI", "Anthropic", "Google AI", "Vercel", "Postgres", "Tailwind"].map((tech, i) => (
-                <TechTag key={tech} name={tech} delay={i * 0.05} variant="dark" />
+              {["Next.js", "TypeScript", "OpenAI", "Anthropic", "Google AI", "Vercel", "Postgres", "Tailwind"].map((tech) => (
+                <Pill key={tech} variant="dark">{tech}</Pill>
               ))}
             </div>
           </motion.div>
