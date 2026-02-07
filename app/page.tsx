@@ -3,7 +3,7 @@
 import { useState, useCallback } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { ArrowRight, ArrowDown, Github, Linkedin, Mail, Zap, GitCompare, Network, Code2, Sparkles, CheckCircle2 } from "lucide-react"
+import { ArrowRight, ArrowDown, Github, Linkedin, Mail, Zap, GitCompare, Network, Code2, Sparkles, CheckCircle2, Shield, TrendingUp, Sliders, Cpu } from "lucide-react"
 import { Section } from "@/components/section"
 import { Container } from "@/components/container"
 import { CaseStudyCard } from "@/components/case-study-card"
@@ -126,7 +126,7 @@ export default function Home() {
       </Section>
 
       {/* What I Help Teams Do */}
-      <Section id="scope" className="section-tech">
+      <Section id="scope" className="bg-gray-50">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -135,65 +135,94 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="max-w-5xl mx-auto"
           >
-            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-12 text-center">
-              What I Help Teams Do
-            </h2>
+            <div className="text-center mb-12">
+              <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-3">
+                What I Help Teams Do
+              </h2>
+              <p className="text-base text-muted-foreground/70 max-w-2xl mx-auto">
+                The outcomes that consistently make a difference.
+              </p>
+            </div>
             
             <div className="grid md:grid-cols-2 gap-6">
               {/* Ship Reliably */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="rounded-lg border border-gray-300 bg-card p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 ease-out motion-reduce:hover:translate-y-0"
+                className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md hover:border-gray-300 transition-shadow duration-200 ease-out"
               >
-                <h3 className="text-xl font-bold mb-3">Ship Reliably</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Turn ideas into production software with clear ownership, fewer handoffs, and systems teams can depend on from day one.
-                </p>
+                <div className="flex items-start gap-3">
+                  <Shield className="h-5 w-5 text-gray-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-3">Ship Reliably</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      Turn ideas into production software with clear ownership, fewer handoffs, and systems teams can depend on from day one.
+                    </p>
+                  </div>
+                </div>
               </motion.div>
 
               {/* Scale Without Pain */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="rounded-lg border border-gray-300 bg-card p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 ease-out motion-reduce:hover:translate-y-0"
+                className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md hover:border-gray-300 transition-shadow duration-200 ease-out"
               >
-                <h3 className="text-xl font-bold mb-3">Scale Without Pain</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Design software that can grow with usage and requirements without constant re-architecture or rewrites.
-                </p>
+                <div className="flex items-start gap-3">
+                  <TrendingUp className="h-5 w-5 text-gray-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-3">Scale Without Pain</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      Design software that can grow with usage and requirements without constant re-architecture or rewrites.
+                    </p>
+                  </div>
+                </div>
               </motion.div>
 
               {/* Make Smart Technical Decisions */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="rounded-lg border border-gray-300 bg-card p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 ease-out motion-reduce:hover:translate-y-0"
+                className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md hover:border-gray-300 transition-shadow duration-200 ease-out"
               >
-                <h3 className="text-xl font-bold mb-3">Make Smart Technical Decisions</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Balance speed, complexity, and long-term maintainability under real product and operational constraints.
-                </p>
+                <div className="flex items-start gap-3">
+                  <Sliders className="h-5 w-5 text-gray-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-3">Make Smart Technical Decisions</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      Balance speed, complexity, and long-term maintainability under real product and operational constraints.
+                    </p>
+                  </div>
+                </div>
               </motion.div>
 
               {/* Bring AI Into Real Systems */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="rounded-lg border border-gray-300 bg-card p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 ease-out motion-reduce:hover:translate-y-0"
+                className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md hover:border-gray-300 transition-shadow duration-200 ease-out"
               >
-                <h3 className="text-xl font-bold mb-3">Bring AI Into Real Systems</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Integrate AI thoughtfully, with structure, validation, and production constraints that hold up in real systems.
-                </p>
+                <div className="flex items-start gap-3">
+                  <Cpu className="h-5 w-5 text-gray-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-3">Bring AI Into Real Systems</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      Integrate AI thoughtfully, with structure, validation, and production constraints that hold up in real systems.
+                    </p>
+                  </div>
+                </div>
               </motion.div>
             </div>
           </motion.div>
@@ -221,25 +250,25 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <CaseStudyCard
               title="Account Registration Portal"
-              description="Led team of 5 engineers to ship a production account registration system serving 100,000+ users, integrating React front-end with AEM and Java microservices."
-              impact="Launched on schedule, enabled digital account creation at scale, improved conversion rates and user onboarding experience."
-              tags={["React", "AEM", "Java", "Distributed Systems"]}
+              description="Designed and delivered a high-volume account registration platform under strict reliability and compliance constraints, coordinating frontend, backend, and platform teams to ship on schedule."
+              impact="Enabled reliable account creation at scale, improved onboarding conversion, and reduced friction across the registration flow."
+              tags={["React", "AEM", "Java", "OAuth"]}
               delay={0.1}
             />
             
             <CaseStudyCard
               title="Rules-Driven Eligibility System"
-              description="Architected and built a flexible eligibility and dynamic content platform using Next.js, Node.js, Redis, and Postgres to support complex business rules."
-              impact="Reduced manual configuration effort by 70%, enabled rapid rule changes without deployments, improved accuracy of content targeting."
-              tags={["Next.js", "Node.js", "Redis", "PostgreSQL", "Backend Architecture"]}
+              description="Designed a flexible eligibility and decision system that governed access to product features, offers, and workflows, allowing teams to update rules without engineering involvement or service downtime."
+              impact="Lowered the risk, effort, and operational cost of frequent product and policy updates."
+              tags={["Next.js", "Node.js", "Redis", "PostgreSQL"]}
               delay={0.2}
             />
             
             <CaseStudyCard
-              title="AWS Lambda Data Orchestration"
-              description="Built TypeScript-based AWS Lambda workflows to orchestrate Java microservices, Snowflake queries, and S3 data pipelines for financial data processing."
-              impact="Automated data flows, reduced processing time by 60%, improved reliability and observability of critical data operations."
-              tags={["AWS Lambda", "TypeScript", "Snowflake", "S3", "Data Engineering"]}
+              title="AI Translation Platform"
+              description="Built an AI-powered translation workflow that generated localized content for different languages and regions across web applications using structured product and requirements context."
+              impact="Reduced translation costs and turnaround time while improving consistency across localized content."
+              tags={["Github Spec Kit", "OpenAI", "React", "AEM"]}
               delay={0.3}
             />
           </div>
