@@ -293,8 +293,8 @@ export default function Home() {
             <h2 className="font-[family-name:var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
               ModelTriage
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
-              A context engineering platform for comparing, routing, and validating LLM outputs. Applies structured constraints and schemas to make AI workflows reliable at scale.
+            <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed font-light">
+            A decision and verification layer that routes prompts to the right LLM and explains model behavior.
             </p>
           </motion.div>
 
@@ -318,67 +318,64 @@ export default function Home() {
             </div>
           </motion.div>
 
-          {/* What it does */}
+          {/* How It Works & Why It Matters - Side by Side */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="max-w-4xl mx-auto mb-16 p-8 rounded-lg border bg-card shadow-sm"
+            className="max-w-6xl mx-auto mb-16"
           >
-            <h3 className="text-xl font-bold mb-4">What It Does</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              ModelTriage applies context engineering principles to multi-LLM workflows: define structured inputs with explicit constraints, route requests to optimal models based on task requirements, validate outputs against schemas, and compare results across providers. Designed for production systems where reliability matters.
-            </p>
-          </motion.div>
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* How It Works */}
+              <div className="p-8 rounded-lg border bg-card shadow-sm">
+                <h3 className="text-xl font-bold mb-4">How It Works</h3>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                ModelTriage analyzes each request by reading the prompt and scanning any uploaded files to establish context.
+It classifies the task and routes the request to the LLM best suited for that type of work.
+When multiple models are queried, ModelTriage analyzes their responses to identify agreement, disagreement, and unique perspectives.
+                </p>
 
-          {/* Feature Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-            <FeatureCard
-              icon={Network}
-              title="Intelligent Routing"
-              description="Automatically route prompts to the optimal LLM based on task type, cost constraints, and performance requirements."
-              delay={0.1}
-            />
-            <FeatureCard
-              icon={GitCompare}
-              title="Diff & Compare"
-              description="Run the same prompt across multiple models and compare outputs in a clean interface with structured diffs."
-              delay={0.2}
-            />
-            <FeatureCard
-              icon={CheckCircle2}
-              title="Schema Validation"
-              description="Define output schemas, constraints, and validation rules. Enforce structure and catch errors before responses reach production systems."
-              delay={0.3}
-            />
-          </div>
+                <div className="flex flex-wrap gap-3">
+                  <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
+                    <Network className="w-4 h-4 mr-2" />
+                    Intelligent Routing
+                  </Badge>
+                  <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
+                    <GitCompare className="w-4 h-4 mr-2" />
+                    Multi-Model Comparison
+                  </Badge>
+                  <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
+                    <Code2 className="w-4 h-4 mr-2" />
+                    Context Analysis
+                  </Badge>
+                </div>
+              </div>
 
-          {/* Why it matters */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="max-w-4xl mx-auto mb-12 p-8 rounded-lg bg-foreground/[0.02] border"
-          >
-            <h3 className="text-xl font-bold mb-4">Why It Matters</h3>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              LLM outputs vary widely in quality, cost, and reliability. Context engineering brings system design discipline to AI workflows: measurable quality through validation, predictable costs through routing, and production confidence through structured constraints.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
-                <Sparkles className="w-4 h-4 mr-2" />
-                Faster Iteration
-              </Badge>
-              <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
-                <CheckCircle2 className="w-4 h-4 mr-2" />
-                Higher Quality
-              </Badge>
-              <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
-                <Zap className="w-4 h-4 mr-2" />
-                Lower Costs
-              </Badge>
+              {/* Why It Matters */}
+              <div className="p-8 rounded-lg bg-foreground/[0.02] border">
+                <h3 className="text-xl font-bold mb-4">Why It Matters</h3>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  LLM outputs vary widely in quality, cost, and reliability. ModelTriage brings structure to AI decision-making by applying task-aware routing and parallel comparison, giving teams predictable costs, measurable quality, and confidence in model behavior.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  Engineering teams use ModelTriage to evaluate model tradeoffs, validate prompts before production, debug inconsistent behavior across providers, and make model choices based on evidence instead of guesswork.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
+                    <Sparkles className="w-4 h-4 mr-2" />
+                    Faster Iteration
+                  </Badge>
+                  <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
+                    <CheckCircle2 className="w-4 h-4 mr-2" />
+                    Higher Quality
+                  </Badge>
+                  <Badge variant="outline" className="px-4 py-2 text-sm font-medium border-white/20 text-white/90">
+                    <Zap className="w-4 h-4 mr-2" />
+                    Lower Costs
+                  </Badge>
+                </div>
+              </div>
             </div>
           </motion.div>
 
