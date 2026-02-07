@@ -789,14 +789,14 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="relative bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-blue-200 transition-all duration-200 ease-out h-full overflow-hidden"
+                className="group relative bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-blue-200 transition-all duration-200 ease-out h-full overflow-hidden"
               >
                 {/* Left accent bar */}
-                <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-blue-500 to-blue-400"></div>
+                <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-blue-400 to-blue-300 group-hover:from-blue-500 group-hover:to-blue-400 transition-colors duration-200"></div>
                 
                 <div className="flex items-center gap-2.5 mb-4">
-                  <div className="flex items-center justify-center w-6 h-6 bg-blue-500/10 rounded">
-                    <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+                  <div className="flex items-center justify-center w-6 h-6 bg-blue-400/5 group-hover:bg-blue-400/10 rounded transition-colors duration-200">
+                    <div className="w-2 h-2 rounded-full bg-blue-400"></div>
                   </div>
                   <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">Platforms</h3>
                 </div>
@@ -814,14 +814,14 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.15 }}
-                className="relative bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-green-200 transition-all duration-200 ease-out h-full overflow-hidden"
+                className="group relative bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-green-200 transition-all duration-200 ease-out h-full overflow-hidden"
               >
                 {/* Left accent bar */}
-                <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-green-500 to-green-400"></div>
+                <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-green-400 to-green-300 group-hover:from-green-500 group-hover:to-green-400 transition-colors duration-200"></div>
                 
                 <div className="flex items-center gap-2.5 mb-4">
-                  <div className="flex items-center justify-center w-6 h-6 bg-green-500/10 rounded">
-                    <div className="w-2 h-2 bg-green-500" style={{ clipPath: 'polygon(50% 0%, 100% 100%, 0% 100%)' }}></div>
+                  <div className="flex items-center justify-center w-6 h-6 bg-green-400/5 group-hover:bg-green-400/10 rounded transition-colors duration-200">
+                    <div className="w-2 h-2 bg-green-400" style={{ clipPath: 'polygon(50% 0%, 100% 100%, 0% 100%)' }}></div>
                   </div>
                   <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">Data Systems</h3>
                 </div>
@@ -840,14 +840,14 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="relative bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-200 ease-out h-full overflow-hidden"
+                className="group relative bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-200 ease-out h-full overflow-hidden"
               >
                 {/* Left accent bar */}
-                <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-purple-500 to-purple-400"></div>
+                <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-purple-400 to-purple-300 group-hover:from-purple-500 group-hover:to-purple-400 transition-colors duration-200"></div>
                 
                 <div className="flex items-center gap-2.5 mb-4">
-                  <div className="flex items-center justify-center w-6 h-6 bg-purple-500/10 rounded">
-                    <div className="w-2 h-2 bg-purple-500"></div>
+                  <div className="flex items-center justify-center w-6 h-6 bg-purple-400/5 group-hover:bg-purple-400/10 rounded transition-colors duration-200">
+                    <div className="w-2 h-2 bg-purple-400"></div>
                   </div>
                   <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">AI Tools</h3>
                 </div>
