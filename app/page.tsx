@@ -695,28 +695,21 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-6"
+            className="text-center mb-8"
           >
-            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-2">
+            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
               Tech Stack
             </h2>
-            <p className="text-sm text-gray-600 max-w-2xl mx-auto leading-tight mb-3">
+            <p className="text-base text-gray-700 max-w-xl mx-auto leading-relaxed mb-5">
               Technologies I use to build and ship production systems.
             </p>
-            {/* Credibility Strip */}
-            <div className="flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-gray-500">
-              <span className="flex items-center gap-1.5">
-                <span className="w-1 h-1 rounded-full bg-gray-400"></span>
-                Frontend + full stack
-              </span>
-              <span className="flex items-center gap-1.5">
-                <span className="w-1 h-1 rounded-full bg-gray-400"></span>
-                Serverless + APIs
-              </span>
-              <span className="flex items-center gap-1.5">
-                <span className="w-1 h-1 rounded-full bg-gray-400"></span>
-                Data + pipelines
-              </span>
+            {/* Capability Strip */}
+            <div className="flex flex-wrap items-center justify-center gap-x-3 text-base font-medium text-gray-700">
+              <span>Frontend & Backend</span>
+              <span className="text-gray-400">|</span>
+              <span>Serverless Systems</span>
+              <span className="text-gray-400">|</span>
+              <span>Data Storage</span>
             </div>
           </motion.div>
 
@@ -727,7 +720,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="relative bg-gradient-to-br from-gray-100 via-gray-50 to-white border-2 border-gray-300 rounded-xl px-6 py-4 shadow-sm"
+              className="relative bg-gradient-to-br from-gray-100 via-gray-50 to-white border-2 border-gray-300 rounded-xl px-6 pt-3 pb-4 shadow-sm"
               style={{
                 background: 'radial-gradient(circle at top left, rgb(249, 250, 251) 0%, rgb(255, 255, 255) 50%, rgb(249, 250, 251) 100%)'
               }}
@@ -740,22 +733,22 @@ export default function Home() {
               </div>
               
               {/* Shape Badge */}
-              <div className="flex items-center gap-2.5 mb-4">
+              <div className="flex items-center gap-2.5 mb-3">
                 <div className="flex items-center justify-center w-6 h-6 bg-gray-900/5 rounded">
                   <div className="w-2 h-2 rotate-45 bg-gray-900"></div>
                 </div>
                 <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">Core Stack</h3>
               </div>              
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="flex flex-col items-start justify-center lg:pr-6 lg:border-r lg:border-gray-300/40">
+                <div className="flex flex-col items-start justify-center lg:pr-6 lg:border-r lg:border-gray-300/25">
                   <span className="text-[9px] text-gray-500 uppercase tracking-wider font-medium mb-1.5">LANG</span>
                   <span className="text-base font-bold text-gray-900">TypeScript</span>
                 </div>
-                <div className="flex flex-col items-start justify-center lg:pr-6 lg:border-r lg:border-gray-300/40">
+                <div className="flex flex-col items-start justify-center lg:pr-6 lg:border-r lg:border-gray-300/25">
                   <span className="text-[9px] text-gray-500 uppercase tracking-wider font-medium mb-1.5">RUNTIME</span>
                   <span className="text-base font-bold text-gray-900">Node.js</span>
                 </div>
-                <div className="flex flex-col items-start justify-center lg:pr-6 lg:border-r lg:border-gray-300/40">
+                <div className="flex flex-col items-start justify-center lg:pr-6 lg:border-r lg:border-gray-300/25">
                   <span className="text-[9px] text-gray-500 uppercase tracking-wider font-medium mb-1.5">DB</span>
                   <span className="text-base font-bold text-gray-900">PostgreSQL</span>
                 </div>
@@ -795,14 +788,9 @@ export default function Home() {
                     <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
                     <span className="text-[15px] font-bold text-gray-900 leading-snug">Next.js</span>
                   </div>
-                  <div className="flex items-center gap-2 py-1.5">
-                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Angular</span>
-                  </div>
-                  <div className="flex items-center gap-2 py-1.5">
-                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
-                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Vue.js</span>
-                  </div>
+                </div>
+                <div className="mt-3 pt-2 border-t border-gray-100">
+                  <p className="text-sm text-gray-500">Also: Angular, Vue</p>
                 </div>
               </motion.div>
 
