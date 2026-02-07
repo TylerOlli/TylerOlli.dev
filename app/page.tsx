@@ -695,12 +695,12 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-8"
+            className="text-center mb-6"
           >
-            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-3">
+            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-2">
               Tech Stack
             </h2>
-            <p className="text-sm text-gray-600 max-w-2xl mx-auto leading-tight mb-4">
+            <p className="text-sm text-gray-600 max-w-2xl mx-auto leading-tight mb-3">
               Technologies I use to build and ship production systems.
             </p>
             {/* Credibility Strip */}
@@ -720,14 +720,14 @@ export default function Home() {
             </div>
           </motion.div>
 
-          <div className="max-w-4xl mx-auto space-y-5">
+          <div className="max-w-4xl mx-auto space-y-4">
             {/* Core Stack - Hero Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="relative bg-gradient-to-br from-gray-100 via-gray-50 to-white border-2 border-gray-300 rounded-xl p-6 shadow-sm"
+              className="relative bg-gradient-to-br from-gray-100 via-gray-50 to-white border-2 border-gray-300 rounded-xl p-5 shadow-sm"
               style={{
                 background: 'radial-gradient(circle at top left, rgb(249, 250, 251) 0%, rgb(255, 255, 255) 50%, rgb(249, 250, 251) 100%)'
               }}
@@ -740,42 +740,42 @@ export default function Home() {
               </div>
               
               {/* Shape Badge */}
-              <div className="flex items-center gap-2.5 mb-4">
+              <div className="flex items-center gap-2.5 mb-3">
                 <div className="flex items-center justify-center w-6 h-6 bg-gray-900/5 rounded">
                   <div className="w-2 h-2 rotate-45 bg-gray-900"></div>
                 </div>
                 <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">Core Stack</h3>
               </div>              
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
-                <div className="flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0"></span>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                <div className="flex items-baseline gap-2">
+                  <span className="w-20 sm:w-24 md:w-28 text-[10px] text-gray-500 uppercase tracking-wide font-medium text-right shrink-0">LANG</span>
+                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0 mt-1.5"></span>
                   <span className="text-sm font-semibold text-gray-900">TypeScript</span>
-                  <span className="text-[10px] text-gray-400 ml-auto uppercase tracking-wide">Lang</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0"></span>
+                <div className="flex items-baseline gap-2">
+                  <span className="w-20 sm:w-24 md:w-28 text-[10px] text-gray-500 uppercase tracking-wide font-medium text-right shrink-0">UI</span>
+                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0 mt-1.5"></span>
                   <span className="text-sm font-semibold text-gray-900">React</span>
-                  <span className="text-[10px] text-gray-400 ml-auto uppercase tracking-wide">UI</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0"></span>
+                <div className="flex items-baseline gap-2">
+                  <span className="w-20 sm:w-24 md:w-28 text-[10px] text-gray-500 uppercase tracking-wide font-medium text-right shrink-0">FRAMEWORK</span>
+                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0 mt-1.5"></span>
                   <span className="text-sm font-semibold text-gray-900">Next.js</span>
-                  <span className="text-[10px] text-gray-400 ml-auto uppercase tracking-wide">Framework</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0"></span>
+                <div className="flex items-baseline gap-2">
+                  <span className="w-20 sm:w-24 md:w-28 text-[10px] text-gray-500 uppercase tracking-wide font-medium text-right shrink-0">RUNTIME</span>
+                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0 mt-1.5"></span>
                   <span className="text-sm font-semibold text-gray-900">Node.js</span>
-                  <span className="text-[10px] text-gray-400 ml-auto uppercase tracking-wide">Runtime</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0"></span>
+                <div className="flex items-baseline gap-2">
+                  <span className="w-20 sm:w-24 md:w-28 text-[10px] text-gray-500 uppercase tracking-wide font-medium text-right shrink-0">DB</span>
+                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0 mt-1.5"></span>
                   <span className="text-sm font-semibold text-gray-900">PostgreSQL</span>
-                  <span className="text-[10px] text-gray-400 ml-auto uppercase tracking-wide">DB</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0"></span>
+                <div className="flex items-baseline gap-2">
+                  <span className="w-20 sm:w-24 md:w-28 text-[10px] text-gray-500 uppercase tracking-wide font-medium text-right shrink-0">COMPUTE</span>
+                  <span className="w-1 h-1 rounded-full bg-gray-400 flex-shrink-0 mt-1.5"></span>
                   <span className="text-sm font-semibold text-gray-900">AWS Lambda</span>
-                  <span className="text-[10px] text-gray-400 ml-auto uppercase tracking-wide">Compute</span>
                 </div>
               </div>
             </motion.div>
@@ -789,21 +789,30 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="group relative bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-blue-200 transition-all duration-200 ease-out h-full overflow-hidden"
+                className="group relative bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md hover:border-blue-200 transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-blue-400 to-blue-300 group-hover:from-blue-500 group-hover:to-blue-400 transition-colors duration-200"></div>
                 
-                <div className="flex items-center gap-2.5 mb-4">
+                <div className="flex items-center gap-2.5 mb-2.5">
                   <div className="flex items-center justify-center w-6 h-6 bg-blue-400/5 group-hover:bg-blue-400/10 rounded transition-colors duration-200">
                     <div className="w-2 h-2 rounded-full bg-blue-400"></div>
                   </div>
                   <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">Platforms</h3>
                 </div>
-                <div className="space-y-2 text-sm font-semibold text-gray-800 leading-tight">
-                  <div>AEM</div>
-                  <div>AWS Lambda</div>
-                  <div>Amazon S3</div>
+                <div className="divide-y divide-gray-100">
+                  <div className="flex items-center gap-2 py-1.5">
+                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Adobe Experience Manager</span>
+                  </div>
+                  <div className="flex items-center gap-2 py-1.5">
+                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">AWS Lambda</span>
+                  </div>
+                  <div className="flex items-center gap-2 py-1.5">
+                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Amazon S3</span>
+                  </div>
                 </div>
               </motion.div>
 
@@ -814,22 +823,34 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.15 }}
-                className="group relative bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-green-200 transition-all duration-200 ease-out h-full overflow-hidden"
+                className="group relative bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md hover:border-green-200 transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-green-400 to-green-300 group-hover:from-green-500 group-hover:to-green-400 transition-colors duration-200"></div>
                 
-                <div className="flex items-center gap-2.5 mb-4">
+                <div className="flex items-center gap-2.5 mb-2.5">
                   <div className="flex items-center justify-center w-6 h-6 bg-green-400/5 group-hover:bg-green-400/10 rounded transition-colors duration-200">
                     <div className="w-2 h-2 bg-green-400" style={{ clipPath: 'polygon(50% 0%, 100% 100%, 0% 100%)' }}></div>
                   </div>
                   <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">Data Systems</h3>
                 </div>
-                <div className="space-y-2 text-sm font-semibold text-gray-800 leading-tight">
-                  <div>MongoDB</div>
-                  <div>Redis</div>
-                  <div>Snowflake</div>
-                  <div>SQL</div>
+                <div className="divide-y divide-gray-100">
+                  <div className="flex items-center gap-2 py-1.5">
+                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">MongoDB</span>
+                  </div>
+                  <div className="flex items-center gap-2 py-1.5">
+                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Redis</span>
+                  </div>
+                  <div className="flex items-center gap-2 py-1.5">
+                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Snowflake</span>
+                  </div>
+                  <div className="flex items-center gap-2 py-1.5">
+                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">SQL</span>
+                  </div>
                 </div>
               </motion.div>
 
@@ -840,23 +861,38 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="group relative bg-white border border-gray-200 rounded-lg p-5 shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-200 ease-out h-full overflow-hidden"
+                className="group relative bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md hover:border-purple-200 transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-purple-400 to-purple-300 group-hover:from-purple-500 group-hover:to-purple-400 transition-colors duration-200"></div>
                 
-                <div className="flex items-center gap-2.5 mb-4">
+                <div className="flex items-center gap-2.5 mb-2.5">
                   <div className="flex items-center justify-center w-6 h-6 bg-purple-400/5 group-hover:bg-purple-400/10 rounded transition-colors duration-200">
                     <div className="w-2 h-2 bg-purple-400"></div>
                   </div>
                   <h3 className="text-[11px] font-bold text-gray-900 uppercase tracking-[0.1em]">AI Tools</h3>
                 </div>
-                <div className="space-y-2 text-sm font-semibold text-gray-800 leading-tight">
-                  <div>Cursor</div>
-                  <div>GitHub Copilot</div>
-                  <div>ChatGPT</div>
-                  <div>Claude</div>
-                  <div>Gemini</div>
+                <div className="divide-y divide-gray-100">
+                  <div className="flex items-center gap-2 py-1.5">
+                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Cursor</span>
+                  </div>
+                  <div className="flex items-center gap-2 py-1.5">
+                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">GitHub Copilot</span>
+                  </div>
+                  <div className="flex items-center gap-2 py-1.5">
+                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">ChatGPT</span>
+                  </div>
+                  <div className="flex items-center gap-2 py-1.5">
+                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Claude</span>
+                  </div>
+                  <div className="flex items-center gap-2 py-1.5">
+                    <span className="w-1 h-1 rounded-full bg-gray-300 flex-shrink-0"></span>
+                    <span className="text-[15px] font-bold text-gray-900 leading-snug">Gemini</span>
+                  </div>
                 </div>
               </motion.div>
             </div>
