@@ -17,7 +17,10 @@ export function Pill({ children, tone = "ui", className, onClick }: PillProps) {
   
   // Tone-specific classes using semantic accent tokens
   const toneClasses = {
-    ui: "text-ui-text-secondary border-accent-ui/10 bg-accent-ui/5 hover:border-accent-ui-light hover:bg-accent-ui/10 hover:shadow-sm focus-visible:ring-accent-ui-light",
+    // Blue accent (Case Studies) - visible at rest, BOLD blue on hover
+    ui: "text-ui-text-secondary border-accent-ui/40 bg-accent-ui/7 hover:border-accent-ui hover:bg-accent-ui/20 hover:shadow-sm focus-visible:ring-accent-ui-light",
+    
+    // Green accent (ModelTriage) - neutral gray at rest, green on hover
     data: "text-white border-white/40 bg-accent-data/5 hover:border-accent-data-light hover:bg-accent-data/10 hover:shadow-sm focus-visible:ring-accent-data-light"
   }
   
