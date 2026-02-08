@@ -338,7 +338,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="max-w-4xl mx-auto mb-12"
           >
-            <div className="relative w-full rounded-lg border border-accent-data/20 hover:border-accent-data/30 transition-colors duration-200 overflow-hidden" style={{ filter: 'brightness(0.94)' }}>
+            <div className="relative w-full rounded-lg border border-white/10 overflow-hidden shadow-lg" style={{ filter: 'brightness(0.94)' }}>
               <Image
                 src="/modeltriage-screenshot.png"
                 alt="ModelTriage interface showing LLM comparison and routing"
@@ -465,7 +465,7 @@ export default function Home() {
             className="flex flex-col items-center justify-center gap-4"
           >
             <a href="https://modeltriage.com" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="group px-8">
+              <Button size="lg" className="group modeltriage-cta px-8">
                 Visit ModelTriage
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
