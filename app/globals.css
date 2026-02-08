@@ -164,10 +164,6 @@
     color: hsl(0 0% 70%);
   }
   
-  .section-dark .border {
-    border-color: hsl(0 0% 20%);
-  }
-  
   .section-dark .bg-card {
     background-color: hsl(0 0% 12%);
     color: hsl(0 0% 98%);

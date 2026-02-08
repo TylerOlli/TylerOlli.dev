@@ -43,7 +43,7 @@ export function CaseStudyCard({
           </div>
           <div className="flex flex-wrap gap-1.5">
             {tags.map((tag) => (
-              <Pill key={tag}>{tag}</Pill>
+              <Pill key={tag} tone="ui">{tag}</Pill>
             ))}
           </div>
         </CardContent>

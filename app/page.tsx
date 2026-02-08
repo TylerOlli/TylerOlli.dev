@@ -413,7 +413,7 @@ export default function Home() {
             </div>
             <div className="flex flex-wrap justify-center gap-2">
               {["Next.js", "TypeScript", "OpenAI", "Anthropic", "Google AI", "Vercel", "Postgres", "Tailwind"].map((tech) => (
-                <Pill key={tech} variant="dark">{tech}</Pill>
+                <Pill key={tech} tone="data">{tech}</Pill>
               ))}
             </div>
           </motion.div>
