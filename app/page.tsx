@@ -136,12 +136,12 @@ export default function Home() {
             className="max-w-5xl mx-auto"
           >
             <div className="text-center mb-12">
-              <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-3">
+              <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
                 What I Help Teams Do
               </h2>
               {/* Subtle divider */}
-              <div className="flex justify-center mb-3">
-                <div className="w-full max-w-md h-[3px] bg-accent-ui"></div>
+              <div className="flex justify-center mb-4">
+                <div className="w-48 h-[2px] bg-accent-ui"></div>
               </div>
               <p className="text-base text-muted-foreground/70 max-w-2xl mx-auto">
                 The outcomes that consistently make a difference.
@@ -263,12 +263,12 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-5">
               Selected Case Studies
             </h2>
             {/* Divider */}
-            <div className="flex justify-center mb-4">
-              <div className="w-full max-w-md h-[3px] bg-accent-ui"></div>
+            <div className="flex justify-center mb-5">
+              <div className="w-48 h-[2px] bg-accent-ui"></div>
             </div>
             <p className="text-base text-muted-foreground max-w-2xl mx-auto font-light">
               High-impact projects that scaled systems, improved workflows, and delivered value.
@@ -318,12 +318,12 @@ export default function Home() {
             <Badge variant="outline" className="mb-4 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider border-white/20 text-white/90">
               Product Spotlight
             </Badge>
-            <h2 className="font-[family-name:var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+            <h2 className="font-[family-name:var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-5">
               ModelTriage
             </h2>
             {/* Divider */}
-            <div className="flex justify-center mb-6">
-              <div className="w-full max-w-md h-[3px] bg-accent-data"></div>
+            <div className="flex justify-center mb-7">
+              <div className="w-40 h-[2px] bg-accent-data"></div>
             </div>
             <p className="text-lg text-white max-w-4xl mx-auto leading-relaxed font-light">
             A decision and verification layer that routes prompts to the right LLM and explains model behavior.
@@ -488,12 +488,12 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto mb-10"
           >
-            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-center">
+            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-5 text-center">
               AI in My Engineering Workflow
             </h2>
             {/* Divider */}
-            <div className="flex justify-center mb-6">
-              <div className="w-full max-w-md h-[3px] bg-accent-ai"></div>
+            <div className="flex justify-center mb-7">
+              <div className="w-56 h-[2px] bg-accent-ai"></div>
             </div>
             <div className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               <p>
@@ -638,12 +638,12 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-3 text-center">
+            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 text-center">
               Experience
             </h2>
             {/* Divider */}
             <div className="flex justify-center mb-12">
-              <div className="w-full max-w-md h-[3px] bg-accent-ui"></div>
+              <div className="w-36 h-[2px] bg-accent-ui"></div>
             </div>
 
             <div className="relative border-l-2 border-ui-border-subtle pl-8">
@@ -760,12 +760,12 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-8"
           >
-            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-5">
               Tech Stack
             </h2>
             {/* Divider */}
-            <div className="flex justify-center mb-4">
-              <div className="w-full max-w-md h-[3px] bg-accent-ui"></div>
+            <div className="flex justify-center mb-5">
+              <div className="w-36 h-[2px] bg-accent-ui"></div>
             </div>
             <p className="text-base text-ui-text-secondary max-w-xl mx-auto leading-relaxed mb-5">
               Technologies I use to build and ship production systems.
