@@ -123,6 +123,84 @@ Where `{category}` is one of: `ui`, `data`, `ai`
 
 ---
 
+## Pattern: Multi-Accent Cards (Calm Rest → Rewarding Hover)
+
+For content cards that use different accent colors per card (e.g., "What I Help Teams Do" section), use the **calm rest → intensify hover** pattern:
+
+### Design Philosophy
+- **At rest**: Subtle accent hints that don't compete for attention
+- **On hover**: Clear accent intensification that feels rewarding
+- **Transition**: Smooth 200ms ease-out matching site-wide interaction speed
+
+### Implementation Pattern
+
+```tsx
+<motion.div
+  whileHover={{ y: -2 }}
+  className="group relative rounded-lg border border-ui-border-subtle bg-ui-bg-surface p-6 
+             shadow-sm hover:shadow-md hover:border-accent-{category}-light 
+             transition-all duration-200 ease-out overflow-hidden"
+>
+  {/* Left accent bar - lighter at rest (50% opacity), intensifies on hover */}
+  <div className="absolute left-0 top-0 bottom-0 w-[2px] 
+       bg-gradient-to-b from-accent-{category}-light/50 to-accent-{category}-mid/50 
+       group-hover:from-accent-{category} group-hover:to-accent-{category}-mid 
+       transition-colors duration-200">
+  </div>
+  
+  <div className="flex items-start gap-3">
+    {/* Icon container - subtle bg at rest, intensifies on hover */}
+    <div className="flex items-center justify-center w-8 h-8 
+         bg-accent-{category}/5 group-hover:bg-accent-{category}/10 
+         rounded transition-colors duration-200 flex-shrink-0 mt-0.5">
+      {/* Icon - 70% opacity at rest, full opacity on hover */}
+      <Icon className="h-5 w-5 text-accent-{category}/70 
+                      group-hover:text-accent-{category} 
+                      transition-colors duration-200" />
+    </div>
+    <div>
+      <h3 className="text-xl font-bold mb-3">Card Title</h3>
+      <p className="text-sm text-muted-foreground leading-relaxed">
+        Card content...
+      </p>
+    </div>
+  </div>
+</motion.div>
+```
+
+### Rest vs Hover States
+
+| Element | Rest | Hover | Change |
+|---------|------|-------|--------|
+| **Left accent bar** | `{color}-light/50` → `{color}-mid/50` | `{color}` → `{color}-mid` | 2× opacity + stronger gradient |
+| **Icon container bg** | `{color}/5` | `{color}/10` | 2× opacity |
+| **Icon color** | `{color}/70` | `{color}` | Full opacity |
+| **Card border** | `ui-border-subtle` | `{color}-light` | Accent identity |
+| **Card shadow** | `shadow-sm` | `shadow-md` | Subtle lift |
+| **Card position** | `y: 0` | `y: -2` | 2px lift (Framer Motion) |
+
+### Usage Examples
+
+**"What I Help Teams Do" section**:
+- Ship Reliably → `accent-ui` (blue)
+- Scale Without Pain → `accent-ui` (blue)
+- Make Smart Technical Decisions → `accent-data` (green)
+- Bring AI Into Real Systems → `accent-ai` (purple)
+
+### Key Differences from Tech Stack Cards
+
+1. **Lighter rest state**: Uses `/50` opacity on accent bar to stay calm
+2. **Icon opacity**: Icons fade in from 70% → 100% on hover
+3. **Framer Motion lift**: Cards lift 2px on hover for tactile feedback
+4. **Multi-accent per section**: Each card can use a different accent color
+
+### Accessibility Notes
+- Hover effects are purely additive (cards are fully functional without hover)
+- Color is not the only differentiator (icons and text provide context)
+- Respects `prefers-reduced-motion` via Framer Motion
+
+---
+
 ## Implementation Notes
 
 ### Opacity Support

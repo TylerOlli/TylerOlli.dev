@@ -145,17 +145,22 @@ export default function Home() {
             </div>
             
             <div className="grid md:grid-cols-2 gap-6">
-              {/* Ship Reliably */}
+              {/* Ship Reliably - Blue (UI) */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="rounded-lg border border-ui-border-subtle bg-ui-bg-surface p-6 shadow-sm hover:shadow-md hover:border-ui-border-default transition-shadow duration-200 ease-out"
+                className="group relative rounded-lg border border-ui-border-subtle bg-ui-bg-surface p-6 shadow-sm hover:shadow-md hover:border-accent-ui-light transition-all duration-200 ease-out overflow-hidden"
               >
+                {/* Left accent bar - lighter at rest, intensifies on hover */}
+                <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ui-light/50 to-accent-ui-mid/50 group-hover:from-accent-ui group-hover:to-accent-ui-mid transition-colors duration-200"></div>
+                
                 <div className="flex items-start gap-3">
-                  <Shield className="h-5 w-5 text-ui-text-tertiary mt-1 flex-shrink-0" />
+                  <div className="flex items-center justify-center w-8 h-8 bg-accent-ui/5 group-hover:bg-accent-ui/10 rounded transition-colors duration-200 flex-shrink-0 mt-0.5">
+                    <Shield className="h-5 w-5 text-accent-ui/70 group-hover:text-accent-ui transition-colors duration-200" />
+                  </div>
                   <div>
                     <h3 className="text-xl font-bold mb-3">Ship Reliably</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
@@ -165,17 +170,22 @@ export default function Home() {
                 </div>
               </motion.div>
 
-              {/* Scale Without Pain */}
+              {/* Scale Without Pain - Blue (UI) */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="rounded-lg border border-ui-border-subtle bg-ui-bg-surface p-6 shadow-sm hover:shadow-md hover:border-ui-border-default transition-shadow duration-200 ease-out"
+                className="group relative rounded-lg border border-ui-border-subtle bg-ui-bg-surface p-6 shadow-sm hover:shadow-md hover:border-accent-ui-light transition-all duration-200 ease-out overflow-hidden"
               >
+                {/* Left accent bar - lighter at rest, intensifies on hover */}
+                <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ui-light/50 to-accent-ui-mid/50 group-hover:from-accent-ui group-hover:to-accent-ui-mid transition-colors duration-200"></div>
+                
                 <div className="flex items-start gap-3">
-                  <TrendingUp className="h-5 w-5 text-ui-text-tertiary mt-1 flex-shrink-0" />
+                  <div className="flex items-center justify-center w-8 h-8 bg-accent-ui/5 group-hover:bg-accent-ui/10 rounded transition-colors duration-200 flex-shrink-0 mt-0.5">
+                    <TrendingUp className="h-5 w-5 text-accent-ui/70 group-hover:text-accent-ui transition-colors duration-200" />
+                  </div>
                   <div>
                     <h3 className="text-xl font-bold mb-3">Scale Without Pain</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
@@ -185,17 +195,22 @@ export default function Home() {
                 </div>
               </motion.div>
 
-              {/* Make Smart Technical Decisions */}
+              {/* Make Smart Technical Decisions - Green (Data) */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="rounded-lg border border-ui-border-subtle bg-ui-bg-surface p-6 shadow-sm hover:shadow-md hover:border-ui-border-default transition-shadow duration-200 ease-out"
+                className="group relative rounded-lg border border-ui-border-subtle bg-ui-bg-surface p-6 shadow-sm hover:shadow-md hover:border-accent-data-light transition-all duration-200 ease-out overflow-hidden"
               >
+                {/* Left accent bar - lighter at rest, intensifies on hover */}
+                <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-data-light/50 to-accent-data-mid/50 group-hover:from-accent-data group-hover:to-accent-data-mid transition-colors duration-200"></div>
+                
                 <div className="flex items-start gap-3">
-                  <Sliders className="h-5 w-5 text-ui-text-tertiary mt-1 flex-shrink-0" />
+                  <div className="flex items-center justify-center w-8 h-8 bg-accent-data/5 group-hover:bg-accent-data/10 rounded transition-colors duration-200 flex-shrink-0 mt-0.5">
+                    <Sliders className="h-5 w-5 text-accent-data/70 group-hover:text-accent-data transition-colors duration-200" />
+                  </div>
                   <div>
                     <h3 className="text-xl font-bold mb-3">Make Smart Technical Decisions</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
@@ -205,17 +220,22 @@ export default function Home() {
                 </div>
               </motion.div>
 
-              {/* Bring AI Into Real Systems */}
+              {/* Bring AI Into Real Systems - Purple (AI) */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="rounded-lg border border-ui-border-subtle bg-ui-bg-surface p-6 shadow-sm hover:shadow-md hover:border-ui-border-default transition-shadow duration-200 ease-out"
+                className="group relative rounded-lg border border-ui-border-subtle bg-ui-bg-surface p-6 shadow-sm hover:shadow-md hover:border-accent-ai-light transition-all duration-200 ease-out overflow-hidden"
               >
+                {/* Left accent bar - lighter at rest, intensifies on hover */}
+                <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ai-light/50 to-accent-ai-mid/50 group-hover:from-accent-ai group-hover:to-accent-ai-mid transition-colors duration-200"></div>
+                
                 <div className="flex items-start gap-3">
-                  <Cpu className="h-5 w-5 text-ui-text-tertiary mt-1 flex-shrink-0" />
+                  <div className="flex items-center justify-center w-8 h-8 bg-accent-ai/5 group-hover:bg-accent-ai/10 rounded transition-colors duration-200 flex-shrink-0 mt-0.5">
+                    <Cpu className="h-5 w-5 text-accent-ai/70 group-hover:text-accent-ai transition-colors duration-200" />
+                  </div>
                   <div>
                     <h3 className="text-xl font-bold mb-3">Bring AI Into Real Systems</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
