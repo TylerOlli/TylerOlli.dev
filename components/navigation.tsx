@@ -58,19 +58,19 @@ export function Navigation() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "px-2 sm:px-3 py-1.5 text-[11px] sm:text-[13px] font-normal transition-all relative group whitespace-nowrap flex-shrink-0",
+                  "px-2 sm:px-3 py-1.5 text-[11px] sm:text-[13px] font-normal transition-all duration-200 relative group whitespace-nowrap flex-shrink-0",
                   activeSection === item.href.slice(1)
-                    ? "text-foreground"
-                    : "text-muted-foreground/80 hover:text-foreground"
+                    ? "text-[#1E3A8A] font-medium"
+                    : "text-foreground/75 hover:text-[#1E3A8A]"
                 )}
               >
                 {item.label}
                 <span 
                   className={cn(
-                    "absolute bottom-0 left-2 sm:left-3 right-2 sm:right-3 h-[1px] bg-foreground transition-opacity",
+                    "absolute bottom-0 left-2 sm:left-3 right-2 sm:right-3 h-[2px] bg-[#1E3A8A] transition-opacity duration-200",
                     activeSection === item.href.slice(1)
                       ? "opacity-100"
-                      : "opacity-0 group-hover:opacity-40"
+                      : "opacity-0 group-hover:opacity-100"
                   )}
                 />
               </Link>
