@@ -158,8 +158,8 @@ export default function Home() {
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ui-light/50 to-accent-ui-mid/50 group-hover:from-accent-ui group-hover:to-accent-ui-mid transition-colors duration-200"></div>
                 
                 <div className="flex items-start gap-3">
-                  <div className="flex items-center justify-center w-8 h-8 bg-accent-ui/5 group-hover:bg-accent-ui/10 rounded transition-colors duration-200 flex-shrink-0 mt-0.5">
-                    <Shield className="h-5 w-5 text-accent-ui/70 group-hover:text-accent-ui transition-colors duration-200" />
+                  <div className="flex items-center justify-center w-8 h-8 bg-accent-ui/10 group-hover:bg-accent-ui/15 rounded transition-colors duration-200 flex-shrink-0 mt-0.5">
+                    <Shield className="h-5 w-5 text-accent-ui" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-3">Ship Reliably</h3>
@@ -183,8 +183,8 @@ export default function Home() {
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ui-light/50 to-accent-ui-mid/50 group-hover:from-accent-ui group-hover:to-accent-ui-mid transition-colors duration-200"></div>
                 
                 <div className="flex items-start gap-3">
-                  <div className="flex items-center justify-center w-8 h-8 bg-accent-ui/5 group-hover:bg-accent-ui/10 rounded transition-colors duration-200 flex-shrink-0 mt-0.5">
-                    <TrendingUp className="h-5 w-5 text-accent-ui/70 group-hover:text-accent-ui transition-colors duration-200" />
+                  <div className="flex items-center justify-center w-8 h-8 bg-accent-ui/10 group-hover:bg-accent-ui/15 rounded transition-colors duration-200 flex-shrink-0 mt-0.5">
+                    <TrendingUp className="h-5 w-5 text-accent-ui" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-3">Scale Without Pain</h3>
@@ -208,8 +208,8 @@ export default function Home() {
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-data-light/50 to-accent-data-mid/50 group-hover:from-accent-data group-hover:to-accent-data-mid transition-colors duration-200"></div>
                 
                 <div className="flex items-start gap-3">
-                  <div className="flex items-center justify-center w-8 h-8 bg-accent-data/5 group-hover:bg-accent-data/10 rounded transition-colors duration-200 flex-shrink-0 mt-0.5">
-                    <Sliders className="h-5 w-5 text-accent-data/70 group-hover:text-accent-data transition-colors duration-200" />
+                  <div className="flex items-center justify-center w-8 h-8 bg-accent-data/10 group-hover:bg-accent-data/15 rounded transition-colors duration-200 flex-shrink-0 mt-0.5">
+                    <Sliders className="h-5 w-5 text-accent-data" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-3">Make Smart Technical Decisions</h3>
@@ -233,8 +233,8 @@ export default function Home() {
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ai-light/50 to-accent-ai-mid/50 group-hover:from-accent-ai group-hover:to-accent-ai-mid transition-colors duration-200"></div>
                 
                 <div className="flex items-start gap-3">
-                  <div className="flex items-center justify-center w-8 h-8 bg-accent-ai/5 group-hover:bg-accent-ai/10 rounded transition-colors duration-200 flex-shrink-0 mt-0.5">
-                    <Cpu className="h-5 w-5 text-accent-ai/70 group-hover:text-accent-ai transition-colors duration-200" />
+                  <div className="flex items-center justify-center w-8 h-8 bg-accent-ai/10 group-hover:bg-accent-ai/15 rounded transition-colors duration-200 flex-shrink-0 mt-0.5">
+                    <Cpu className="h-5 w-5 text-accent-ai" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-3">Bring AI Into Real Systems</h3>
