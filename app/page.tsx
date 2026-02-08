@@ -44,7 +44,7 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <Badge variant="secondary" className="mb-4 px-5 py-2 text-sm font-semibold uppercase tracking-wider bg-white/50 backdrop-blur-sm border border-[#3B82F6]/40 text-[#2563EB]">
+              <Badge variant="secondary" className="mb-4 px-5 py-2 text-sm font-semibold uppercase tracking-wider bg-white/50 backdrop-blur-sm border border-[#3B82F6]/40 text-[#2563EB] hover:bg-[#1E3A8A]/[0.06] hover:border-[#3B82F6]/50 transition-all duration-200 cursor-default">
                 Senior Software Engineer
               </Badge>
             </motion.div>
