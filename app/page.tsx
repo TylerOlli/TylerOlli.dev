@@ -139,6 +139,10 @@ export default function Home() {
               <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-3">
                 What I Help Teams Do
               </h2>
+              {/* Subtle divider */}
+              <div className="flex justify-center mb-3">
+                <div className="w-full max-w-md h-[3px] bg-accent-ui"></div>
+              </div>
               <p className="text-base text-muted-foreground/70 max-w-2xl mx-auto">
                 The outcomes that consistently make a difference.
               </p>
@@ -152,7 +156,7 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="group relative rounded-lg border border-ui-border-subtle bg-accent-ui/5 group-hover:bg-accent-ui/8 p-6 shadow-sm hover:shadow-lg transition-all duration-200 ease-out overflow-hidden"
+                className="group relative rounded-lg border border-ui-border-subtle bg-accent-ui/5 group-hover:bg-accent-ui/12 p-6 shadow-sm hover:shadow-lg transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar - lighter at rest, intensifies on hover */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ui-light/50 to-accent-ui-mid/50 group-hover:from-accent-ui group-hover:to-accent-ui-mid transition-colors duration-200"></div>
@@ -177,7 +181,7 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="group relative rounded-lg border border-ui-border-subtle bg-accent-ui/5 group-hover:bg-accent-ui/8 p-6 shadow-sm hover:shadow-lg transition-all duration-200 ease-out overflow-hidden"
+                className="group relative rounded-lg border border-ui-border-subtle bg-accent-ui/5 group-hover:bg-accent-ui/12 p-6 shadow-sm hover:shadow-lg transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar - lighter at rest, intensifies on hover */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ui-light/50 to-accent-ui-mid/50 group-hover:from-accent-ui group-hover:to-accent-ui-mid transition-colors duration-200"></div>
@@ -202,7 +206,7 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="group relative rounded-lg border border-ui-border-subtle bg-accent-data/5 group-hover:bg-accent-data/8 p-6 shadow-sm hover:shadow-lg transition-all duration-200 ease-out overflow-hidden"
+                className="group relative rounded-lg border border-ui-border-subtle bg-accent-data/5 group-hover:bg-accent-data/12 p-6 shadow-sm hover:shadow-lg transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar - lighter at rest, intensifies on hover */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-data-light/50 to-accent-data-mid/50 group-hover:from-accent-data group-hover:to-accent-data-mid transition-colors duration-200"></div>
@@ -227,7 +231,7 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="group relative rounded-lg border border-ui-border-subtle bg-accent-ai/5 group-hover:bg-accent-ai/8 p-6 shadow-sm hover:shadow-lg transition-all duration-200 ease-out overflow-hidden"
+                className="group relative rounded-lg border border-ui-border-subtle bg-accent-ai/5 group-hover:bg-accent-ai/12 p-6 shadow-sm hover:shadow-lg transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar - lighter at rest, intensifies on hover */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ai-light/50 to-accent-ai-mid/50 group-hover:from-accent-ai group-hover:to-accent-ai-mid transition-colors duration-200"></div>
@@ -262,6 +266,10 @@ export default function Home() {
             <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
               Selected Case Studies
             </h2>
+            {/* Divider */}
+            <div className="flex justify-center mb-4">
+              <div className="w-full max-w-md h-[3px] bg-accent-ui"></div>
+            </div>
             <p className="text-base text-muted-foreground max-w-2xl mx-auto font-light">
               High-impact projects that scaled systems, improved workflows, and delivered value.
             </p>
@@ -313,6 +321,10 @@ export default function Home() {
             <h2 className="font-[family-name:var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
               ModelTriage
             </h2>
+            {/* Divider */}
+            <div className="flex justify-center mb-6">
+              <div className="w-full max-w-md h-[3px] bg-accent-data"></div>
+            </div>
             <p className="text-lg text-white max-w-4xl mx-auto leading-relaxed font-light">
             A decision and verification layer that routes prompts to the right LLM and explains model behavior.
             </p>
@@ -479,6 +491,10 @@ export default function Home() {
             <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-center">
               AI in My Engineering Workflow
             </h2>
+            {/* Divider */}
+            <div className="flex justify-center mb-6">
+              <div className="w-full max-w-md h-[3px] bg-accent-ai"></div>
+            </div>
             <div className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               <p>
               I use AI-assisted development tools such as <strong>Cursor</strong>, <strong>GitHub Copilot</strong>, and <strong>Codex</strong> to explore ideas and execute faster, while making the final calls on architecture, technical tradeoffs, and what ships to production. This approach shapes how I use AI across my engineering workflow:
@@ -622,9 +638,13 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-12 text-center">
+            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-3 text-center">
               Experience
             </h2>
+            {/* Divider */}
+            <div className="flex justify-center mb-12">
+              <div className="w-full max-w-md h-[3px] bg-accent-ui"></div>
+            </div>
 
             <div className="relative border-l-2 border-ui-border-subtle pl-8">
               <div className="space-y-12">
@@ -743,6 +763,10 @@ export default function Home() {
             <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
               Tech Stack
             </h2>
+            {/* Divider */}
+            <div className="flex justify-center mb-4">
+              <div className="w-full max-w-md h-[3px] bg-accent-ui"></div>
+            </div>
             <p className="text-base text-ui-text-secondary max-w-xl mx-auto leading-relaxed mb-5">
               Technologies I use to build and ship production systems.
             </p>
