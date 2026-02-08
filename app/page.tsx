@@ -44,7 +44,7 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <Badge variant="secondary" className="mb-6 px-5 py-2 text-sm font-semibold uppercase tracking-wider bg-white/50 backdrop-blur-sm border border-[#3B82F6]/40 text-[#2563EB]">
+              <Badge variant="secondary" className="mb-4 px-5 py-2 text-sm font-semibold uppercase tracking-wider bg-white/50 backdrop-blur-sm border border-[#3B82F6]/40 text-[#2563EB]">
                 Senior Software Engineer
               </Badge>
             </motion.div>
@@ -53,7 +53,7 @@ export default function Home() {
               Tyler Olli
             </h1>
             
-            <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-3 leading-relaxed max-w-3xl mx-auto font-light">
+            <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground font-medium mb-3 leading-relaxed max-w-3xl mx-auto">
               <TypingText 
                 text="Building scalable software and AI platforms."
                 duration={2000}
@@ -62,7 +62,7 @@ export default function Home() {
             </p>
 
             <p 
-              className={`text-base md:text-lg text-muted-foreground/80 mb-8 leading-relaxed max-w-3xl mx-auto font-light transition-opacity duration-200 ${
+              className={`text-base md:text-lg text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto font-normal transition-opacity duration-200 ${
                 isTypingComplete ? 'opacity-100' : 'opacity-0'
               }`}
             >
@@ -100,7 +100,7 @@ export default function Home() {
                 href="https://github.com/TylerOlli"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                className="text-muted-foreground hover:text-[#1E3A8A] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1E3A8A] focus-visible:ring-offset-2 rounded"
                 aria-label="GitHub"
               >
                 <Github className="h-6 w-6" />
@@ -109,14 +109,14 @@ export default function Home() {
                 href="https://www.linkedin.com/in/tylerolli/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                className="text-muted-foreground hover:text-[#1E3A8A] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1E3A8A] focus-visible:ring-offset-2 rounded"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-6 w-6" />
               </a>
               <a
                 href="mailto:ollityler@gmail.com"
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                className="text-muted-foreground hover:text-[#1E3A8A] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1E3A8A] focus-visible:ring-offset-2 rounded"
                 aria-label="Email"
               >
                 <Mail className="h-6 w-6" />

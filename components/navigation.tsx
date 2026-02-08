@@ -67,9 +67,9 @@ export function Navigation() {
                 {item.label}
                 <span 
                   className={cn(
-                    "absolute bottom-0 left-2 sm:left-3 right-2 sm:right-3 h-[2px] bg-[#1E3A8A] transition-opacity duration-200",
+                    "absolute bottom-0 left-2 sm:left-3 right-2 sm:right-3 h-[1.5px] bg-[#1E3A8A] transition-opacity duration-200",
                     activeSection === item.href.slice(1)
-                      ? "opacity-100"
+                      ? "opacity-80"
                       : "opacity-0 group-hover:opacity-100"
                   )}
                 />
