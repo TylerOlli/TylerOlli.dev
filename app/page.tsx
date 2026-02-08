@@ -953,7 +953,7 @@ export default function Home() {
       </Section>
 
       {/* Contact */}
-      <Section id="contact" className="relative overflow-hidden">
+      <Section id="contact" className="relative overflow-hidden" style={{ backgroundColor: '#F5F8FF' }}>
         
         <Container className="relative z-10">
           <motion.div
@@ -963,22 +963,22 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 text-foreground">
               Let's Build Something
             </h2>
-            <p className="text-lg text-muted-foreground mb-12 leading-relaxed font-light">
+            <p className="text-lg text-muted-foreground mb-12 leading-relaxed font-normal">
               Interested in complex engineering problems where scale, architecture, and engineering judgment matter. If you're building something meaningful, let's talk.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12">
               <a href="mailto:ollityler@gmail.com" className="w-full sm:w-auto">
-                <Button size="lg" className="w-full sm:w-auto group">
+                <Button size="lg" className="w-full sm:w-auto group bg-[#1E3A8A] text-white hover:bg-[#1E40AF] transition-all duration-200 ease-out">
                   <Mail className="mr-2 h-5 w-5" />
                   ollityler@gmail.com
                 </Button>
               </a>
               <a href="https://www.linkedin.com/in/tylerolli/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto bg-white border-2 border-[#1E3A8A] text-[#1E3A8A] hover:bg-[#1E3A8A]/[0.06] hover:border-[#1E3A8A] transition-all duration-200 ease-out">
                   <Linkedin className="mr-2 h-5 w-5" />
                   Connect on LinkedIn
                 </Button>
@@ -990,7 +990,7 @@ export default function Home() {
                 href="https://github.com/TylerOlli"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-foreground transition-colors flex items-center gap-2"
+                className="hover:text-[#1E3A8A] transition-colors duration-200 ease-out flex items-center gap-2"
               >
                 <Github className="h-5 w-5" />
                 <span>GitHub</span>
@@ -999,7 +999,7 @@ export default function Home() {
                 href="/resume"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-foreground transition-colors flex items-center gap-2"
+                className="hover:text-[#1E3A8A] transition-colors duration-200 ease-out flex items-center gap-2"
               >
                 <Code2 className="h-5 w-5" />
                 <span>Resume</span>
@@ -1010,7 +1010,7 @@ export default function Home() {
       </Section>
 
       {/* Footer */}
-      <footer className="border-t bg-ui-bg-surface">
+      <footer className="border-t" style={{ backgroundColor: '#F5F8FF', borderTopColor: '#E0E7FF' }}>
         <Container>
           <div className="py-8 text-center text-sm text-muted-foreground">
             <p>© {new Date().getFullYear()} Tyler Olli. Built with Next.js, TypeScript, and Tailwind CSS.</p>
