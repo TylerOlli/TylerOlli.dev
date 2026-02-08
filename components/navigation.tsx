@@ -82,7 +82,7 @@ export function Navigation() {
             href="/resume"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[11px] sm:text-[13px] font-medium px-3 sm:px-4 py-1.5 rounded-md border border-border hover:bg-accent hover:border-primary/30 transition-all whitespace-nowrap flex-shrink-0"
+            className="text-[11px] sm:text-[13px] font-semibold px-3 sm:px-4 py-1.5 rounded-md bg-white border-2 border-[#1E3A8A] text-[#1E3A8A] hover:bg-[#1E3A8A] hover:text-white hover:border-[#1E3A8A] transition-all duration-200 ease-out whitespace-nowrap flex-shrink-0"
           >
             Resume
           </Link>
