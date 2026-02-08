@@ -143,7 +143,7 @@ export default function Home() {
               <div className="flex justify-center mb-4">
                 <div className="w-48 h-[2px] bg-accent-ui"></div>
               </div>
-              <p className="text-base text-muted-foreground/70 max-w-2xl mx-auto">
+              <p className="text-lg text-muted-foreground/90 max-w-2xl mx-auto">
                 The outcomes that consistently make a difference.
               </p>
             </div>
@@ -270,7 +270,7 @@ export default function Home() {
             <div className="flex justify-center mb-5">
               <div className="w-48 h-[2px] bg-accent-ui"></div>
             </div>
-            <p className="text-base text-muted-foreground max-w-2xl mx-auto font-light">
+            <p className="text-lg text-muted-foreground/90 max-w-2xl mx-auto font-light">
               High-impact projects that scaled systems, improved workflows, and delivered value.
             </p>
           </motion.div>
@@ -325,7 +325,7 @@ export default function Home() {
             <div className="flex justify-center mb-7">
               <div className="w-40 h-[2px] bg-accent-data"></div>
             </div>
-            <p className="text-lg text-white max-w-4xl mx-auto leading-relaxed font-light">
+            <p className="text-xl text-white/90 max-w-4xl mx-auto leading-relaxed font-light">
             A decision and verification layer that routes prompts to the right LLM and explains model behavior.
             </p>
           </motion.div>
@@ -767,7 +767,7 @@ export default function Home() {
             <div className="flex justify-center mb-5">
               <div className="w-36 h-[2px] bg-accent-ui"></div>
             </div>
-            <p className="text-base text-ui-text-secondary max-w-xl mx-auto leading-relaxed mb-5">
+            <p className="text-base text-ui-text-secondary/90 max-w-xl mx-auto leading-relaxed mb-5">
               Technologies I use to build and ship production systems.
             </p>
             {/* Capability Strip */}
