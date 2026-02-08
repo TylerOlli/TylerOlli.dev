@@ -228,8 +228,6 @@
   .section-dark .modeltriage-cta:hover {
     background-color: rgb(74 222 128);  /* accent-data (green-400) - same as panel left border */
     color: hsl(0 0% 9%);  /* Dark text for contrast on green */
-    box-shadow: 0 10px 15px -3px rgb(74 222 128 / 0.3), 
-                0 4px 6px -4px rgb(74 222 128 / 0.3);  /* Subtle green elevation */
   }
 }
 
