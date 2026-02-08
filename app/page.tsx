@@ -26,10 +26,11 @@ export default function Home() {
       {/* Hero Section */}
       <Section 
         id="hero" 
-        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 bg-ui-bg-surface"
+        className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
+        style={{ backgroundColor: '#F0F5FF' }}
       >
-        {/* Subtle Background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-ui-bg-surface-subtle via-ui-bg-surface to-ui-bg-surface" />
+        {/* Subtle Background Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#EEF3FF] via-[#F0F5FF] to-[#F3F6FF]" />
         
         <Container className="relative z-10">
           <motion.div
@@ -43,12 +44,12 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <Badge variant="secondary" className="mb-6 px-5 py-2 text-sm font-semibold uppercase tracking-wider bg-ui-bg-surface-muted border border-ui-border-default text-ui-text-secondary">
+              <Badge variant="secondary" className="mb-6 px-5 py-2 text-sm font-semibold uppercase tracking-wider bg-white border-2 border-[#3B82F6] text-[#3B82F6]">
                 Senior Software Engineer
               </Badge>
             </motion.div>
             
-            <h1 className="font-[family-name:var(--font-outfit)] text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 text-foreground">
+            <h1 className="font-[family-name:var(--font-outfit)] text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6" style={{ color: '#1E40AF' }}>
               Tyler Olli
             </h1>
             
@@ -75,7 +76,7 @@ export default function Home() {
               className="flex flex-col items-center justify-center gap-4"
             >
               <a href="#case-studies">
-                <Button size="lg" className="group px-8 h-12 text-base">
+                <Button size="lg" className="group px-8 h-12 text-base bg-[#1E40AF] text-white hover:bg-[#1E3A8A] transition-colors">
                   View My Work
                   <ArrowDown className="ml-2 h-5 w-5 transition-transform group-hover:translate-y-1" />
                 </Button>
