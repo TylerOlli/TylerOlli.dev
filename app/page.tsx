@@ -150,7 +150,7 @@ export default function Home() {
             </div>
             
             <div className="grid md:grid-cols-2 gap-6">
-              {/* Ship Reliably - Blue (UI) */}
+              {/* Ship Without Chaos - Blue (UI) */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -167,15 +167,15 @@ export default function Home() {
                     <Shield className="h-5 w-5 text-accent-ui" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-3">Ship Reliably</h3>
+                    <h3 className="text-xl font-bold mb-3">Ship Without Chaos</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      Turn ideas into production software with clear ownership, fewer handoffs, and systems teams can depend on from day one.
+                    Deliver production software without last-minute scrambles, fragile releases, or unclear ownership, so teams can ship with confidence from day one.
                     </p>
                   </div>
                 </div>
               </motion.div>
 
-              {/* Scale Without Pain - Blue (UI) */}
+              {/* Scale Without Rewrites - Blue (UI) */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -192,15 +192,15 @@ export default function Home() {
                     <TrendingUp className="h-5 w-5 text-accent-ui" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-3">Scale Without Pain</h3>
+                    <h3 className="text-xl font-bold mb-3">Scale Without Rewrites</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      Design software that can grow with usage and requirements without constant re-architecture or rewrites.
+                    Design systems that scale with real usage and evolving requirements, without constant re-architecture as the product grows.
                     </p>
                   </div>
                 </div>
               </motion.div>
 
-              {/* Make Smart Technical Decisions - Green (Data) */}
+              {/* Make the Right Tradeoffs - Green (Data) */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -217,15 +217,15 @@ export default function Home() {
                     <Sliders className="h-5 w-5 text-accent-data" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-3">Make Smart Technical Decisions</h3>
+                    <h3 className="text-xl font-bold mb-3">Make the Right Tradeoffs</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      Balance speed, complexity, and long-term maintainability under real product and operational constraints.
+                    Make clear, defensible tradeoffs under real product, business, and operational constraints to avoid unnecessary complexity and long-term maintenance risk.
                     </p>
                   </div>
                 </div>
               </motion.div>
 
-              {/* Bring AI Into Real Systems - Purple (AI) */}
+              {/* Production-Ready AI, Not Demos - Purple (AI) */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -242,9 +242,9 @@ export default function Home() {
                     <Cpu className="h-5 w-5 text-accent-ai" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-3">Bring AI Into Real Systems</h3>
+                    <h3 className="text-xl font-bold mb-3">Production-Ready AI, Not Demos</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      Integrate AI thoughtfully, with structure, validation, and production constraints that hold up in real systems.
+                    Bring AI into production systems with structure, validation, and safeguards that hold up beyond demos, prototypes, and experiments.
                     </p>
                   </div>
                 </div>
