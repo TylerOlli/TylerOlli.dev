@@ -360,7 +360,10 @@ export default function Home() {
           >
             <div className="grid md:grid-cols-2 gap-6">
               {/* How It Works */}
-              <div className="p-8 rounded-lg border-2 border-accent-data/30 bg-white/10 shadow-sm hover:bg-white/15 hover:border-accent-data/60 hover:shadow-accent-data/20 hover:shadow-lg transition-all duration-200">
+              <div className="group relative p-8 rounded-lg border border-white/10 bg-white/10 shadow-sm hover:bg-white/15 hover:shadow-lg transition-all duration-200 overflow-hidden">
+                {/* Left accent bar - appears on hover */}
+                <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-accent-data opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                
                 <h3 className="text-xl font-bold mb-4">How It Works</h3>
                 <div className="space-y-4 mb-6">
                   <div>
@@ -399,7 +402,10 @@ export default function Home() {
               </div>
 
               {/* Why It Matters */}
-              <div className="p-8 rounded-lg bg-white/10 border-2 border-accent-data/30 hover:bg-white/15 hover:border-accent-data/60 hover:shadow-accent-data/20 hover:shadow-lg transition-all duration-200">
+              <div className="group relative p-8 rounded-lg border border-white/10 bg-white/10 shadow-sm hover:bg-white/15 hover:shadow-lg transition-all duration-200 overflow-hidden">
+                {/* Left accent bar - appears on hover */}
+                <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-accent-data opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                
                 <h3 className="text-xl font-bold mb-4">Why It Matters</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                 LLM outputs vary widely in quality, cost, and reliability, making model choice a recurring engineering decision rather than a one-time setup.
