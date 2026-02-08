@@ -20,7 +20,7 @@ export function FeatureCard({ icon: Icon, title, description, delay = 0 }: Featu
       transition={{ duration: 0.5, delay }}
       whileHover={{ y: -4 }}
     >
-      <Card className="group h-full border transition-all shadow-sm hover:shadow-md">
+      <Card className="group h-full border transition-all shadow-sm hover:shadow-lg">
         <CardHeader>
           <div className="mb-4 inline-flex rounded-md bg-foreground/5 p-3 transition-colors group-hover:bg-foreground/10">
             <Icon className="h-6 w-6" />

@@ -152,7 +152,7 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="group relative rounded-lg border border-ui-border-subtle bg-accent-ui/5 group-hover:bg-accent-ui/8 p-6 shadow-sm hover:shadow-md transition-all duration-200 ease-out overflow-hidden"
+                className="group relative rounded-lg border border-ui-border-subtle bg-accent-ui/5 group-hover:bg-accent-ui/8 p-6 shadow-sm hover:shadow-lg transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar - lighter at rest, intensifies on hover */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ui-light/50 to-accent-ui-mid/50 group-hover:from-accent-ui group-hover:to-accent-ui-mid transition-colors duration-200"></div>
@@ -177,7 +177,7 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="group relative rounded-lg border border-ui-border-subtle bg-accent-ui/5 group-hover:bg-accent-ui/8 p-6 shadow-sm hover:shadow-md transition-all duration-200 ease-out overflow-hidden"
+                className="group relative rounded-lg border border-ui-border-subtle bg-accent-ui/5 group-hover:bg-accent-ui/8 p-6 shadow-sm hover:shadow-lg transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar - lighter at rest, intensifies on hover */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ui-light/50 to-accent-ui-mid/50 group-hover:from-accent-ui group-hover:to-accent-ui-mid transition-colors duration-200"></div>
@@ -202,7 +202,7 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 }}
-                className="group relative rounded-lg border border-ui-border-subtle bg-accent-data/5 group-hover:bg-accent-data/8 p-6 shadow-sm hover:shadow-md transition-all duration-200 ease-out overflow-hidden"
+                className="group relative rounded-lg border border-ui-border-subtle bg-accent-data/5 group-hover:bg-accent-data/8 p-6 shadow-sm hover:shadow-lg transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar - lighter at rest, intensifies on hover */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-data-light/50 to-accent-data-mid/50 group-hover:from-accent-data group-hover:to-accent-data-mid transition-colors duration-200"></div>
@@ -227,7 +227,7 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="group relative rounded-lg border border-ui-border-subtle bg-accent-ai/5 group-hover:bg-accent-ai/8 p-6 shadow-sm hover:shadow-md transition-all duration-200 ease-out overflow-hidden"
+                className="group relative rounded-lg border border-ui-border-subtle bg-accent-ai/5 group-hover:bg-accent-ai/8 p-6 shadow-sm hover:shadow-lg transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar - lighter at rest, intensifies on hover */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ai-light/50 to-accent-ai-mid/50 group-hover:from-accent-ai group-hover:to-accent-ai-mid transition-colors duration-200"></div>
@@ -501,7 +501,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.05 }}
                 >
-                  <div className="group p-6 rounded-lg border border-ui-border-subtle bg-card shadow-sm hover:shadow-md hover:border-accent-ai transition-all duration-200 ease-out h-full">
+                  <div className="group p-6 rounded-lg border border-ui-border-subtle bg-card shadow-sm hover:shadow-lg hover:border-accent-ai transition-all duration-200 ease-out h-full">
                     <div className="flex items-center gap-2 mb-3">
                       <div className="flex items-center justify-center w-8 h-8 bg-accent-ai/5 group-hover:bg-accent-ai/15 rounded transition-colors duration-200">
                         <Sliders className="w-5 h-5 text-accent-ai" />
@@ -521,7 +521,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                  <div className="group p-6 rounded-lg border border-ui-border-subtle bg-card shadow-sm hover:shadow-md hover:border-accent-ai transition-all duration-200 ease-out h-full">
+                  <div className="group p-6 rounded-lg border border-ui-border-subtle bg-card shadow-sm hover:shadow-lg hover:border-accent-ai transition-all duration-200 ease-out h-full">
                     <div className="flex items-center gap-2 mb-3">
                       <div className="flex items-center justify-center w-8 h-8 bg-accent-ai/5 group-hover:bg-accent-ai/15 rounded transition-colors duration-200">
                         <Code2 className="w-5 h-5 text-accent-ai" />
@@ -541,7 +541,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.15 }}
                 >
-                  <div className="group p-6 rounded-lg border border-ui-border-subtle bg-card shadow-sm hover:shadow-md hover:border-accent-ai transition-all duration-200 ease-out h-full">
+                  <div className="group p-6 rounded-lg border border-ui-border-subtle bg-card shadow-sm hover:shadow-lg hover:border-accent-ai transition-all duration-200 ease-out h-full">
                     <div className="flex items-center gap-2 mb-3">
                       <div className="flex items-center justify-center w-8 h-8 bg-accent-ai/5 group-hover:bg-accent-ai/15 rounded transition-colors duration-200">
                         <FileText className="w-5 h-5 text-accent-ai" />
@@ -561,7 +561,7 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                  <div className="group p-6 rounded-lg border border-ui-border-subtle bg-card shadow-sm hover:shadow-md hover:border-accent-ai transition-all duration-200 ease-out h-full">
+                  <div className="group p-6 rounded-lg border border-ui-border-subtle bg-card shadow-sm hover:shadow-lg hover:border-accent-ai transition-all duration-200 ease-out h-full">
                     <div className="flex items-center gap-2 mb-3">
                       <div className="flex items-center justify-center w-8 h-8 bg-accent-ai/5 group-hover:bg-accent-ai/15 rounded transition-colors duration-200">
                         <RefreshCw className="w-5 h-5 text-accent-ai" />
@@ -584,7 +584,7 @@ export default function Home() {
             className="max-w-7xl mx-auto"
           >
               {/* Agent-Oriented Engineering Systems - Focal Point */}
-              <div className="group max-w-4xl mx-auto mt-14 bg-ui-bg-surface border border-ui-border-subtle rounded-lg py-10 px-6 md:py-12 md:px-10 mb-14 shadow-sm hover:shadow-md transition-all duration-200 ease-out overflow-hidden relative">
+              <div className="group max-w-4xl mx-auto mt-14 bg-ui-bg-surface border border-ui-border-subtle rounded-lg py-10 px-6 md:py-12 md:px-10 mb-14 shadow-sm hover:shadow-lg transition-all duration-200 ease-out overflow-hidden relative">
                 {/* Left accent bar */}
                 <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-accent-ai/30 group-hover:bg-accent-ai-dark transition-colors duration-200"></div>
                 <h3 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl font-extrabold text-foreground text-center mb-8">
@@ -639,7 +639,7 @@ export default function Home() {
                   className="relative"
                 >
                   <div className="absolute -left-[42px] top-0 w-5 h-5 rounded-full bg-accent-ui border-[3px] border-background ring-2 ring-accent-ui/20" />
-                  <div className="group relative bg-ui-bg-surface border border-ui-border-subtle rounded px-6 py-5 shadow-sm hover:shadow-md hover:border-accent-ui-light transition-all duration-200 ease-out overflow-hidden">
+                  <div className="group relative bg-ui-bg-surface border border-ui-border-subtle rounded px-6 py-5 shadow-sm hover:shadow-lg hover:border-accent-ui-light transition-all duration-200 ease-out overflow-hidden">
                     {/* Left accent bar */}
                     <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ui to-accent-ui-mid group-hover:from-accent-ui-dark group-hover:to-accent-ui transition-colors duration-200"></div>
                     <div className="mb-4">
@@ -691,7 +691,7 @@ export default function Home() {
                   className="relative"
                 >
                   <div className="absolute -left-[40px] top-0 w-3.5 h-3.5 rounded-full bg-ui-border-strong border-[1.5px] border-background" />
-                  <div className="group relative bg-ui-bg-surface border border-ui-border-subtle rounded px-6 py-4 shadow-sm hover:shadow-md hover:border-ui-border-default transition-all duration-200 ease-out">
+                  <div className="group relative bg-ui-bg-surface border border-ui-border-subtle rounded px-6 py-4 shadow-sm hover:shadow-lg hover:border-ui-border-default transition-all duration-200 ease-out">
                     <div className="mb-4">
                       <h3 className="text-xl font-bold mb-1">Senior Software Engineer</h3>
                       <p className="text-sm text-muted-foreground font-medium">Citrix • 2020–2023</p>
@@ -763,7 +763,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="relative bg-gradient-to-br from-ui-bg-surface-muted via-ui-bg-surface-subtle to-ui-bg-surface border-2 border-ui-border-default rounded-xl px-6 pt-3 pb-4 shadow-sm hover:shadow-md hover:border-ui-border-strong transition-all duration-200 ease-out"
+              className="relative bg-gradient-to-br from-ui-bg-surface-muted via-ui-bg-surface-subtle to-ui-bg-surface border-2 border-ui-border-default rounded-xl px-6 pt-3 pb-4 shadow-sm hover:shadow-lg hover:border-ui-border-strong transition-all duration-200 ease-out"
               style={{
                 background: 'radial-gradient(circle at top left, rgb(249, 250, 251) 0%, rgb(255, 255, 255) 50%, rgb(249, 250, 251) 100%)'
               }}
@@ -811,7 +811,7 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="group relative bg-ui-bg-surface border border-ui-border-subtle rounded-lg p-4 shadow-sm hover:shadow-md hover:border-accent-ui-light transition-all duration-200 ease-out overflow-hidden"
+                className="group relative bg-ui-bg-surface border border-ui-border-subtle rounded-lg p-4 shadow-sm hover:shadow-lg hover:border-accent-ui-light transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ui to-accent-ui-mid group-hover:from-accent-ui-dark group-hover:to-accent-ui transition-colors duration-200"></div>
@@ -844,7 +844,7 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.15 }}
-                className="group relative bg-ui-bg-surface border border-ui-border-subtle rounded-lg p-4 shadow-sm hover:shadow-md hover:border-accent-data-light transition-all duration-200 ease-out overflow-hidden"
+                className="group relative bg-ui-bg-surface border border-ui-border-subtle rounded-lg p-4 shadow-sm hover:shadow-lg hover:border-accent-data-light transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-data to-accent-data-mid group-hover:from-accent-data-dark group-hover:to-accent-data transition-colors duration-200"></div>
@@ -882,7 +882,7 @@ export default function Home() {
                 whileHover={{ y: -2 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="group relative bg-ui-bg-surface border border-ui-border-subtle rounded-lg p-4 shadow-sm hover:shadow-md hover:border-accent-ai-light transition-all duration-200 ease-out overflow-hidden"
+                className="group relative bg-ui-bg-surface border border-ui-border-subtle rounded-lg p-4 shadow-sm hover:shadow-lg hover:border-accent-ai-light transition-all duration-200 ease-out overflow-hidden"
               >
                 {/* Left accent bar */}
                 <div className="absolute left-0 top-0 bottom-0 w-[2px] bg-gradient-to-b from-accent-ai to-accent-ai-mid group-hover:from-accent-ai-dark group-hover:to-accent-ai transition-colors duration-200"></div>

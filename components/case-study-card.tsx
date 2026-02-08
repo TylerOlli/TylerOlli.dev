@@ -26,7 +26,7 @@ export function CaseStudyCard({
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
     >
-      <Card className="group h-full transition-all duration-200 ease-out border border-ui-border-subtle bg-ui-bg-surface-subtle shadow-sm hover:shadow-md hover:border-accent-ui-light overflow-hidden relative">
+      <Card className="group h-full transition-all duration-200 ease-out border border-ui-border-subtle bg-ui-bg-surface-subtle shadow-sm hover:shadow-lg hover:border-accent-ui-light overflow-hidden relative">
         {/* Top accent bar - appears on hover */}
         <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-accent-ui to-accent-ui-mid opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
         
