@@ -218,6 +218,11 @@
     background-color: hsl(0 0% 20%);
     border-color: hsl(0 0% 50%);
   }
+  
+  /* Override for ModelTriage pills - use accent-data green on hover */
+  .section-dark [class*="border-accent-data"]:hover {
+    border-color: rgb(74 222 128 / 0.6) !important;
+  }
 }
 
 /* Noise texture effect */

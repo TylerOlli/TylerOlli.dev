@@ -315,7 +315,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-8"
           >
-            <Badge variant="outline" className="mb-4 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider border-white/20 text-white/90">
+            <Badge variant="outline" className="mb-4 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider border-accent-data/30 text-white/90 hover:border-accent-data/50 transition-colors">
               Product Spotlight
             </Badge>
             <h2 className="font-[family-name:var(--font-outfit)] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-5">
@@ -338,7 +338,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="max-w-4xl mx-auto mb-12"
           >
-            <div className="relative w-full rounded-lg border border-white/10 overflow-hidden" style={{ filter: 'brightness(0.94)' }}>
+            <div className="relative w-full rounded-lg border border-accent-data/20 hover:border-accent-data/30 transition-colors duration-200 overflow-hidden" style={{ filter: 'brightness(0.94)' }}>
               <Image
                 src="/modeltriage-screenshot.png"
                 alt="ModelTriage interface showing LLM comparison and routing"
@@ -360,7 +360,7 @@ export default function Home() {
           >
             <div className="grid md:grid-cols-2 gap-6">
               {/* How It Works */}
-              <div className="p-8 rounded-lg border border-white/20 bg-white/10 shadow-sm hover:bg-white/20 hover:border-white/30 transition-colors duration-200">
+              <div className="p-8 rounded-lg border-2 border-accent-data/30 bg-white/10 shadow-sm hover:bg-white/15 hover:border-accent-data/60 hover:shadow-accent-data/20 hover:shadow-lg transition-all duration-200">
                 <h3 className="text-xl font-bold mb-4">How It Works</h3>
                 <div className="space-y-4 mb-6">
                   <div>
@@ -399,7 +399,7 @@ export default function Home() {
               </div>
 
               {/* Why It Matters */}
-              <div className="p-8 rounded-lg bg-white/10 border border-white/20 hover:bg-white/20 hover:border-white/30 transition-colors duration-200">
+              <div className="p-8 rounded-lg bg-white/10 border-2 border-accent-data/30 hover:bg-white/15 hover:border-accent-data/60 hover:shadow-accent-data/20 hover:shadow-lg transition-all duration-200">
                 <h3 className="text-xl font-bold mb-4">Why It Matters</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                 LLM outputs vary widely in quality, cost, and reliability, making model choice a recurring engineering decision rather than a one-time setup.
