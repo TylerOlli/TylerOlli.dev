@@ -9,6 +9,12 @@ import {
   Linkedin,
   Mail,
   FileText,
+  Layers,
+  Cpu,
+  Users,
+  Sliders,
+  Code2,
+  RefreshCw,
 } from "lucide-react"
 import { Section } from "@/components/section"
 import { Container } from "@/components/container"
@@ -141,6 +147,72 @@ export default function Home() {
           </div>
         </Container>
       </section>
+
+      {/* ==========================================
+          What I Do
+          ========================================== */}
+      <Section className="relative">
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent" />
+
+        <Container>
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="grid md:grid-cols-3 gap-12 max-w-5xl">
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-8 h-8 rounded-lg bg-violet-500/10 flex items-center justify-center">
+                    <Layers className="w-4 h-4 text-violet-400" />
+                  </div>
+                  <h3 className="text-base font-bold text-zinc-100">
+                    Production Architecture
+                  </h3>
+                </div>
+                <p className="text-sm text-zinc-400 leading-relaxed">
+                  Design systems for real-world constraints&mdash;scalability,
+                  reliability, and maintainability at every layer. From database
+                  schema to API surface to deployment pipeline.
+                </p>
+              </div>
+
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-8 h-8 rounded-lg bg-violet-500/10 flex items-center justify-center">
+                    <Cpu className="w-4 h-4 text-violet-400" />
+                  </div>
+                  <h3 className="text-base font-bold text-zinc-100">
+                    AI Integration
+                  </h3>
+                </div>
+                <p className="text-sm text-zinc-400 leading-relaxed">
+                  Bring AI into production with structure, validation, and
+                  safeguards. LLM orchestration, intelligent routing, prompt
+                  engineering, and evaluation&mdash;not demos.
+                </p>
+              </div>
+
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-8 h-8 rounded-lg bg-violet-500/10 flex items-center justify-center">
+                    <Users className="w-4 h-4 text-violet-400" />
+                  </div>
+                  <h3 className="text-base font-bold text-zinc-100">
+                    Technical Leadership
+                  </h3>
+                </div>
+                <p className="text-sm text-zinc-400 leading-relaxed">
+                  Coordinate across frontend, backend, and platform teams to
+                  align architecture with product goals. Clear tradeoffs, shared
+                  ownership, and on-schedule delivery.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </Container>
+      </Section>
 
       {/* ==========================================
           Featured Project — ModelTriage
@@ -361,9 +433,9 @@ export default function Home() {
       </Section>
 
       {/* ==========================================
-          Engineering Approach — Callout
+          AI Engineering
           ========================================== */}
-      <section className="relative py-20 md:py-28">
+      <Section className="relative">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent" />
 
         <Container>
@@ -372,29 +444,124 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="max-w-3xl mx-auto"
+            className="mb-16"
           >
-            <span className="text-xs font-mono text-violet-400 tracking-widest uppercase mb-8 block">
-              Engineering Approach
+            <span className="text-xs font-mono text-violet-400 tracking-widest uppercase mb-4 block">
+              AI Engineering
             </span>
+            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl font-bold tracking-tight text-zinc-50 mb-6">
+              How I Work With AI
+            </h2>
+            <p className="text-lg text-zinc-400 max-w-3xl leading-relaxed font-light">
+              I use AI-assisted development tools to explore ideas and execute
+              faster, while making the final calls on architecture, technical
+              tradeoffs, and what ships to production.
+            </p>
+          </motion.div>
 
-            <div className="border-l-2 border-violet-500/30 pl-8">
-              <p className="text-lg md:text-xl text-zinc-300 leading-relaxed mb-6">
+          {/* 4-column workflow grid */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mb-16"
+          >
+            <div className="group rounded-xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-700 hover:bg-zinc-900/80 transition-all duration-300">
+              <div className="w-8 h-8 rounded-lg bg-violet-500/10 group-hover:bg-violet-500/15 flex items-center justify-center mb-4 transition-colors">
+                <Sliders className="w-4 h-4 text-violet-400" />
+              </div>
+              <h3 className="text-sm font-bold text-zinc-200 mb-2">
+                Context Engineering
+              </h3>
+              <p className="text-sm text-zinc-500 leading-relaxed">
+                Design structured prompts with clear inputs, constraints, and
+                success criteria for repeatable, predictable AI workflows.
+              </p>
+            </div>
+
+            <div className="group rounded-xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-700 hover:bg-zinc-900/80 transition-all duration-300">
+              <div className="w-8 h-8 rounded-lg bg-violet-500/10 group-hover:bg-violet-500/15 flex items-center justify-center mb-4 transition-colors">
+                <Code2 className="w-4 h-4 text-violet-400" />
+              </div>
+              <h3 className="text-sm font-bold text-zinc-200 mb-2">
+                Code Generation
+              </h3>
+              <p className="text-sm text-zinc-500 leading-relaxed">
+                Draft boilerplate, generate tests, and prototype features
+                faster. AI handles the repetitive work while I focus on
+                architecture and production logic.
+              </p>
+            </div>
+
+            <div className="group rounded-xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-700 hover:bg-zinc-900/80 transition-all duration-300">
+              <div className="w-8 h-8 rounded-lg bg-violet-500/10 group-hover:bg-violet-500/15 flex items-center justify-center mb-4 transition-colors">
+                <FileText className="w-4 h-4 text-violet-400" />
+              </div>
+              <h3 className="text-sm font-bold text-zinc-200 mb-2">
+                Documentation
+              </h3>
+              <p className="text-sm text-zinc-500 leading-relaxed">
+                Generate and maintain API docs, inline documentation, and
+                onboarding guides. Reduce knowledge silos and keep system
+                intent documented as code evolves.
+              </p>
+            </div>
+
+            <div className="group rounded-xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-700 hover:bg-zinc-900/80 transition-all duration-300">
+              <div className="w-8 h-8 rounded-lg bg-violet-500/10 group-hover:bg-violet-500/15 flex items-center justify-center mb-4 transition-colors">
+                <RefreshCw className="w-4 h-4 text-violet-400" />
+              </div>
+              <h3 className="text-sm font-bold text-zinc-200 mb-2">
+                Code Review
+              </h3>
+              <p className="text-sm text-zinc-500 leading-relaxed">
+                Identify edge cases, performance risks, and architectural
+                issues. Use AI-assisted review to modernize legacy systems
+                and refactor with validation at each step.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Agent-Oriented Engineering — callout block */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <div className="max-w-3xl mx-auto rounded-xl border border-zinc-800 bg-zinc-900/60 p-8 md:p-10">
+              <h3 className="font-[family-name:var(--font-outfit)] text-xl md:text-2xl font-bold text-zinc-100 mb-6">
+                Agent-Oriented Engineering Systems
+              </h3>
+              <p className="text-base text-zinc-400 leading-relaxed mb-4">
                 I design and operate AI-driven engineering systems where multiple
                 specialized agents execute work in parallel&mdash;code generation,
                 validation, review, documentation, and migration&mdash;while I
                 retain architectural ownership and final decision authority.
               </p>
-              <p className="text-sm text-zinc-500 leading-relaxed">
-                This approach has reduced feature iteration cycles from days to
-                hours for well-scoped work, enabling 3&ndash;5&times; faster delivery on
-                AI-assisted features and significantly more time spent on system
-                design and high-leverage decisions.
+              <p className="text-base text-zinc-400 leading-relaxed">
+                I treat context engineering as a system design discipline. Agents
+                are designed with explicit inputs, constraints, schemas, and
+                success criteria&mdash;turning LLM interactions from ad-hoc prompts
+                into reliable, testable components that integrate cleanly with
+                production systems.
               </p>
+              <div className="pt-6 mt-6 border-t border-zinc-800">
+                <p className="text-sm text-zinc-400 leading-relaxed">
+                  <span className="font-bold text-violet-400">
+                    Measurable impact:
+                  </span>{" "}
+                  Reduced feature iteration cycles from days to hours for
+                  well-scoped work, enabling 3&ndash;5&times; faster delivery on
+                  AI-assisted features and significantly more time spent on
+                  system design and high-leverage decisions.
+                </p>
+              </div>
             </div>
           </motion.div>
         </Container>
-      </section>
+      </Section>
 
       {/* ==========================================
           Experience
@@ -418,123 +585,136 @@ export default function Home() {
             </h2>
           </motion.div>
 
-          <div className="max-w-3xl space-y-16">
-            {/* ---- Blankfactor ---- */}
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-6">
-                <div>
-                  <h3 className="text-xl font-bold text-zinc-100">
-                    Lead Software Engineer
-                  </h3>
-                  <p className="text-sm text-violet-400 font-medium mt-0.5">
-                    Blankfactor
-                  </p>
+          <div className="max-w-3xl relative border-l-2 border-zinc-800 pl-8">
+            <div className="space-y-14">
+              {/* ---- Blankfactor ---- */}
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="relative"
+              >
+                {/* Timeline dot — active role */}
+                <div className="absolute -left-[42px] top-1 w-4 h-4 rounded-full bg-violet-500 border-[3px] border-zinc-950 ring-2 ring-violet-500/20" />
+
+                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-5">
+                  <div>
+                    <h3 className="text-xl font-bold text-zinc-100">
+                      Lead Software Engineer
+                    </h3>
+                    <p className="text-sm text-violet-400 font-medium mt-0.5">
+                      Blankfactor
+                    </p>
+                  </div>
+                  <span className="text-sm text-zinc-600 font-mono mt-1 sm:mt-0">
+                    2023&ndash;2025
+                  </span>
                 </div>
-                <span className="text-sm text-zinc-600 font-mono mt-1 sm:mt-0">
-                  2023&ndash;2025
-                </span>
-              </div>
 
-              <ul className="space-y-3">
-                <li className="flex gap-3 text-sm text-zinc-400">
-                  <span className="text-violet-500/60 mt-0.5 flex-shrink-0 select-none">
-                    &mdash;
-                  </span>
-                  <span className="leading-relaxed">
-                    Delivered a high-volume account registration platform with
-                    integrated auth, unifying onboarding workflows across
-                    applications
-                  </span>
-                </li>
-                <li className="flex gap-3 text-sm text-zinc-400">
-                  <span className="text-violet-500/60 mt-0.5 flex-shrink-0 select-none">
-                    &mdash;
-                  </span>
-                  <span className="leading-relaxed">
-                    Architected a rules-driven eligibility system enabling dynamic
-                    policy updates without engineering deployments or downtime
-                  </span>
-                </li>
-                <li className="flex gap-3 text-sm text-zinc-400">
-                  <span className="text-violet-500/60 mt-0.5 flex-shrink-0 select-none">
-                    &mdash;
-                  </span>
-                  <span className="leading-relaxed">
-                    Shipped an AI-powered localization system that automated
-                    multilingual content generation across web platforms
-                  </span>
-                </li>
-                <li className="flex gap-3 text-sm text-zinc-400">
-                  <span className="text-violet-500/60 mt-0.5 flex-shrink-0 select-none">
-                    &mdash;
-                  </span>
-                  <span className="leading-relaxed">
-                    Pioneered adoption of AI development tools across engineering
-                    teams, integrating them into production workflows
-                  </span>
-                </li>
-              </ul>
-            </motion.div>
+                <ul className="space-y-3">
+                  <li className="flex gap-3 text-sm text-zinc-400">
+                    <span className="text-violet-500/60 mt-0.5 flex-shrink-0 select-none">
+                      &mdash;
+                    </span>
+                    <span className="leading-relaxed">
+                      Delivered a high-volume account registration platform with
+                      integrated auth, unifying onboarding workflows across
+                      applications
+                    </span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-zinc-400">
+                    <span className="text-violet-500/60 mt-0.5 flex-shrink-0 select-none">
+                      &mdash;
+                    </span>
+                    <span className="leading-relaxed">
+                      Architected a rules-driven eligibility system enabling
+                      dynamic policy updates without engineering deployments or
+                      downtime
+                    </span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-zinc-400">
+                    <span className="text-violet-500/60 mt-0.5 flex-shrink-0 select-none">
+                      &mdash;
+                    </span>
+                    <span className="leading-relaxed">
+                      Shipped an AI-powered localization system that automated
+                      multilingual content generation across web platforms
+                    </span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-zinc-400">
+                    <span className="text-violet-500/60 mt-0.5 flex-shrink-0 select-none">
+                      &mdash;
+                    </span>
+                    <span className="leading-relaxed">
+                      Pioneered adoption of AI development tools across
+                      engineering teams, integrating them into production
+                      workflows
+                    </span>
+                  </li>
+                </ul>
+              </motion.div>
 
-            {/* ---- Citrix ---- */}
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
-              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-6">
-                <div>
-                  <h3 className="text-xl font-bold text-zinc-100">
-                    Senior Software Engineer
-                  </h3>
-                  <p className="text-sm text-zinc-500 font-medium mt-0.5">
-                    Citrix
-                  </p>
+              {/* ---- Citrix ---- */}
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="relative"
+              >
+                {/* Timeline dot — past role */}
+                <div className="absolute -left-[40px] top-1 w-3 h-3 rounded-full bg-zinc-600 border-2 border-zinc-950" />
+
+                <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-5">
+                  <div>
+                    <h3 className="text-xl font-bold text-zinc-100">
+                      Senior Software Engineer
+                    </h3>
+                    <p className="text-sm text-zinc-500 font-medium mt-0.5">
+                      Citrix
+                    </p>
+                  </div>
+                  <span className="text-sm text-zinc-600 font-mono mt-1 sm:mt-0">
+                    2020&ndash;2023
+                  </span>
                 </div>
-                <span className="text-sm text-zinc-600 font-mono mt-1 sm:mt-0">
-                  2020&ndash;2023
-                </span>
-              </div>
 
-              <ul className="space-y-3">
-                <li className="flex gap-3 text-sm text-zinc-400">
-                  <span className="text-zinc-700 mt-0.5 flex-shrink-0 select-none">
-                    &mdash;
-                  </span>
-                  <span className="leading-relaxed">
-                    Led end-to-end architecture and delivery for enterprise web
-                    platforms supporting NetScaler and XenServer product lines
-                  </span>
-                </li>
-                <li className="flex gap-3 text-sm text-zinc-400">
-                  <span className="text-zinc-700 mt-0.5 flex-shrink-0 select-none">
-                    &mdash;
-                  </span>
-                  <span className="leading-relaxed">
-                    Built purchasing systems with reusable workflows, secure SKU
-                    lookup, interactive forms, and pricing calculators
-                  </span>
-                </li>
-                <li className="flex gap-3 text-sm text-zinc-400">
-                  <span className="text-zinc-700 mt-0.5 flex-shrink-0 select-none">
-                    &mdash;
-                  </span>
-                  <span className="leading-relaxed">
-                    Created and maintained a centralized React component library
-                    used across multiple enterprise sites and teams
-                  </span>
-                </li>
-              </ul>
-            </motion.div>
+                <ul className="space-y-3">
+                  <li className="flex gap-3 text-sm text-zinc-400">
+                    <span className="text-zinc-700 mt-0.5 flex-shrink-0 select-none">
+                      &mdash;
+                    </span>
+                    <span className="leading-relaxed">
+                      Led end-to-end architecture and delivery for enterprise
+                      web platforms supporting NetScaler and XenServer product
+                      lines
+                    </span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-zinc-400">
+                    <span className="text-zinc-700 mt-0.5 flex-shrink-0 select-none">
+                      &mdash;
+                    </span>
+                    <span className="leading-relaxed">
+                      Built purchasing systems with reusable workflows, secure
+                      SKU lookup, interactive forms, and pricing calculators
+                    </span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-zinc-400">
+                    <span className="text-zinc-700 mt-0.5 flex-shrink-0 select-none">
+                      &mdash;
+                    </span>
+                    <span className="leading-relaxed">
+                      Created and maintained a centralized React component
+                      library used across multiple enterprise sites and teams
+                    </span>
+                  </li>
+                </ul>
+              </motion.div>
+            </div>
           </div>
 
-          {/* Tech strip */}
+          {/* Tech stack — grouped */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -542,14 +722,68 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="max-w-3xl mt-20 pt-8 border-t border-zinc-800/50"
           >
-            <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-widest mb-4">
+            <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-widest mb-6">
               Core Technologies
             </p>
-            <p className="text-sm text-zinc-500 leading-relaxed">
-              TypeScript&ensp;&middot;&ensp;React&ensp;&middot;&ensp;Next.js&ensp;&middot;&ensp;Node.js&ensp;&middot;&ensp;PostgreSQL&ensp;&middot;&ensp;Redis&ensp;&middot;&ensp;MongoDB&ensp;&middot;&ensp;AWS
-              Lambda&ensp;&middot;&ensp;OpenAI&ensp;&middot;&ensp;Anthropic&ensp;&middot;&ensp;Google
-              AI&ensp;&middot;&ensp;Vercel
-            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+              <div>
+                <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-wider mb-3">
+                  Languages &amp; Frameworks
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {["TypeScript", "React", "Next.js", "Node.js"].map((t) => (
+                    <span
+                      key={t}
+                      className="text-xs px-2.5 py-1 rounded-md border border-zinc-800 text-zinc-400 bg-zinc-900/50"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-wider mb-3">
+                  Infrastructure &amp; Data
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {[
+                    "PostgreSQL",
+                    "Redis",
+                    "MongoDB",
+                    "AWS Lambda",
+                    "Snowflake",
+                  ].map((t) => (
+                    <span
+                      key={t}
+                      className="text-xs px-2.5 py-1 rounded-md border border-zinc-800 text-zinc-400 bg-zinc-900/50"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-wider mb-3">
+                  AI &amp; Tooling
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {[
+                    "OpenAI",
+                    "Anthropic",
+                    "Google AI",
+                    "Cursor",
+                    "Copilot",
+                  ].map((t) => (
+                    <span
+                      key={t}
+                      className="text-xs px-2.5 py-1 rounded-md border border-zinc-800 text-zinc-400 bg-zinc-900/50"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
           </motion.div>
         </Container>
       </Section>
