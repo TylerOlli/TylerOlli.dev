@@ -863,7 +863,7 @@ export default function Home() {
             </h2>
           </motion.div>
 
-          {/* Primary stack — large, prominent */}
+          {/* Core Stack — large, prominent */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -872,19 +872,27 @@ export default function Home() {
             className="mb-12"
           >
             <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-widest mb-5">
-              Primary
+              Core Stack
             </p>
-            <div className="flex flex-wrap gap-3">
-              {["TypeScript", "React", "Next.js", "Node.js", "PostgreSQL"].map(
-                (t) => (
-                  <span
-                    key={t}
-                    className="text-base md:text-lg font-semibold text-zinc-200 px-5 py-2.5 rounded-xl border border-zinc-800 bg-zinc-900/50 hover:border-zinc-700 hover:bg-zinc-900 transition-all duration-200"
-                  >
-                    {t}
-                  </span>
-                )
-              )}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { label: "Lang", value: "TypeScript" },
+                { label: "Runtime", value: "Node.js" },
+                { label: "DB", value: "PostgreSQL" },
+                { label: "Compute", value: "AWS Lambda" },
+              ].map((item) => (
+                <div
+                  key={item.value}
+                  className="rounded-xl border border-zinc-800 bg-zinc-900/50 hover:border-zinc-700 hover:bg-zinc-900 transition-all duration-200 px-5 py-4"
+                >
+                  <p className="text-[10px] font-mono text-zinc-600 uppercase tracking-widest mb-1.5">
+                    {item.label}
+                  </p>
+                  <p className="text-base md:text-lg font-semibold text-zinc-200">
+                    {item.value}
+                  </p>
+                </div>
+              ))}
             </div>
           </motion.div>
 
@@ -898,15 +906,33 @@ export default function Home() {
           >
             <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-5">
               <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-widest mb-4">
-                Infrastructure &amp; Data
+                UI Frameworks
+              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {["React", "Next.js"].map((t) => (
+                  <span
+                    key={t}
+                    className="text-xs px-2.5 py-1 rounded-md border border-zinc-800 text-zinc-400 bg-zinc-950/50 hover:border-zinc-700 transition-colors"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+              <p className="text-xs text-zinc-600 mt-3">
+                Also: Angular, Vue
+              </p>
+            </div>
+
+            <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-5">
+              <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-widest mb-4">
+                Data Systems
               </p>
               <div className="flex flex-wrap gap-1.5">
                 {[
-                  "Redis",
                   "MongoDB",
-                  "AWS Lambda",
-                  "Amazon S3",
+                  "Redis",
                   "Snowflake",
+                  "Amazon S3",
                 ].map((t) => (
                   <span
                     key={t}
@@ -920,13 +946,12 @@ export default function Home() {
 
             <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-5">
               <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-widest mb-4">
-                AI Providers
+                AI Tools
               </p>
               <div className="flex flex-wrap gap-1.5">
                 {[
-                  "OpenAI",
-                  "Anthropic",
-                  "Google AI",
+                  "Cursor",
+                  "GitHub Copilot",
                   "ChatGPT",
                   "Claude",
                   "Gemini",
@@ -938,24 +963,6 @@ export default function Home() {
                     {t}
                   </span>
                 ))}
-              </div>
-            </div>
-
-            <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-5">
-              <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-widest mb-4">
-                Dev Tooling
-              </p>
-              <div className="flex flex-wrap gap-1.5">
-                {["Cursor", "GitHub Copilot", "Vercel", "Tailwind CSS"].map(
-                  (t) => (
-                    <span
-                      key={t}
-                      className="text-xs px-2.5 py-1 rounded-md border border-zinc-800 text-zinc-400 bg-zinc-950/50 hover:border-zinc-700 transition-colors"
-                    >
-                      {t}
-                    </span>
-                  )
-                )}
               </div>
             </div>
           </motion.div>
