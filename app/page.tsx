@@ -838,78 +838,124 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Tech stack — grouped */}
+        </Container>
+      </Section>
+
+      {/* ==========================================
+          Tech Stack
+          ========================================== */}
+      <Section className="relative">
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-zinc-800 to-transparent" />
+
+        <Container>
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="max-w-3xl mt-20 pt-8 border-t border-zinc-800/50"
+            transition={{ duration: 0.6 }}
+            className="mb-16"
           >
-            <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-widest mb-6">
-              Core Technologies
+            <span className="text-xs font-mono text-violet-400 tracking-widest uppercase mb-4 block">
+              Tech Stack
+            </span>
+            <h2 className="font-[family-name:var(--font-outfit)] text-3xl md:text-4xl font-bold tracking-tight text-zinc-50">
+              Technologies I Ship With
+            </h2>
+          </motion.div>
+
+          {/* Primary stack — large, prominent */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="mb-12"
+          >
+            <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-widest mb-5">
+              Primary
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-              <div>
-                <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-wider mb-3">
-                  Languages &amp; Frameworks
-                </p>
-                <div className="flex flex-wrap gap-1.5">
-                  {["TypeScript", "React", "Next.js", "Node.js"].map((t) => (
-                    <span
-                      key={t}
-                      className="text-xs px-2.5 py-1 rounded-md border border-zinc-800 text-zinc-400 bg-zinc-900/50"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
+            <div className="flex flex-wrap gap-3">
+              {["TypeScript", "React", "Next.js", "Node.js", "PostgreSQL"].map(
+                (t) => (
+                  <span
+                    key={t}
+                    className="text-base md:text-lg font-semibold text-zinc-200 px-5 py-2.5 rounded-xl border border-zinc-800 bg-zinc-900/50 hover:border-zinc-700 hover:bg-zinc-900 transition-all duration-200"
+                  >
+                    {t}
+                  </span>
+                )
+              )}
+            </div>
+          </motion.div>
+
+          {/* Secondary — grouped categories */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="grid grid-cols-1 sm:grid-cols-3 gap-6"
+          >
+            <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-5">
+              <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-widest mb-4">
+                Infrastructure &amp; Data
+              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {[
+                  "Redis",
+                  "MongoDB",
+                  "AWS Lambda",
+                  "Amazon S3",
+                  "Snowflake",
+                ].map((t) => (
+                  <span
+                    key={t}
+                    className="text-xs px-2.5 py-1 rounded-md border border-zinc-800 text-zinc-400 bg-zinc-950/50 hover:border-zinc-700 transition-colors"
+                  >
+                    {t}
+                  </span>
+                ))}
               </div>
-              <div>
-                <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-wider mb-3">
-                  Infrastructure &amp; Data
-                </p>
-                <div className="flex flex-wrap gap-1.5">
-                  {[
-                    "PostgreSQL",
-                    "Redis",
-                    "MongoDB",
-                    "AWS Lambda",
-                    "Amazon S3",
-                    "Snowflake",
-                  ].map((t) => (
-                    <span
-                      key={t}
-                      className="text-xs px-2.5 py-1 rounded-md border border-zinc-800 text-zinc-400 bg-zinc-900/50"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
+            </div>
+
+            <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-5">
+              <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-widest mb-4">
+                AI Providers
+              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {[
+                  "OpenAI",
+                  "Anthropic",
+                  "Google AI",
+                  "ChatGPT",
+                  "Claude",
+                  "Gemini",
+                ].map((t) => (
+                  <span
+                    key={t}
+                    className="text-xs px-2.5 py-1 rounded-md border border-zinc-800 text-zinc-400 bg-zinc-950/50 hover:border-zinc-700 transition-colors"
+                  >
+                    {t}
+                  </span>
+                ))}
               </div>
-              <div>
-                <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-wider mb-3">
-                  AI &amp; Tooling
-                </p>
-                <div className="flex flex-wrap gap-1.5">
-                  {[
-                    "OpenAI",
-                    "Anthropic",
-                    "Google AI",
-                    "Cursor",
-                    "Copilot",
-                    "ChatGPT",
-                    "Claude",
-                    "Gemini",
-                  ].map((t) => (
+            </div>
+
+            <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-5">
+              <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-widest mb-4">
+                Dev Tooling
+              </p>
+              <div className="flex flex-wrap gap-1.5">
+                {["Cursor", "GitHub Copilot", "Vercel", "Tailwind CSS"].map(
+                  (t) => (
                     <span
                       key={t}
-                      className="text-xs px-2.5 py-1 rounded-md border border-zinc-800 text-zinc-400 bg-zinc-900/50"
+                      className="text-xs px-2.5 py-1 rounded-md border border-zinc-800 text-zinc-400 bg-zinc-950/50 hover:border-zinc-700 transition-colors"
                     >
                       {t}
                     </span>
-                  ))}
-                </div>
+                  )
+                )}
               </div>
             </div>
           </motion.div>
