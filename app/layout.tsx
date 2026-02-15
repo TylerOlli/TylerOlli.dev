@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Inter, Outfit } from "next/font/google"
+import { Inter, Outfit, JetBrains_Mono } from "next/font/google"
 import "./globals.css"
 import { Navigation } from "@/components/navigation"
 
@@ -15,32 +15,50 @@ const outfit = Outfit({
   display: "swap",
 })
 
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains",
+  display: "swap",
+})
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://tylerolli.dev'),
-  title: "Tyler Olli",
-  description: "Senior Software Engineer. Building scalable software and AI platforms.",
-  keywords: ["software engineer", "senior engineer", "full-stack", "TypeScript", "React", "Next.js", "AI engineering", "AWS", "context engineering"],
+  metadataBase: new URL("https://tylerolli.dev"),
+  title: "Tyler Olli — Software Engineer",
+  description:
+    "Software engineer building AI-native production systems. LLM orchestration, full-stack platforms, and scalable infrastructure.",
+  keywords: [
+    "software engineer",
+    "AI engineering",
+    "LLM orchestration",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "full-stack",
+    "production systems",
+  ],
   authors: [{ name: "Tyler Olli" }],
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://tylerolli.dev",
     siteName: "Tyler Olli",
-    title: "Tyler Olli",
-    description: "Senior Software Engineer. Building scalable software and AI platforms.",
+    title: "Tyler Olli — Software Engineer",
+    description:
+      "Software engineer building AI-native production systems. LLM orchestration, full-stack platforms, and scalable infrastructure.",
     images: [
       {
         url: "/og/tyler-olli-og.png",
         width: 1200,
         height: 630,
-        alt: "Tyler Olli - Senior Software Engineer",
+        alt: "Tyler Olli — Software Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tyler Olli",
-    description: "Senior Software Engineer. Building scalable software and AI platforms.",
+    title: "Tyler Olli — Software Engineer",
+    description:
+      "Software engineer building AI-native production systems.",
     images: ["/og/tyler-olli-og.png"],
   },
   robots: {
@@ -56,7 +74,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} ${outfit.variable} font-sans antialiased`}>
+      <body
+        className={`${inter.variable} ${outfit.variable} ${jetbrainsMono.variable} font-sans antialiased`}
+      >
         <Navigation />
         {children}
       </body>

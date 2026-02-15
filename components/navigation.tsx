@@ -5,9 +5,7 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 
 const navItems = [
-  { label: "Overview", href: "#hero" },
-  { label: "Work", href: "#case-studies" },
-  { label: "ModelTriage", href: "#modeltriage" },
+  { label: "Work", href: "#work" },
   { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ]
@@ -20,20 +18,20 @@ export function Navigation() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20)
 
-      // Update active section based on scroll position
-      const sections = navItems.map(item => item.href.slice(1))
-      const currentSection = sections.find(section => {
-        const element = document.getElementById(section)
+      const allSections = ["hero", ...navItems.map((item) => item.href.slice(1))]
+      let current = allSections[0]
+
+      for (const id of allSections) {
+        const element = document.getElementById(id)
         if (element) {
           const rect = element.getBoundingClientRect()
-          return rect.top <= 100 && rect.bottom >= 100
+          if (rect.top <= 150) {
+            current = id
+          }
         }
-        return false
-      })
-      
-      if (currentSection) {
-        setActiveSection(currentSection)
       }
+
+      setActiveSection(current)
     }
 
     window.addEventListener("scroll", handleScroll)
@@ -45,47 +43,48 @@ export function Navigation() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-background/80 backdrop-blur-lg border-b shadow-sm"
+          ? "bg-zinc-950/80 backdrop-blur-xl border-b border-zinc-800/50"
           : "bg-transparent"
       )}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-14 items-center justify-between gap-4 sm:gap-8">
-          {/* Left-aligned navigation */}
-          <div className="flex items-center gap-0.5 sm:gap-1 overflow-x-auto no-scrollbar">
+        <div className="flex h-14 items-center justify-between">
+          {/* Brand */}
+          <Link
+            href="#hero"
+            className="text-sm font-semibold text-zinc-100 hover:text-white transition-colors tracking-tight"
+          >
+            Tyler Olli
+          </Link>
+
+          {/* Navigation links + Resume */}
+          <div className="flex items-center gap-1">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "px-2 sm:px-3 py-1.5 text-[11px] sm:text-[13px] font-normal transition-all duration-200 ease-out relative group whitespace-nowrap flex-shrink-0",
+                  "px-3 py-1.5 text-[13px] transition-colors duration-200 rounded-md",
                   activeSection === item.href.slice(1)
-                    ? "text-[#1E3A8A] font-medium"
-                    : "text-foreground/85 hover:text-[#1E3A8A]"
+                    ? "text-white font-medium"
+                    : "text-zinc-400 hover:text-zinc-200"
                 )}
               >
                 {item.label}
-                <span 
-                  className={cn(
-                    "absolute bottom-0 left-2 sm:left-3 right-2 sm:right-3 h-[1.5px] bg-[#1E3A8A] transition-all duration-200 ease-out",
-                    activeSection === item.href.slice(1)
-                      ? "opacity-80"
-                      : "opacity-0 group-hover:opacity-100"
-                  )}
-                />
               </Link>
             ))}
-          </div>
 
-          {/* Right-aligned Resume button */}
-          <Link
-            href="/resume"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[11px] sm:text-[13px] font-semibold px-3 sm:px-4 py-1.5 rounded-md bg-white border-2 border-[#1E3A8A] text-[#1E3A8A] hover:bg-[#1E3A8A] hover:text-white hover:border-[#1E3A8A] transition-all duration-200 ease-out whitespace-nowrap flex-shrink-0"
-          >
-            Resume
-          </Link>
+            <div className="w-px h-4 bg-zinc-800 mx-2" />
+
+            <Link
+              href="/resume"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[13px] font-medium px-3.5 py-1.5 rounded-md border border-zinc-700 text-zinc-300 hover:bg-zinc-800 hover:text-white hover:border-zinc-600 transition-all duration-200"
+            >
+              Resume
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
