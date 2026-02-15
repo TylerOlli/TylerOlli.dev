@@ -262,56 +262,152 @@ export default function Home() {
             </div>
           </motion.div>
 
-          {/* Three-column details */}
+          {/* Two-column details: How It Works + Why It Matters */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto mb-16"
+            className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16"
           >
-            <div>
-              <h3 className="text-xs font-mono text-violet-400 uppercase tracking-widest mb-4">
+            {/* How It Works — numbered steps */}
+            <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-6 md:p-8">
+              <h3 className="text-xs font-mono text-violet-400 uppercase tracking-widest mb-6">
                 How It Works
               </h3>
-              <p className="text-sm text-zinc-400 leading-relaxed">
-                Analyzes prompt context, classifies the task type, routes to the
-                optimal model, and compares behavior across providers&mdash;giving
-                engineers evidence-based model selection instead of guesswork.
-              </p>
+              <ol className="space-y-5">
+                <li className="flex gap-3">
+                  <span className="text-xs font-mono text-violet-400/60 mt-0.5 flex-shrink-0 select-none">
+                    01
+                  </span>
+                  <div>
+                    <p className="text-sm font-semibold text-zinc-200 mb-1">
+                      Analyze context
+                    </p>
+                    <p className="text-sm text-zinc-500 leading-relaxed">
+                      Reads the prompt and any uploaded files to understand the
+                      task.
+                    </p>
+                  </div>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-xs font-mono text-violet-400/60 mt-0.5 flex-shrink-0 select-none">
+                    02
+                  </span>
+                  <div>
+                    <p className="text-sm font-semibold text-zinc-200 mb-1">
+                      Route intelligently
+                    </p>
+                    <p className="text-sm text-zinc-500 leading-relaxed">
+                      Classifies the request and routes to the LLM best suited
+                      for that type of work.
+                    </p>
+                  </div>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-xs font-mono text-violet-400/60 mt-0.5 flex-shrink-0 select-none">
+                    03
+                  </span>
+                  <div>
+                    <p className="text-sm font-semibold text-zinc-200 mb-1">
+                      Compare behavior
+                    </p>
+                    <p className="text-sm text-zinc-500 leading-relaxed">
+                      When multiple models are queried, responses are analyzed to
+                      identify agreement, disagreement, and unique perspectives.
+                    </p>
+                  </div>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-xs font-mono text-violet-400/60 mt-0.5 flex-shrink-0 select-none">
+                    04
+                  </span>
+                  <div>
+                    <p className="text-sm font-semibold text-zinc-200 mb-1">
+                      The result
+                    </p>
+                    <p className="text-sm text-zinc-500 leading-relaxed">
+                      Engineers review how different models behave on the same
+                      task and make an informed decision before production.
+                    </p>
+                  </div>
+                </li>
+              </ol>
             </div>
-            <div>
-              <h3 className="text-xs font-mono text-violet-400 uppercase tracking-widest mb-4">
+
+            {/* Why It Matters — with use-case bullets */}
+            <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-6 md:p-8">
+              <h3 className="text-xs font-mono text-violet-400 uppercase tracking-widest mb-6">
                 Why It Matters
               </h3>
-              <p className="text-sm text-zinc-400 leading-relaxed">
-                LLM outputs vary widely in quality, cost, and reliability.
-                ModelTriage brings structure through task-aware routing and
-                parallel comparison&mdash;predictable costs, measurable quality,
-                and justified decisions.
+              <p className="text-sm text-zinc-400 leading-relaxed mb-6">
+                LLM outputs vary widely in quality, cost, and reliability, making
+                model choice a recurring engineering decision rather than a
+                one-time setup. ModelTriage brings structure through task-aware
+                routing and parallel comparison.
               </p>
-            </div>
-            <div>
-              <h3 className="text-xs font-mono text-violet-400 uppercase tracking-widest mb-4">
-                Built With
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  "Next.js",
-                  "TypeScript",
-                  "OpenAI",
-                  "Anthropic",
-                  "Google AI",
-                  "Vercel",
-                  "Postgres",
-                ].map((tech) => (
-                  <span
-                    key={tech}
-                    className="text-xs px-2.5 py-1 rounded-md border border-zinc-800 text-zinc-400 bg-zinc-900/50 hover:border-zinc-700 transition-colors"
-                  >
-                    {tech}
+              <p className="text-sm font-semibold text-zinc-200 mb-3">
+                Engineering teams use ModelTriage to:
+              </p>
+              <ul className="space-y-2.5">
+                <li className="flex gap-2.5 text-sm text-zinc-400">
+                  <span className="text-violet-500/50 mt-0.5 flex-shrink-0 select-none">
+                    &mdash;
                   </span>
-                ))}
+                  <span className="leading-relaxed">
+                    Evaluate tradeoffs between models before committing to one
+                  </span>
+                </li>
+                <li className="flex gap-2.5 text-sm text-zinc-400">
+                  <span className="text-violet-500/50 mt-0.5 flex-shrink-0 select-none">
+                    &mdash;
+                  </span>
+                  <span className="leading-relaxed">
+                    Validate prompt behavior across providers, not just a single
+                    model
+                  </span>
+                </li>
+                <li className="flex gap-2.5 text-sm text-zinc-400">
+                  <span className="text-violet-500/50 mt-0.5 flex-shrink-0 select-none">
+                    &mdash;
+                  </span>
+                  <span className="leading-relaxed">
+                    Debug inconsistent responses and edge cases early
+                  </span>
+                </li>
+                <li className="flex gap-2.5 text-sm text-zinc-400">
+                  <span className="text-violet-500/50 mt-0.5 flex-shrink-0 select-none">
+                    &mdash;
+                  </span>
+                  <span className="leading-relaxed">
+                    Justify model choices with evidence instead of intuition
+                  </span>
+                </li>
+              </ul>
+
+              {/* Built With — inline */}
+              <div className="mt-8 pt-6 border-t border-zinc-800/50">
+                <p className="text-[11px] font-mono text-zinc-600 uppercase tracking-widest mb-3">
+                  Built With
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {[
+                    "Next.js",
+                    "TypeScript",
+                    "OpenAI",
+                    "Anthropic",
+                    "Google AI",
+                    "Vercel",
+                    "Postgres",
+                  ].map((tech) => (
+                    <span
+                      key={tech}
+                      className="text-xs px-2.5 py-1 rounded-md border border-zinc-800 text-zinc-400 bg-zinc-900/50 hover:border-zinc-700 transition-colors"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </motion.div>
@@ -638,6 +734,16 @@ export default function Home() {
                       &mdash;
                     </span>
                     <span className="leading-relaxed">
+                      Architected systems coordinating services and data
+                      pipelines to support personalized experiences across
+                      financial products
+                    </span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-zinc-400">
+                    <span className="text-violet-500/60 mt-0.5 flex-shrink-0 select-none">
+                      &mdash;
+                    </span>
+                    <span className="leading-relaxed">
                       Shipped an AI-powered localization system that automated
                       multilingual content generation across web platforms
                     </span>
@@ -705,8 +811,26 @@ export default function Home() {
                       &mdash;
                     </span>
                     <span className="leading-relaxed">
+                      Implemented a company-wide unsubscribe and email preference
+                      service backed by MongoDB with centralized opt-out logic
+                    </span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-zinc-400">
+                    <span className="text-zinc-700 mt-0.5 flex-shrink-0 select-none">
+                      &mdash;
+                    </span>
+                    <span className="leading-relaxed">
                       Created and maintained a centralized React component
                       library used across multiple enterprise sites and teams
+                    </span>
+                  </li>
+                  <li className="flex gap-3 text-sm text-zinc-400">
+                    <span className="text-zinc-700 mt-0.5 flex-shrink-0 select-none">
+                      &mdash;
+                    </span>
+                    <span className="leading-relaxed">
+                      Introduced automated testing and accessibility workflows to
+                      improve reliability, compliance, and release confidence
                     </span>
                   </li>
                 </ul>
@@ -751,6 +875,7 @@ export default function Home() {
                     "Redis",
                     "MongoDB",
                     "AWS Lambda",
+                    "Amazon S3",
                     "Snowflake",
                   ].map((t) => (
                     <span
@@ -773,6 +898,9 @@ export default function Home() {
                     "Google AI",
                     "Cursor",
                     "Copilot",
+                    "ChatGPT",
+                    "Claude",
+                    "Gemini",
                   ].map((t) => (
                     <span
                       key={t}
